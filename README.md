@@ -5,13 +5,13 @@ General protocols used by the Silbiger Lab for various research projects and equ
 Environmental, coral physiological, spectrophotometer methods included.
 
 
-[Coral physiological protocols](Protocols/Coral_Physiological_Parameter_Protocols)
+[Coral physiological protocols](https://github.com/SilbigerLab/Protocols/tree/master/Coral_Physiological_Parameter_Protocols)
 
 
-[Environmental parameter protocols](Protocols/Environmental_Parameter_Protocols)
+[Environmental parameter protocols](https://github.com/SilbigerLab/Protocols/tree/master/Coral_Physiological_Parameter_Protocols)
 
 
-[Spectrophotometer protocols](Protocols/Spectrophotometer)
+[Spectrophotometer protocols](https://github.com/SilbigerLab/Protocols/tree/master/Spectrophotometer)
 
 
 
