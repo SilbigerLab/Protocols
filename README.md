@@ -8,7 +8,7 @@ Environmental, coral physiological, spectrophotometer methods included.
 [Coral physiological protocols](https://github.com/SilbigerLab/Protocols/tree/master/Coral_Physiological_Parameter_Protocols)
 
 
-[Environmental parameter protocols](https://github.com/SilbigerLab/Protocols/tree/master/Coral_Physiological_Parameter_Protocols)
+[Environmental parameter protocols](https://github.com/SilbigerLab/Protocols/tree/master/Environmental_Parameter_Protocols)
 
 
 [Spectrophotometer protocols](https://github.com/SilbigerLab/Protocols/tree/master/Spectrophotometer)
