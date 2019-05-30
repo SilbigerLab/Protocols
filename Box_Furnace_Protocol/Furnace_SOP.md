@@ -44,15 +44,22 @@ Precautions
 1. Check the door seal
     1. The furnace has a power interrupt switch. Opening the furnace door shuts off power to the heating unit. The door must be completely closed before the furnace will operate.
 1. Turn furnace ON using the switch.
-1. Setting your temperature
+1. Setting your High Temperature Alarm Setpoint
     1. Press and HOLD for three seconds the "SET/ENT" button to display "modE rES".
     1. Press and release the "SET/ENT" button to display "PrG 0"
     1. Press the "UP/RESET" Button to show the lower display value of "1".
     1. Press and release the “SET/ENT” button to select this new value and advance to the "SSP 25" display.
     1. Press and release the “SET/ENT” button until the High Temperature Alarm Setpoint value is displayed as "A1".
-    1. Select an alarm setpoint 10 °C above the target setpoint to be selected. In this instance select "560".
+    1. Select an alarm setpoint ~10 °C above the target setpoint to be selected in the next step.
     1. Press and release the “SET/ENT” button to place this new value in the controller memory.
     1. Press and HOLD for three seconds the “SET/ENT” button to exit this menu.
+1. Setting the Local Setpoint
+    1. Make sure the indicators beside "RUN" and "L" on the controller face are off. If either indicator is on, press and hold the “SET/ENT” button until the display shows “modE”. Select “rES” in the lower display with the "arrow" buttons. Press and release the “SET/ENT” button once.
+    1. Press and release "SET/ENT" until "LoC" is displayed. Make sure the value below "LoC" is "0" (zero). If it is not "0" use the "down arrow" to make "0" and press and release "SET/ENT” button to register the change to "0".
+    1. Press and release the "SET/ENT" button until "modE" is displayed.
+    1. At "modE" display, press the "UP" arrow button to make the lower value "LCL", Press and release the “SET/ENT” button once to enter the local mode.
+    1. Use the "UP" and "DOWN" buttons to select the operating temperature setpoint.
+    1. Press and release the “SET/ENT" button once to select this setpoint value. This will show the display with the measured temperature in the upper display, the lower display showing the present temperature setpoint.
 
 <a name="Ashing"></a> **Ashing Guidelines**  
  * Ashing at relatively low furnace temperatures (400 ° to 800 °C) may cause carbon residue to build up on the walls, floor, ceiling and heating elements inside the furnace chamber. The carbon will look like a black powder, similar to smoke on glass from a candle.
