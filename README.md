@@ -2,8 +2,6 @@
 
 General protocols used by the Silbiger Lab for various research projects and equipment. 
 
-Environmental, coral physiological, spectrophotometer methods included.
-
 
 [Coral physiological protocols](https://github.com/SilbigerLab/Protocols/tree/master/Coral_Physiological_Parameter_Protocols)
 
@@ -13,5 +11,6 @@ Environmental, coral physiological, spectrophotometer methods included.
 
 [Spectrophotometer protocols](https://github.com/SilbigerLab/Protocols/tree/master/Spectrophotometer)
 
+[Intertidal Ecosystem Function Protocols](https://github.com/SilbigerLab/Protocols/tree/master/Intertidal_Ecosystem_Function_Protocols)
 
 
