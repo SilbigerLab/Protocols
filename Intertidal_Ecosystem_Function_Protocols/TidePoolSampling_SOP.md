@@ -30,7 +30,7 @@ Contents
 
 
   *  50 mL centrifuge tubes 
-  * 0.7 μm 25 mm glass fiber filters (GF/F)
+  * 0.7 &mu;m 25 mm glass fiber filters (GF/F)
   * 4-way stopcock
   * Filter holders
   * Luer-Lock tip 60 mL syringes 
@@ -59,7 +59,7 @@ Contents
 
   * Small cooler
   * 0.2 um Sterivex filter (for eDNA)
-  * Pipette with 1000mL pipette tips for field
+  * Pipette with 1000&mu;L pipette tips for field
   * 2.0 mL microcentrifuge tubes (microbial counts)
   * Paraformaldehyde (PFA; 32% stock solution)
   * Pipette and pipette tips for PFA (in lab)
@@ -70,10 +70,10 @@ Contents
 2. <a name="Protocol"></a> **Protocol**
 
 
-    1. 24 hours prior: Calibrate probes and place 16uL of the paraformaldehyde (PFA) stock (32%) in 2 mL microcentrifuge tubes (this must be done in fume hood) 
+    1. 24 hours prior: Calibrate probes and place 16&mu;L of the paraformaldehyde (PFA) stock (32%) in 2 mL microcentrifuge tubes (this must be done in fume hood) 
     1. Arrive at site several hours before start of sampling
     1.  Rinse all biogeochemistry containers (erlenmeyer flasks, tubing, 50 mL centrifuge tubes, 250 mL nalgene bottles, syringes and holders) three times with ocean water. Do not put waste water in tide pools.
-    1.  **Chemistry lab set-up:** probe stand with pH and temperature probes in 50 mL centrifuge cap and tube in tupperware on cooler for nutrient samples; pipette set to 1000mL with tips; 250 mL bottles for TA; 50 mL centrifuge tubes in styrofoam holders; 2 mL tubes in holders pretreated with 1mL paraformaldehyde; fDOM  containers; filters (0.7 and 0.22), syringe with holders and stopcocks. 
+    1.  **Chemistry lab set-up:** probe stand with pH and temperature probes in 50 mL centrifuge cap and tube in tupperware on cooler for nutrient samples; pipette set to 1000&mu;L with tips; 250 mL bottles for TA; 50 mL centrifuge tubes in styrofoam holders; 2 mL tubes in holders pretreated with 1mL paraformaldehyde; fDOM  containers; filters (0.7 and 0.22), syringe with holders and stopcocks. 
     1.  **Water collection set-up:** Buckets of Erlenmeyer flasks with stopper without holes and multi-parameter probe. 
     1. Set out tubing with weights and rubber stopper at each pool near the benthos next to the experimental chamber
     1.  At sampling time in each pool and the ocean, use multiparameter probe next to tubing to measure DO, conductivity, conductivity, salinity and temperature
@@ -85,13 +85,12 @@ Contents
     1. Take filled flask to chemistry lab station.
     1.  Repeat with other pools.
     1.  At next time point, hand pump 10x to flush tubing. Dispose of water on the rocks.
-    1.  At next time point, hand pump 10x to flush tubing. Dispose of water on the rocks
     1. **At chemistry lab:** Have filters already in filter holder and station organized by order of samples.
     1. Receive capped erlenmeyer flask from field team.
     1.  Pore around 20 mL into 50 mL centrifuge tube and twist on to cap with pH and temp probes (cover probes fully)
     1.  When pH stabilizes, record temperature first then pH. 
     1.  Fill 250 mL bottle for total alkalinity measurements, leaving a little head space for mercuric chloride addition. 
-    1.  Pour 50 mL of seawater into syringe connected to filter holder with stopcock in locked position. Place plunger of syringe on then unlock stopcock to side and push water through the filter holder with already pre-loaded 0.7 mm filter. Use same filter for 3 samples. 
+    1.  Pour 50 mL of seawater into syringe connected to filter holder with stopcock in locked position. Place plunger of syringe on then unlock stopcock to side and push water through the filter holder with already pre-loaded GF/F filter. Use same filter for 3 samples. 
     1.  Place nutrient samples back in cooler after 2 rounds of sampling.
     1.  On microbial sample times (1 & 5), pipette 1mL of unfiltered seawater into 2mL microcentrifuge container pretreated with PFA. Use another syringe with sterivex filter to push 2 x 60 mL onto rocks then 20 mL into fDOM flask, then the remainder on to the rocks. Plunge one syringe full of air to flush water out of sterivex. Place sterivex filter and microcentrifuge tubes into small cooler with dry ice after sampling. 
     1. Place 100 μl of 50% saturated HgCl2 with repeater pipette in each TA samples to preserve the water. Parafilm container tops
