@@ -9,7 +9,7 @@ Contents
  
 ***
 1. <a name="Materials"></a> **Materials**
-  *  YSI Pro2030 multiparameter prometer
+  *  YSI Pro2030 multiparameter prometer (measures Dissolved Oxygen, Conductivity, Salinity, and temperature)
   *  YSI 3169 Conductivity Calibrator solution (50,000 microsiemens/cm +/- 1% at 25 &deg; C
   *  YSI Pro2030 Quick Start Guide
 
