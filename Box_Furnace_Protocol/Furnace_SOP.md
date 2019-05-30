@@ -8,6 +8,8 @@ Contents
 - [**Furnace Materials**](#Furnace_Materials)
 - [**Personal Protective Equipment**](#PPE)
 - [**Standard Protocol**](#Protocol)
+- [**Single Setpoint Mode**](#Single_Mode)
+- [**Programming Mode**](#Programming_Mode)
 - [**Ashing Guidelines**](#Ashing)
 - [**References**](#References)
  
@@ -60,6 +62,18 @@ Precautions
     1. At "modE" display, press the "UP" arrow button to make the lower value "LCL", Press and release the “SET/ENT” button once to enter the local mode.
     1. Use the "UP" and "DOWN" buttons to select the operating temperature setpoint.
     1. Press and release the “SET/ENT" button once to select this setpoint value. This will show the display with the measured temperature in the upper display, the lower display showing the present temperature setpoint.
+
+<a name="Single_Mode"></a> **Single Setpoint Mode**  
+Single Setpoint Mode allows the user to select a single target temperature setpoint in the controller. The controller will operate the heating equipment until this setpoint value is achieved, then maintain this setpoint indefinitely.
+
+1. 
+
+
+<a name="Programming_Mode"></a> **Programming Mode**  
+Programming Mode allows the user to enter a series of setpoint and time values.The controller will follow these sequences of instructions to energize the heating equipment until the entire sequence is complete.
+
+1. 
+
 
 <a name="Ashing"></a> **Ashing Guidelines**  
  * Ashing at relatively low furnace temperatures (400 ° to 800 °C) may cause carbon residue to build up on the walls, floor, ceiling and heating elements inside the furnace chamber. The carbon will look like a black powder, similar to smoke on glass from a candle.
