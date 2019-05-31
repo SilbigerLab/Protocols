@@ -20,7 +20,7 @@ Contents
   * Model Name: Box Furnace
   * Temperature Range: 1,100 Celcius
 
-<a name="Materials"></a> **Furnace Materials**  
+<a name="Furnace_Materials"></a> **Furnace Materials**  
   * Vent Plug (S/N: 7221-2063-00A)
   * USB Manual (S/N: 329437G01)
   * Hearth Plate (S/N: 7011-2022-00C)
@@ -115,4 +115,4 @@ Programming Mode allows the user to enter a series of setpoint and time values.T
  
 <a name="References"></a> **References**
 
-Information in this guide and supplemental information about the Box Furnace and its operation and maintenance can be found in the [BF51800 Series Manual](blah)
+Information in this guide and supplemental information about the Box Furnace and its operation and maintenance can be found in the [BF51800 Series Manual](References/BF51800_Series_Manual.pdf)
