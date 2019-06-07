@@ -19,3 +19,5 @@ General protocols used by the Silbiger Lab for various research projects and equ
 [Box Furnace Protocols](https://github.com/SilbigerLab/Protocols/tree/master/Box_Furnace_Protocol)
 
 
+[Protocols for the titrator, acid washing bottles, and mixing mercuric chloride](https://github.com/SilbigerLab/Titrator)
+
