@@ -21,7 +21,9 @@ Contents
     1.  Return all samples to lab and remove approximately 1 g (wet mass) of tissue (5 cm from a branch apex) from each individual.
     1.  Rinse all samples in fresh water (FW).
     1.  Label individual pieces of aluminum foil for each sample.
-    1.  Dry all samples to a constant weight in the drying oven (80 °C) .
+    1.  Dry all samples to a constant weight in the drying oven (80 °C) for 24 hrs.
+    1.  Remove samples from oven, use acetone to sterilize mortar and pestal in between each sample.
+    1.  Crush samples into a very fine powder using a mortar and pestal.
     1.  Place samples in individually labeled centrifuge tubes. 
     1.  Submit dried samples to the University of California, Santa Barbara Marine Science Institute for CHN analysis using standarc techniques for an organic elemental analyzer.
 
