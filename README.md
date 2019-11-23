@@ -9,7 +9,7 @@ General protocols used by the Silbiger Lab for various research projects and equ
 [Environmental parameter protocols](https://github.com/SilbigerLab/Protocols/tree/master/Environmental_Parameter_Protocols)
 
 
-[Spectrophotometer protocols](https://github.com/SilbigerLab/Protocols/tree/master/Spectrophotometer)
+[Spectrophotometer protocols](https://github.com/SilbigerLab/Protocols/tree/master/SpectraMax_iD3_Spectrophotometer)
 
 [Intertidal Ecosystem Function Protocols](https://github.com/SilbigerLab/Protocols/tree/master/Intertidal_Ecosystem_Function_Protocols)
 
