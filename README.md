@@ -16,5 +16,7 @@ General protocols used by the Silbiger Lab for various research projects and equ
 
 [Respirometry Protocols](https://github.com/SilbigerLab/Respirometry)  
 
+[RAD Protocols](RAD7_Protocol)
+
 [General Lab Guide and Protocols](https://github.com/SilbigerLab/Protocols/tree/master/General_Lab_Guide)
 
