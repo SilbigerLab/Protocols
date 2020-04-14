@@ -5,7 +5,7 @@ Last Revised: 20200330
 **Contents**  
 - [**Materials**](#Materials)  
 - [**Safety Procedures**](#Safety)  
-- [**Set Up Procedure](#Set_up)  
+- [**Set Up Procedure**](#Set_up)  
 - [**Sampling Protocol**](#Sampling_Protocol)  
 - [**Stop and Breakdown**](#Breakdown)  
 - [**References**](#References)  
@@ -45,9 +45,9 @@ Last Revised: 20200330
 * DO NOT open or attempt to repair the machine. The detector has an internal high voltage supply that can generate more than 2,500V. 
 * DO NOT allow liquid to enter the drying tube.  The desiccant will be ruined and in need of replacing if submerged or exposed to liquids.
 
-<a name="Set_Up"></a> **Set Up Procedure**  
+<a name="Set_up"></a> **Set Up Procedure**  
 
-**Before field deployment**  
+Before field deployment  
 * Necessary in-lab steps before deploying, though you may set up other components of the RAD Aqua and RAD7 if applicable.  
 1. Charge the RAD7 and boat battery overnight before deployment.
     1. For the RAD7, choose the appropriate international 12V adapter and plug one end into the DC Power Input on the RAD7 and the other end into your outlet (refer to Figure 1 for an overlook of the RAD7).
@@ -65,7 +65,7 @@ Last Revised: 20200330
         1. Set the Cycle time to 20-30 minutes or 00:20 - 00:30 for temporal surveys
     1. Turn RAD7 off until ready for deployment.
 
-**RAD Aqua Set Up**  
+RAD Aqua Set Up  
 * For a visual of the final set up for the RAD Aqua, refer to the schematic in Figure 2.  
 1. Screw one end of the metal rod into the middle of the white trivet base of the RAD Aqua.
 1. Place the clear cylinder around the metal rod in the grooves of the trivet.
@@ -73,7 +73,7 @@ Last Revised: 20200330
 1. Unscrew the cap of one of the outflow hose-connection ports on the trivet to allow water to flow out.
     1. Optional: connect a hose to one of these ports to guide the water away from the system.
 
-**Hose and Pump Connections**  
+Hose and Pump Connections  
 * For proper hose connections, follow the schematic in Figure 2.  
 1. Place the RAD7 on a clean, dry surface inside some sort of protection to avoid any harsh environment or liquids.
     1. Possible protective measures include a storage bin and/or a clear plastic bag, which has its opening bunched around the inlet and outlet tubes to allow for readings and access to the control panel. 
@@ -92,7 +92,7 @@ Last Revised: 20200330
 ![Figure 1. RAD7 Overlook](Images/RAD7_Overlook.PNG)  
 ![Figure 2. Rad Aqua Set Up](Images/RAD_Aqua_Setup.PNG)  
 
-<a name=Sampling_Protocol</a> **Sampling Protocol**  
+<a name="Sampling_Protocol"></a> **Sampling Protocol**  
 
 1. Once the RAD7 and RAD Aqua are connected in-line with tubing as described and diagramed above, turn on the RAD7.
     1. From the main menu screen, check the battery voltage.  Voltage should be above 6V, else the RAD should be charged.  Typically a full charge will last about 8-9 hours.
@@ -107,9 +107,9 @@ Last Revised: 20200330
 1. Once the RAD Aqua seems stable, use the RAD7 key pad to start testing: Menu > "Test" > Enter > "Start"
     1. Note that the first two cycles are used as purge rounds, so you will not have data for the first two cycles, but will begin collecting data after those first two.  The RAD7 will beep at the end of each cycle.
 
-<a name=Breakdown></a> **Stopping and Breaking down the system**  
+<a name="Breakdown"></a> **Stopping and Breaking down the system**  
 
-**Breakdown**  
+Breakdown  
 1. When you are ready to stop recording data, use the key pad to stop testing: Menu > "Test" > Enter > "Stop"
 1. Turn the bilge switch Off and then disconnect the terminals, first the negative (black) then the positive (red).
 1. Disconnect the attached hoses from the RAD Aqua and RAD7, being sure to cap any hose ports with the appropriate dust cap (one small red dust cat for the RAD7, a free spare filter for the RAD7, and two yellow dust caps for the drying unit).
@@ -118,7 +118,7 @@ Last Revised: 20200330
 1. Wash all components of the RAD Aqua in fresh water and lay out to dry.
 1. Spin the hoses to remove most of the water from inside the tubing.
 
-**Data offload**  
+Data offload  
 1. Back in lab, connect the RAD7 to a power source and to the USB to serial adapter cable.  Attach the USB end of that cable to the computer containing the Durridge Capture software (download from the included disk).
 1. Turn on the RAD7 and make sure the Status is "Idle".
 1. Open the Capture software on the computer.
