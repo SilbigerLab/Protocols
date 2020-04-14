@@ -1,6 +1,6 @@
 # Standard protocol for setup and use of the Durridge RAD7 Radon Detector
-Original: 20200330
-Last Revised: 20200330
+Original: 20200330  
+Last Revised: 20200413  
 
 **Contents**  
 - [**Materials**](#Materials)  
@@ -90,7 +90,7 @@ Hose and Pump Connections
 1. Unless discussed otherwise, ignore the Optional Bleed valve in the Figure 2. diagram.
 
 ![Figure 1. RAD7 Overlook](Environmental_Parameter_Protocols/Images/RAD7_Overlook.PNG)  
-![Figure 2. Rad Aqua Set Up](Environmental_Parameter_Protocols/Images/RAD_Aqua_Setup.PNG)  
+![Figure 2. Rad Aqua Set Up](Environmental_Parameter_Protocols/Images/RAD_Aqua_Setup.png)  
 
 <a name="Sampling_Protocol"></a> **Sampling Protocol**  
 
