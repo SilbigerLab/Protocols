@@ -16,7 +16,5 @@ General protocols used by the Silbiger Lab for various research projects and equ
 
 [Respirometry Protocols](https://github.com/SilbigerLab/Respirometry)  
 
-[RAD Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)
-
-[General Lab Guide and Protocols](https://github.com/SilbigerLab/Protocols/tree/master/General_Lab_Guide)
+[RAD Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)  
 
