@@ -89,8 +89,8 @@ Hose and Pump Connections
     1. Be sure to wrap or isolate the boat battery, bilge switch, and fuse from possible exposure to water or other hazards.
 1. Unless discussed otherwise, ignore the Optional Bleed valve in the Figure 2. diagram.
 
-![Figure 1. RAD7 Overlook](Environmental_Parameter_Protocols/Images/RAD7_Overlook.PNG)  
-![Figure 2. Rad Aqua Set Up](Environmental_Parameter_Protocols/Images/RAD_Aqua_Setup.PNG)  
+![Figure 1. RAD7 Overlook](https://github.com/SilbigerLab/Protocols/blob/master/Environmental_Parameter_Protocols/Images/RAD7_Overlook.PNG)  
+![Figure 2. Rad Aqua Set Up](https://github.com/SilbigerLab/Protocols/blob/master/Environmental_Parameter_Protocols/Images/RAD_Aqua_Setup.png)  
 
 <a name="Sampling_Protocol"></a> **Sampling Protocol**  
 
