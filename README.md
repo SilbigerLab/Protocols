@@ -37,5 +37,5 @@
 
 ## Respirometry Protocols
 [Respirometry Repository](https://github.com/SilbigerLab/Respirometry)  
-*[Respirometer Manual](https://github.com/SilbigerLab/Respirometry/blob/master/Respirometer_SOP.md)
+*[Respirometer Manual](https://github.com/SilbigerLab/Respirometry/blob/master/Respirometer_SOP.md)  
 *[Oxy-10 and PreSens](https://github.com/SilbigerLab/Respirometry/blob/master/PreSens_SOP.md)
