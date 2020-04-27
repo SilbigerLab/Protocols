@@ -18,16 +18,15 @@ Contents
     1. 	Vortex
 
 2. <a name="Protocol"></a> **Protocol**
-
     1.  After isolating coral tissue + symbionts (methods vary), homogenize, vortex and remove an aliquot of 1 ml and place in
     	microcentrifuge tube. If desiring to store in formalin, z-fix or other, adjust volume accordingly. If sample is in 	   filtered seawater, store in freezer or keep on ice until further processing.
 	
-    	Once at microscope…
+    	Once at microscope:
     1.  Place coverslip on slide, and vortex your sample.
     1.  Remove a small volume (less than the stem of pipette) and add slowly to haemocytometer “sample introduction point”
     	until counting chamber is completely covered (Fig 1.).
 	
-	![Haemocytometer](https://github.com/SilbigerLab/Protocols/blob/master/Coral_Physiological_Parameter_Protocols/Images/haemocytometer.png)
+	![Haemocytometer](https://github.com/SilbigerLab/Coral_Physiological_Parameter_Protocols/blob/master/Images/haemocytometer.png)
 	
 	Fig 1. Haemocytometer showing introduction points (where sample is loaded) cover glass, left and right support mounts, 
 	and the counting chamber. Note the depth of the sample under slide is 0.1mm thick. Image: Rice University
@@ -39,7 +38,7 @@ Contents
     1.  Start with microscope at 10x objective and find the middle 5 x 5 square. Take care not to crack coverslip if moving 
     	between objectives. The 25-square internal field has smaller squares that subdivide it. However, you will not likely 	     need to count within these smaller squares. The entire counting chamber (pictured in Fig 2.) is considered a square 	 field, each with a length and width of 1.0 mm. Each of the 9 squares has an area of 1 mm2.
 	
-	![Haemocytometer field of view](https://github.com/SilbigerLab/Protocols/blob/master/Coral_Physiological_Parameter_Protocols/Images/haemocytometer%20total%20field%20of%20view.png)
+	![Haemocytometer field of view](https://github.com/SilbigerLab/Coral_Physiological_Parameter_Protocols/blob/master/Images/haemocytometer%20total%20field%20of%20view.png)
 	
     Fig 2. Haemocytometer total field of view. Showing 9 large squares (1 x 1 mm) and an central, middle square divided into 
     smaller fields. Image: Rice University
@@ -56,7 +55,7 @@ Contents
     	smaller squares). If you count new areas (a corner 4 x 4 larger square), you must count the entire area so that you
 	replicate an area of 1 mm2. You will likely have to count 2 - 4 of the larger, 9 squares.
 	
-	![Symbiont cells in field of view](https://github.com/SilbigerLab/Protocols/blob/master/Coral_Physiological_Parameter_Protocols/Images/symbiont%20cells%20in%20field%20of%20view.png)
+	![Symbiont cells in field of view](https://github.com/SilbigerLab/Coral_Physiological_Parameter_Protocols/blob/master/Images/symbiont%20cells%20in%20field%20of%20view.png)
 	
 	Fig 3. (A) Field of view of showing 25-square, central field in haemocytometer. A single square is outlined in black
 	in the bottom-right. (B) A close up of a symbiont cells (left, right) and cellular debris (bottom, top). Note symbiont
@@ -87,36 +86,4 @@ Contents
 
     1.  Wall, C. 2016. Symbiodinium counts in coral tissue protocol. Dr. Ruth Gates’ Laboratory Hawaii Institute of Marine
     	Biology, University of Hawaii.
-
-
-
-
-
-
-
-
-
-
-
-
-
-	  
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

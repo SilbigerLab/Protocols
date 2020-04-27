@@ -8,7 +8,7 @@ Contents
 - [**Protocol**](#Protocol)
 - [**References**](#References)
  
-1. <a name="Materials"></a> **Materials**
+1. <a name="Materials"></a> **Materials**  
     1. 	Shimadzu UV 2450 spectrophotometer
     1.  Desktop computer
     1.  UV probe software
@@ -16,13 +16,12 @@ Contents
     1.  100% acetone
     1.  Chiller (attached to spectrophotometer)
 
-2. <a name="Protocol"></a> **Protocol**
-
+2. <a name="Protocol"></a> **Protocol**  
     1. 	Turn the chiller switch to ON
-    2.  All the square coils must be submerged in water, usually are already but double check before turning on
-    2.  The chiller is pre-set to 25°C, do not need to change 
+    1.  All the square coils must be submerged in water, usually are already but double check before turning on
+    1.  The chiller is pre-set to 25°C, do not need to change 
     1.  Open the UV probe program and press CONNECT once loaded, takes around 5-10 minutes to warm up and all checks need to    be green before you begin
-    2.  Fine to leave spec on as you set up samples and organize 
+    1.  Fine to leave spec on as you set up samples and organize 
     1.  Once everything is green, click OK
     1.  Then click on the icon with a circle and capital M in the middle, methods
     1.  Add three wavelengths (630nm, 663nm and 750nm) as your WL points

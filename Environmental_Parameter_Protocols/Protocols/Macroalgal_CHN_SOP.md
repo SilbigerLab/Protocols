@@ -24,41 +24,12 @@ Contents
     1.  Dry all samples to a constant weight in the drying oven (80 °C) for 24 hrs.
     1.  Remove samples from oven, use acetone to sterilize mortar and pestal in between each sample.
     1.  Crush samples into a very fine powder using a mortar and pestal. 
-    ![Example of finely crushed algae](https://github.com/SilbigerLab/Protocols/blob/master/Environmental_Parameter_Protocols/Images/algae.png)
+    ![Example of finely crushed algae](https://github.com/SilbigerLab/Environmental_Parameter_Protocols/blob/master/Images/algae.png)
     1.  Place samples in individually labeled centrifuge tubes. 
-    1.  Submit dried samples to the University of California, Santa Barbara Marine Science Institute for CHN analysis using standarc techniques for an organic elemental analyzer.
+    1.  Submit dried samples to the University of California, Santa Barbara Marine Science Institute for CHN analysis using standard techniques for an organic elemental analyzer.
 
 3. <a name="References"></a> **References**
 
     1.  Carpenter, R of Moorea Coral Reef LTER. 2018. MCR LTER: Coral Reef: Macroalgal CHN, ongoing since 2005. knb-lter-mcr.20.17 doi:10.6073/pasta/59244d3280854f513fbb07a749c9b6d1
-
-
-
-
-
-
-
-
-
-
-
-
-	  
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

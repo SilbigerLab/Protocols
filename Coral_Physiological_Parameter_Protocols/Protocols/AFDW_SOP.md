@@ -16,7 +16,6 @@ Contents
     1. 	Analytical balance (0.0001 g)
 
 2. <a name="Protocol"></a> **Protocol**
-
     1.  Obtain aluminum weigh pans to be used in AFDW determination
     1.  Label each pan with an ID number. May use a spatula to scrape a # into bottom of pan, or use pencil. Marker WILL burn
     	off!
@@ -55,7 +54,6 @@ Calculations | | | | = D-C | | = D-F |
 Ex. 1 | 1.0 | 4.5632 | 4.8005 | 0.237 | 4.7542 | 0.0463 |
 
 4. <a name="References"></a> **References**
-
     1.  Fitt et al., 2000. Seasonal patterns of tissue biomass and densities of symbiotic dinoflagellates in reef corals and 
     	relation to coral bleaching. Limnol. Oceanogr., 45(3), 2000, 677–685
     2.  Schoepf et al., 2013. Coral Energy Reserves and Calcification in a High-CO2 World at Two Temperatures. PLoS ONE 8:

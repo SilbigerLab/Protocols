@@ -32,11 +32,11 @@ Contents
     
 3. <a name="Figures_&_Equations"></a> **Figures & Equations**
 
-![Sediment Trap Design](https://github.com/SilbigerLab/Protocols/blob/master/Environmental_Parameter_Protocols/Images/sedimenttrap.png)
+![Sediment Trap Design](https://github.com/SilbigerLab/Environmental_Parameter_Protocols/blob/master/Images/sedimenttrap.png)
 
 Fig 1. Sediment trap design and dimensions used for this experiment. 
 
-![Area Equation](https://github.com/SilbigerLab/Protocols/blob/master/Environmental_Parameter_Protocols/Images/areaequation.png)
+![Area Equation](https://github.com/SilbigerLab/Environmental_Parameter_Protocols/blob/master/Images/areaequation.png)
 
 Eq 1. Area equation for calculating the average trap collection rate. 
 
@@ -44,34 +44,5 @@ Eq 1. Area equation for calculating the average trap collection rate.
 
     1.  Carpenter, R of Moorea Coral Reef LTER. 2018. MCR LTER: Coral Reef: Macroalgal CHN, ongoing since 2005. knb-lter-mcr.20.17 doi:10.6073/pasta/59244d3280854f513fbb07a749c9b6d1
     1.  Storlazzi, C. D., Field, M. E., & Bothner, M. H. 2011. The use (and misuse) of sediment traps in coral reef environments: theory, observations, and suggested protocols. Coral Reefs, 30(1), 23-38.
-
-
-
-
-
-
-
-
-
-
-
-
-	  
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
