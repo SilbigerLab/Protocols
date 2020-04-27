@@ -23,19 +23,19 @@
 
 ## Titration Protocols  
 [Titration Repository](https://github.com/SilbigerLab/Titrator)  
-*[Titrator SOP](https://github.com/SilbigerLab/Titrator/Protocols/TitratorSOP.md)  
-*[Automatically transfer weights from mettler balance to titrator or excel file](https://github.com/SilbigerLab/Titrator/Protocols/BalanceSOP.md)  
-*[Acid washing bottles](https://github.com/SilbigerLab/Titrator/Protocols/AcidWashing.md)  
-*[Mixing Mercuric Chloride solution for poisoning water samples](https://github.com/SilbigerLab/Titrator/Protocols/Mercuric_Chloride_SOP.md)  
+*[Titrator SOP](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/TitratorSOP.md)  
+*[Automatically transfer weights from mettler balance to titrator or excel file](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/BalanceSOP.md)  
+*[Acid washing bottles](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/AcidWashing.md)  
+*[Mixing Mercuric Chloride solution for poisoning water samples](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/Mercuric_Chloride_SOP.md)  
 
 ## Spectrophotometer Protocols
-[SpectraMax iD3 Repository](https://github.com/SilbigerLab/pHSpec)  
-*[Plate Read Setup](https://github.com/SilbigerLab/pHSpec/Protocols/Plate_Read_Setup_SOP.md)  
-*[Preparing the Well Plate](https://github.com/SilbigerLab/pHSpec/Protocols/Prepare_Well_Plate_SOP.md)  
-*[Export Data](https://github.com/SilbigerLab/pHSpec/Protocols/Export_Data_SOP.md)  
+[SpectraMax iD3 Repository](https://github.com/SilbigerLab/pH_Spec)  
+*[Plate Read Setup](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Plate_Read_Setup_SOP.md)  
+*[Preparing the Well Plate](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Prepare_Well_Plate_SOP.md)  
+*[Export Data](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Export_Data_SOP.md)  
 [UV 2450 Spectrophotometer Protocol](UV_2450_Spectrophotometer/UV_2450_SpecSOP.md)  
 
 ## Respirometry Protocols
 [Respirometry Repository](https://github.com/SilbigerLab/Respirometry)  
-*[Respirometer Manual](https://github.com/SilbigerLab/Respirometry/Respirometer_SOP.md)
-*[Oxy-10 and PreSens](https://github.com/SilbigerLab/Respirometry/PreSens_SOP.md)
+*[Respirometer Manual](https://github.com/SilbigerLab/Respirometry/blob/master/Respirometer_SOP.md)
+*[Oxy-10 and PreSens](https://github.com/SilbigerLab/Respirometry/blob/master/PreSens_SOP.md)
