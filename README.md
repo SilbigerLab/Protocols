@@ -3,11 +3,11 @@
 ## General protocols used by the Silbiger Lab for various research projects and equipment. 
 
 ## Coral Physiological Protocols  
-*[Ash Free Dry Weight](Physiological_Parameter_Protocols/Protocols/AFDW_SOP.md)  
-*[Chlorophyll Extraction](Physiological_Parameter_Protocols/Protocols/Chlorophyll_SOP.md)  
-*[Symbiont Cell Counts](Physiological_Parameter_Protocols/Protocols/Counts_SOP.md)  
-*[Tissue Removal](Physiological_Parameter_Protocols/Protocols/Tissue_removal_SOP.md)  
-*[Tissue N Content](Physiological_Parameter_Protocols/Protocols/Tissue_N_content_SOP.md)  
+*[Ash Free Dry Weight](Coral_Physiological_Parameter_Protocols/Protocols/AFDW_SOP.md)  
+*[Chlorophyll Extraction](Coral_Physiological_Parameter_Protocols/Protocols/Chlorophyll_SOP.md)  
+*[Symbiont Cell Counts](Coral_Physiological_Parameter_Protocols/Protocols/Counts_SOP.md)  
+*[Tissue Removal](Coral_Physiological_Parameter_Protocols/Protocols/Tissue_removal_SOP.md)  
+*[Tissue N Content](Coral_Physiological_Parameter_Protocols/Protocols/Tissue_N_content_SOP.md)  
 
 ## Environmental Parameter Protocols  
 *[Nutrients in situ](Environmental_Parameter_Protocols/Protocols/In_situ_nutrients_SOP.md)  
@@ -16,7 +16,7 @@
 *[RAD Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)  
 
 ## Intertidal Ecosystem Function Protocols  
-*[Tide Pool Water Sampling](Intertidal_Ecosystem_Functioning_Protocols/TidePoolSampling_SOP.md)  
+*[Tide Pool Water Sampling](Intertidal_Ecosystem_Function_Protocols/TidePoolSampling_SOP.md)  
 
 ## Probe Calibration Protocols  
 *[YSI 2030 Calibration](Probe_Calibration_Protocols/YSI2030_Calibration_SOP.md)  
