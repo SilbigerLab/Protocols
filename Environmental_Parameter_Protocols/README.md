@@ -10,6 +10,8 @@ Macroalgal CHN content, *in situ* nutrient sampling, sedimentation rate methods,
 
 [Sedimentation rates protocol](Protocols/Sedimentation_rates_SOP.md)
 
+[Volume Dye Method protocol](Protocols/Volume_Dye_Method)
+
 [RAD7 protocol](Protocols/RAD7_Protocol)
 
 [Light Spectrum protocol](Protocols/Light_Spectrum)

@@ -13,6 +13,7 @@
 *[Nutrients in situ](Environmental_Parameter_Protocols/Protocols/In_situ_nutrients_SOP.md)  
 *[Macroalgal CHN Content](Environmental_Parameter_Protocols/Protocols/Macroalgal_CHN_SOP.md)  
 *[Sedimentation Rates](Environmental_Parameter_Protocols/Protocols/Sedimentation_Rates_SOP.md)  
+*[Volume Dye Method Protocols](Environmental_Parameter_Protocols/Protocols/Volume_Dye_Method)  
 *[RAD Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)  
 *[Light Spectrum Protocols](Environmental_Parameter_Protocols/Protocols/Light_Spectrum)  
 
