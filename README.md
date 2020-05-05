@@ -8,6 +8,7 @@
 *[Symbiont Cell Counts](Coral_Physiological_Parameter_Protocols/Protocols/Counts_SOP.md)  
 *[Tissue Removal](Coral_Physiological_Parameter_Protocols/Protocols/Tissue_removal_SOP.md)  
 *[Tissue N Content](Coral_Physiological_Parameter_Protocols/Protocols/Tissue_N_content_SOP.md)  
+*[Respirometry protocol](Coral_Physiological_Parameter_Protocols/Protocols/Respirometry_Protocol)
 
 ## Environmental Parameter Protocols  
 *[Nutrients in situ](Environmental_Parameter_Protocols/Protocols/In_situ_nutrients_SOP.md)  
