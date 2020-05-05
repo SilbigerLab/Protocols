@@ -2,7 +2,7 @@
 
 Coral physiological parameter protocols used by the Silbiger Lab in Mo'orea, French Polynesia
 
-Coral tissue removal, ash-free dry weight, algal endosymbiont counts and chlorophyll a content methods included.
+Coral tissue removal, ash-free dry weight, algal endosymbiont counts, chlorophyll a content, and respirometry methods included.
 
 
 [Algal endosymbiont counts protocol](Protocols/Counts_SOP.md)
@@ -18,3 +18,6 @@ Coral tissue removal, ash-free dry weight, algal endosymbiont counts and chlorop
 
 
 [Tissue nitrogen content protocol](Protocols/Tissue_N_content_SOP.md)
+
+
+[Respirometry protocol](Protocols/Respirometry_Protocol)
