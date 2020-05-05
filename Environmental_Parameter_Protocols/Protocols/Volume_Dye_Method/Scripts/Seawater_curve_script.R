@@ -14,9 +14,11 @@ library(purrr)
 library(broom)
 library(ggpmisc)
 
+#folder of the day
+folder<-"Environmental_Parameter_Protocols/Protocols/Volume_Dye_Method/Data/"
 #load the data
-tdata<-read.csv("Tide_pool_vol_stdcurve_seawater_data.csv")
-#View(tdata)
+tdata<-read_csv(paste0(folder,"Tide_pool_vol_stdcurve_seawater_data.csv"))
+View(tdata)
 
 #analyze data ####
 tdata %>% # this is the dataframe
@@ -26,8 +28,7 @@ tdata %>% # this is the dataframe
   facet_wrap(~Machine*DyeVolume) #dividing plots by machine and dye volume 
 
 
-
-# only include the compete cases
+# only include the complete cases
 tdata<-tdata[complete.cases(tdata),]
 
 #write a power function for each curve work in progress
