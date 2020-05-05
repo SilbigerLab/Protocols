@@ -14,6 +14,7 @@
 *[Macroalgal CHN Content](Environmental_Parameter_Protocols/Protocols/Macroalgal_CHN_SOP.md)  
 *[Sedimentation Rates](Environmental_Parameter_Protocols/Protocols/Sedimentation_Rates_SOP.md)  
 *[RAD Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)  
+*[Light Spectrum Protocols](Environmental_Parameter_Protocols/Protocols/Light_Spectrum)  
 
 ## Intertidal Ecosystem Function Protocols  
 *[Tide Pool Water Sampling](Intertidal_Ecosystem_Function_Protocols/TidePoolSampling_SOP.md)  

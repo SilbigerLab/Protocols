@@ -12,6 +12,7 @@ Macroalgal CHN content, *in situ* nutrient sampling, sedimentation rate methods,
 
 [RAD7 protocol](Protocols/RAD7_Protocol)
 
+[Light Spectrum protocol](Protocols/Light_Spectrum)
 
 
 
