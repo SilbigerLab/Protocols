@@ -13,7 +13,7 @@
 ## Environmental Parameter Protocols  
 *[Nutrients in situ](Environmental_Parameter_Protocols/Protocols/In_situ_nutrients_SOP.md)  
 *[Macroalgal CHN Content](Environmental_Parameter_Protocols/Protocols/Macroalgal_CHN_SOP.md)  
-*[Sedimentation Rates](Environmental_Parameter_Protocols/Protocols/Sedimentation_Rates_SOP.md)  
+*[Sedimentation Rates](Environmental_Parameter_Protocols/Protocols/Sedimentation_rates_SOP.md)  
 *[Volume Dye Method Protocols](Environmental_Parameter_Protocols/Protocols/Volume_Dye_Method)  
 *[RAD Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)  
 *[Light Spectrum Protocols](Environmental_Parameter_Protocols/Protocols/Light_Spectrum)  
@@ -37,8 +37,3 @@
 *[Preparing the Well Plate](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Prepare_Well_Plate_SOP.md)  
 *[Export Data](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Export_Data_SOP.md)  
 [UV 2450 Spectrophotometer Protocol](UV_2450_Spectrophotometer/UV_2450_SpecSOP.md)  
-
-## Respirometry Protocols
-[Respirometry Repository](https://github.com/SilbigerLab/Respirometry)  
-*[Respirometer Manual](https://github.com/SilbigerLab/Respirometry/blob/master/Respirometer_SOP.md)  
-*[Oxy-10 and PreSens](https://github.com/SilbigerLab/Respirometry/blob/master/PreSens_SOP.md)
