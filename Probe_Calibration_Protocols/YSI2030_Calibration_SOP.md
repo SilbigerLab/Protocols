@@ -8,17 +8,17 @@ Contents
 1. [**References**](#References)
  
 ***
-1. <a name="Materials"></a> **Materials**
+<a name="Materials"></a> **Materials**
   *  YSI Pro2030 multiparameter prometer (measures Dissolved Oxygen, Conductivity, Salinity, and temperature)
   *  YSI 3169 Conductivity Calibrator solution (50,000 microsiemens/cm +/- 1% at 25 &deg; C
   *  YSI Pro2030 Quick Start Guide
 
 *** 
-2. <a name="Protocol"></a> **Protocol**
+<a name="Protocol"></a> **Protocol**
 
-	1. Calibrating conductivity
-	  1. Calibrate <24 hours before sampling.
-   	1. Connect cable with probe to handheld meter. 
+1. Calibrating conductivity
+    1. Calibrate <24 hours before sampling.
+    1. Connect cable with probe to handheld meter. 
     1. Fill tall container (ex. graduated cylinder) with new, traceable YSI 3169 conductivity calibration solution. The conductivity sensor is located at the top of the probe and will need to be submerged in the solution.
     1. Remove the gray slip covering the probe and fully submerge probe in the solution. Make sure probe is entirely submered in the solution. Gently agitate the probe to remove any air bubbles from conductivity sensor. 
     1. Turn the instrument on and allow the conductitiy and temperature readings to stabilize. Press the Cal key. Highlight Conducivity and press enter.
@@ -28,7 +28,7 @@ Contents
     1. Press enter to complete the calibration. Or press Cal to cancel the calibration. 
     1. 'Calibration successful' will display for a few sectonds to indicate successful calibration and then the instrument will return to the home screen. 
     1.  If unsuccessful, an error message will appear. See troubleshooting guide for solutions.
-  1. Calibrating %DO
+1. Calibrating Dissolved Oxygen
     1. Calibrate <24 hours before sampling.
     1. Connect cable with probe to handheld meter.
     1. Remove the gray slip covering the probe and take out the small circular sponge inside the gray slip.
@@ -37,13 +37,13 @@ Contents
     1. After this time, turn on the instrument and allow the DO readings to stabilize. Press teh Cal key.  Highlight Dissolved Oxygen and press enter.
     1. After a moment 'Calibration successful' will display for a few seconds to indicate successful calibration, and then the instrument will return to the home screen.
     1. If unsuccessful, an error message will appear. See troubleshooting guide for solutions.
-  1. Cleaning and storage
+1. Cleaning and Storage
     1. Once finished using the probe, thoroughly rinse the entire probe head, especially the probe tips with DI water. Wipe off the probe base, careful not to touch the probe tips.
     1. Dampen the sponge inside the gray slip with DI water, then place the slip over the probe.
-      1. The Dissolved Oxygen sensor must be in a humid environment at all times or the probe could be damaged.
-      1. If you find the sponge to be dry after long storage, moisten the sponge with DI and leave the probe in the gray slip for at least 24 hours before attempting to calibrate DO.
+        1. The Dissolved Oxygen sensor must be in a humid environment at all times or the probe could be damaged.
+        1. If you find the sponge to be dry after long storage, moisten the sponge with DI and leave the probe in the gray slip for at least 24 hours before attempting to calibrate DO.
     
 ***
-3. <a name="References"></a> **References**
+<a name="References"></a> **References**
 
   *  [YSI Pro2030 User Manual Guide](https://www.ysi.com/File%20Library/Documents/Manuals/605056-YSI-Pro2030-User-Manual-RevC.pdf)
