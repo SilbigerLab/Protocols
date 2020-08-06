@@ -13,6 +13,7 @@ Protocol for set-up and take-down of the respirometer in conjunction with the Ox
 - [**Water Changeover for Additional Runs**](#Water_Change)
 - [**Removing Chambers from Respirometer**](#Removing)
 - [**Take-Down and Clean Up**](#Take-Down)
+- [**Troubleshooting**](#Troubleshooting)
 
 
 <a name="Supplies"></a> **Supplies**
@@ -124,11 +125,11 @@ If using the respirometer at more than one temperature
 1. If collecting water samples, note the time when you either unscrew the airlock seal on the lid (best method for pouring the water into another container) or unscrew the bottom (keep the chamber upside down for this method).  
 
 1. Unscrew the bottom of the chamber to fully drain the water, then place the two chamber parts in the source water.  
-  a. If you have any organisms secured in the bottom of the chamber, be as swift as possible to minimize time spent out of the water.  
+    1. If you have any organisms secured in the bottom of the chamber, be as swift as possible to minimize time spent out of the water.  
 
 1. Keep the chamber lid very near or loosely on top of the chamber bottom, unscrewed, to not confuse which organism goes in which numbered chamber, while still allowing for water flow until you're ready to move the chambers to the water bath.
 
-1. Once the source water and water bath are at the desired temperature, follow steps 4-6 in [**Setup**](#Setup) to prepare for your next run.  
+1. Once the source water and water bath are at the desired temperature, follow the same steps to [fill and secure the chambers](#Chambers) to prepare for your next run.  
     
 
 <a name="Take-Down"></a> **Respirometer Take-Down and CleanUp**
@@ -138,31 +139,35 @@ If using the respirometer at more than one temperature
 1. Remove the probes and carefully place or drape them in a secure location.
 
 1. Unscrew the holding plates and remove the chambers.  
-  a. If collecting water samples, note the time when you either unscrew the airlock seal on the lid (best method for pouring the water into another container) or unscrew the bottom (keep the chamber upside down for this method).  
+    1. If collecting water samples, note the time when you either unscrew the airlock seal on the lid (best method for pouring the water into another container) or unscrew the bottom (keep the chamber upside down for this method).  
 
 1. Remove any organisms from the chambers and store or dispose of those organisms as appropriate.
 
 1. Drain the source water bin and fill with fresh water.
 
 1. Place the unsealed chambers, stir bars, heaters, aquarium pumps, and temperature probes in the bin to soak, keeping all outlet plugs out and away from the water.  
-  a. Let the pumps run for some time (without the chiller being on) to flush fresh water through the hoses.  
+    1. Let the pumps run for some time (without the chiller being on) to flush fresh water through the hoses.  
 
 1. Taking the respirometer out of the water bath  
-  a. When lifting the stand out of the bath, keep it tilted slightly so that the lid to the battery compartment is lower than the opposite side with the power switch.  
-  b. If any water seeped into the battery compartment, this will force the water away from other electrical components of the compartment.  
-  c. Drain the water bath and refill with fresh water.  Place the respirometer in the fresh water to soak.  
+    1. When lifting the stand out of the bath, keep it tilted slightly so that the lid to the battery compartment is lower than the opposite side with the power switch.  
+    1. If any water seeped into the battery compartment, this will force the water away from other electrical components of the compartment.  
+    1. Drain the water bath and refill with fresh water.  Place the respirometer in the fresh water to soak.  
 
 1. While letting everything soak, collect and organize the Oxy-10 probes so the Oxygen probes are together and the temperature probes are together  
-  a. Fill two beakers with DI water and gently drape the probes over a line or surface so the probe tips (any portion exposed to the water) are submerged in DI, with O2 probes in one beaker and temp probes in another.  
+    1. Fill two beakers with DI water and gently drape the probes over a line or surface so the probe tips (any portion exposed to the water) are submerged in DI, with O2 probes in one beaker and temp probes in another.  
 
 1. Breaking down the respirometer after soaking  
-  a. Lift the respirometer out of the freshwater bath using the same tilt method as before.
-  b. Remove the parafilm and use a boa grip to loosen the cap utnil you can unscrew it by hand.  
-  c. Take out the battery and detach the positive and negative clips from the battery terminals.  
-  d. Check for any leaked water by wiping a towel, cloth, or chemwipe around the inside of the compartment.  
-  e. Place the respirometer on a stable surface to dry overnight (with the battery compartment opening-side down).  
+    1. Lift the respirometer out of the freshwater bath using the same tilt method as before.
+    1. Remove the parafilm and use a boa grip to loosen the cap utnil you can unscrew it by hand.  
+    1. Take out the battery and detach the positive and negative clips from the battery terminals.  
+    1. Check for any leaked water by wiping a towel, cloth, or chemwipe around the inside of the compartment.  
+    1. Place the respirometer on a stable surface to dry overnight (with the battery compartment opening-side down).  
 
 1. Using a clean rag or chemwipe with ethanol, wipe down the cord of each Oxy-10 probe to remove any remaining salt deposits or particulates, then recoil the probes and store in their original labeled bags.  
-  a. Refer to the [**PreSens SOP**](/PreSens_SOP.md) for proper handling and storage of the probes.  
+    1. Refer to the [**PreSens SOP**](/Coral_Physiological_Parameter_Protocols/Protocols/Respirometry_Protocol/PreSens_SOP.md) for proper handling and storage of the probes.  
 
 1. Leave items to soak overnight if possible, then remove from the fresh water and place on a clean surface to dry.  
+
+
+<a name="Troubleshooting"></a> **Troubleshooting**  
+(In Progress)
