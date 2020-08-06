@@ -59,7 +59,7 @@ Protocol for set-up and take-down of the respirometer in conjunction with the Ox
     1. As an additional check, you can unscrew a chamber base, insert a stir bar in the center divet of the base, then reseal the chamber.  Place the chamber in one of the chamber slots and note the rotation speed of the stir bar.  If the stir bar is spinning slowly or not at all, the battery needs to be switched out and recharged.  
 
 1. Place the connected battery inside the compartment **gently** and screw the lid on tightly, making sure the o-ring is properly positioned.  Use a boa grip to tighten the lid with 1-2 quarter turns, then wrap with parafilm around the lid to seal the cap.
-    1. The connection point of the black wire is very delicate.  Rough handing or too much tension on the wires from twisting may disconnect the wire from its base, requiring soldering to reattach the the metal foot of the wire to the metal point on the base.  If this disconnectin occurs, see [**Troubleshooting**](#Troubleshooting).  
+    1. The connection point of the black wire is very delicate.  Rough handing or too much tension on the wires from twisting may disconnect the wire from its base, requiring soldering to reattach the the metal foot of the wire to the metal point on the base.  If this disconnectin occurs, see [**Troubleshooting**](/Coral_Physiological_Parameter_Protocols/Protocols/Respirometry_Protocol/Troubleshooting_Guide.md).  
     1.  Once the battery is placed inside, and everything is sealed, do one last check of power to make sure the motor is running (observe the black bands moving along their tracks at quick speed), then turn it off to conserve the battery until you're ready to start your runs.
 
 1. Once you are sure the battery compartment is water tight, submerge the respirometer in the cooler's water bath.  
@@ -167,7 +167,3 @@ If using the respirometer at more than one temperature
     1. Refer to the [**PreSens SOP**](/Coral_Physiological_Parameter_Protocols/Protocols/Respirometry_Protocol/PreSens_SOP.md) for proper handling and storage of the probes.  
 
 1. Leave items to soak overnight if possible, then remove from the fresh water and place on a clean surface to dry.  
-
-
-<a name="Troubleshooting"></a> **Troubleshooting**  
-(In Progress)
