@@ -28,19 +28,21 @@ Protocol for set-up and take-down of the respirometer in conjunction with the Ox
 - Large cooler
 - Second bin (for source water to fill chambers)
 - Chiller x2 (for cooler and second bin)
+- Chiller tubing (x2 smaller ID, x2 larger ID for cooler and second bin)
 - Heater(s)
 - Second set of heater(s) (for second bin)
 - Apex controller (for cooler)
+- Apex temperature probe
 - InkBird controller (for second bin)
+- (optional) PVC stand for draping wires
 
 
 <a name="Bath"></a> **Water Bath Setup**
 
 1. Place the cooler and second bin in close proximity to their respective chillers and within reach of the heaters and probes connected to the temperature controllers.  Fill the second bin with the water you'll use to fill the chambers (here called "source water") and set up an InkBird controller (or second Apex) to control the temperature of that water.  
-
 1. Fill the cooler with source water, enough to just fully submerge the chambers once the respirometer and chambers are placed inside, and set up an Apex controller to control the temperature of that water.
 
-1. Connect tubing to the inflow and outflow ports on your chillers.  At the free end of the inflow tube, attach an aquarium pump.  Place the pump and the free end of the outflow tube in the cooler (repeat for the second bin).  Plug the pump into a any free wall outlet (not a temperature controller outlet).
+1. Connect tubing to the inflow (larger ID) and outflow (smaller ID) ports on your chillers.  At the free end of the inflow tube, attach an aquarium pump.  Place the pump and the free end of the outflow tube in the cooler (repeat for the second bin).  Plug the pump into a any free wall outlet (not a temperature controller outlet).
 
 1. Place the Apex or InkBird temperature probe in the water and check that the display (or apex.local dashboard on your computer) is showing an accurate current temperature reading.  
   
@@ -57,32 +59,35 @@ Protocol for set-up and take-down of the respirometer in conjunction with the Ox
 
 1. Place the connected battery inside the compartment **gently** and screw the lid on tightly, making sure the o-ring is properly positioned.  Use a boa grip to tighten the lid with 1-2 quarter turns, then wrap with parafilm around the lid to seal the cap.
     1. The connection point of the black wire is very delicate.  Rough handing or too much tension on the wires from twisting may disconnect the wire from its base, requiring soldering to reattach the the metal foot of the wire to the metal point on the base.  If this disconnectin occurs, see [**Troubleshooting**](#Troubleshooting).  
-    1.  Once the battery is placed inside, and everything is sealed, do one last check of power to make sure the motor is running, then turn it off to conserve the battery until you're ready to start your runs.
+    1.  Once the battery is placed inside, and everything is sealed, do one last check of power to make sure the motor is running (observe the black bands moving along their tracks at quick speed), then turn it off to conserve the battery until you're ready to start your runs.
 
 1. Once you are sure the battery compartment is water tight, submerge the respirometer in the cooler's water bath.  
 
-1. Situate the heater so it's fully submerged but not touching the respirometer stand or the Apex temp probe, and away from the battery compartment if possible.  Consider the best placement of the temp probe, heater, and chiller outflow for adequate water monitoring and circulation.  
+1. Situate the heater so it's fully submerged but not touching the respirometer stand or the Apex temp probe, and away from the battery compartment if possible.  
+    1. Consider the best placement of the temp probe, heater, and chiller outflow for adequate water monitoring and circulation.  Ex. Temp probe along the back of the cooler, centered.  The heater suction cupped on one far side of the cooler.  The chiller inflow and outflow placed on the opposide far side of the cooler.
 
 <a name="Chambers"></a> **Filling and Securing Chambers**
 
-1. Unscrew the bottom from each chamber and place a magnetic stir bar in the center divet. Once the source water is at the desired temperature, submerge the chamber top and bottom and shake off or wipe away any air bubbles.  
-  a. If including organisms, secure them in the bottom of the chamber before screwing the top and bottom together until **finger tight**.  Check again for bubbles and remove any as necessary.  **Record the time of when you seal each chamber** and leave submerged to maintain temperature until ready to secure on the respirometer.  
+1. Unscrew the bottom from a chamber and place a magnetic stir bar in the center divet. Once the source water is at the desired temperature, submerge the chamber top and bottom and shake off or wipe away any air bubbles.  
+    1. If including organisms, secure them in the bottom of the chamber before screwing the top and bottom together until **finger tight**.  Check again for bubbles and remove any as necessary.  **Record the time of when you seal each chamber** and leave submerged to maintain temperature until ready to secure on the respirometer.  
+    1. If the probes will reach the submerged chamber without straining the wire, [insert the probes into the chamber](#Probes) at this time before placing the chambers onto the respirometer.
 
-1. Use the screw key to loosen the bolts of the holding plates on the respirometer just until the plates are moveable.  
+1. Use the screw key to loosen the bolts of the holding plates on the respirometer just until the plates are moveable but not detached.  
 
-1. Place each chamber in a chamber slot and tighten the screws, making sure the holding plates are over the chamber lips.  Test if the chambers are secure by attempting to gently jiggle the chambers.  There should be no movement.  
+1. Place the chamber in a chamber slot and then <a name="Probes"></a> insert the Oxy-10 probes.
+    1. Careful to not damage the probes or introduce bubbles to the chamber, insert the temperature probe into the larger probe port and gently guide it down until it fits snuggly and securely.
+    1. Once the temperature probe is in place, gently guide the oxygen probe into its port, being careful to not scratch the probe tip.  The probe tip should be at least 2 cm into the chamber, but can be inserted farther, as long as the probe isn't touching any organisms or objects in the chamber.  
+    1. Check for bubbles inside the chamber.  If any bubbles are present, remove them at this time.  
+        1. You may be able to guide small bubbles out of the airlock seal on the chamber lid by unscrewing the airlock seal and guiding the bubbles out, then rescrewing on the airlock finger tight.  
+        1. Note that if cooler water is not from the same source as your second bin water (used to fill the chambers), you must remove air bubbles only while submerging the chamber in the second bin's water.
+    1. If there are large bubbles or a large quantity of bubbles after moving the chamber, remove the chamber from the respirometer, place back into the source water, unscrew the bottom to wipe or shake away any bubbles, then close and re-secure the chamber.  Note the new time of when you sealed the chamber.  
 
-1. Once all chambers are secure, turn the power switch **clockwise** to turn on, and check for proper stir bar placement.  If any stir bars are not spinning or are out of place, loosen the bolt and gently jiggle the chamber until the bar is reset.       a. If necessary, remove the chamber, place back into the source water, unscrew the bottom to move the stir bar into place, then close and re-secure the chamber.  Note the new time of when you seal the chamber.  
+1. Repeat for all 10 chambers, filling at least one chamber with only water, without any organisms, for a "background" dataset.
 
-<a name="Probes"></a> **Inserting Oxy-10 Probes**
+1. Once all chambers are in place, with probes and no bubbles, tighten the screws on the respirometer, making sure the holding plates are over the chamber bottoms.  Test if the chambers are secure by attempting to gently jiggle the chambers.  There should be no movement.  
 
-1. Careful to not damage the probes or introduce bubbles to the chamber, insert the temperature probe into the larger probe port and gently guide it down until it fits snuggly and securely.  
-
-1. Once the temperature probe is in place, gently guide the oxygen probe into its port, being careful to not scratch the probe tip.  The probe tip should be at least 2 cm into the chamber, but can be inserted farther, as long as the probe isn't touching any organisms or objects in the chamber.  
-
-1. Check for bubbles inside the chambers.  If any bubbles are present, try to remove them.  
-  a. You may be able to guide small bubbles out of the airlock seal on the chamber lid.  
-  b. For large bubbles or a large quantity of bubbles, remove the chamber, place back into the source water, unscrew the bottom to wipe or shake away any bubbles, then close and re-secure the chamber.  Note the new time of when you sealed the chamber.  
+1. Once all chambers are secure, turn the power switch **clockwise** to turn on, and check for proper stir bar placement.  If any stir bars are not spinning or are out of place, loosen the bolt and gently jiggle the chamber until the bar is reset.
+    1. If necessary, remove the chamber, place back into the source water, unscrew the bottom to move the stir bar into place, then close and re-secure the chamber.  Note the new time of when you seal the chamber.  
 
 <a name="Final_Checks"></a> **Final Checks**
 
@@ -94,10 +99,9 @@ Last checks before starting to record data using the PreSens program:
 
 1. No bubbles are present inside the chambers  
 
-1. The correct probes are in the correct chambers (Every numbered temperature probe is with its corresponding oxygen probe and in the chamber you've assigned to the probe pair)  
+1. The correct probes are in the correct chambers (Every numbered temperature probe is with its corresponding numbered oxygen probe and in the numbered chamber you've assigned to the probe pair)  
 
 1. The probes are snug and secure in the chambers  
-
 
 <a name="Water_Change"></a> **Water Changeover for Additional Runs**
 
@@ -107,7 +111,7 @@ If using the respirometer at more than one temperature
 
 1. Once you've stopped recording data for your current run, program the Apex for the water bath to your new desried temperature (same as the source water).  
 
-1. While you wait for the temperature in your bath water to stabilize, collect water samples, if appropriate, or start preparing the chambers with the new source water.  
+1. While you wait for the temperature in your bath water to stabilize, collect water samples, if needed for your data set, or start [preparing the chambers](#Chambers) with the new source water using the same steps above.
 
 <a name="Removing"></a> **Removing Chambers from Respirometer**
 
