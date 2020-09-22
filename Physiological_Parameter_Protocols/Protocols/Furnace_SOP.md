@@ -120,4 +120,5 @@ Programming Mode allows the user to enter a series of setpoint and time values.T
  
 <a name="References"></a> **References**
 
-Information in this guide and supplemental information about the Box Furnace and its operation and maintenance can be found in the [BF51800 Series Manual](References/BF51800_Series_Manual.pdf)
+* System Information can be found in [References and Manuals](https://github.com/SilbigerLab/Protocols/blob/master/References_and_Manuals/BF51800_Box_Furnace_Manual/System_Information.md)
+* Information in this guide and supplemental information about the Box Furnace and its operation and maintenance can be found in the [BF51800 Series Manual](https://github.com/SilbigerLab/Protocols/blob/master/References_and_Manuals/BF51800_Box_Furnace_Manual/BF51800_Series_Manual.pdf)
