@@ -134,9 +134,9 @@ Once the above settings are preset for the computer and apex, any future connect
 1. Enter the default Username: admin and Password: 1234
 1. Begin controlling your Apex from your computer
 
-<a name="setup_and_sop></a> **Apex set up and operating procedures**
+<a name="setup_and_sop"></a> **Apex set up and operating procedures**
 
-<a name=materials></a> **Materials:**
+<a name="materials"></a> **Materials:**
 - Apex base unit
 - Apex display screen
 - Temperature probe
@@ -148,7 +148,7 @@ Once the above settings are preset for the computer and apex, any future connect
 
 **Removed label from Apex base unit: "Please read and remove: only plug AquaBus compatible equipment into these (ethernet, aquabus and temp plugs on side of apex unit) AquaBus connectors. Damage may result if USB devices are plugged into AquaBus or AquaBus devices are plugged into USB connectors. AquaBus looks like USB but is not USB."**
 
-<a name="apex_display_configuration></a> **Apex Display Configuration**
+<a name="apex_display_configuration"></a> **Apex Display Configuration**
 
 1. Using Apex Display
     1. Plug the temperature probe, the Apex Display, and any other AquaBus modules into the available ports of the AquaBus (the base module).
@@ -184,7 +184,7 @@ Once the above settings are preset for the computer and apex, any future connect
         1. OFF turns off the outlet regardless of programming
         1. AUTO uses the set program to determine ON/OFF status of outlet
 
-<a name="classic_dashboard></a> **Apex Classic Dashboard (no internet needed)**
+<a name="classic_dashboard"></a> **Apex Classic Dashboard (no internet needed)**
 
 1. Connect Apex to the computer using the steps above for [PC](#pc) or [Mac](#mac)
 1. Open the Classic Dashboard by opening a new browser and typing into the address bar: http://10.0.2.75 (for PC) or http://192.168.2.50 (for Mac)
