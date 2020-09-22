@@ -39,7 +39,7 @@
 
 ## Spectrophotometer Protocols  
 [SpectraMax iD3 Repository](https://github.com/SilbigerLab/pH_Spec)  
-* [Startup Procedures](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Startup_SOP)
+* [Startup Procedures](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Startup_SOP.md)
 * [Plate Read Setup](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Plate_Read_Setup_SOP.md)
 * [Preparing the Well Plate](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Prepare_Well_Plate_SOP.md)
 * [Export Data](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Export_Data_SOP.md)  
