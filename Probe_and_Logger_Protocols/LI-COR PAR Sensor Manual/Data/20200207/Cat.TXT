@@ -1,0 +1,8 @@
+MiniDOT Logger Concatenated Data File
+Sensor:             7530-428102
+Concatenation Date: 2020Feb07 16:23:26 PST
+
+
+            Unix Timestamp,               UTC_Date_&_Time,         Pacific Standard Time,       Battery,   Temperature,           PAR,  Acceleration X,  Acceleration Y,  Acceleration Z
+                  (Second),                        (none),                        (none),        (Volt),       (deg C), (umol/(s m^2),             (g),             (g),             (g)
+                1581121200,           2020-02-08 00:20:00,           2020-02-07 16:20:00,      3.380000,     23.721000,      6.625760,     1100.000000,       52.000000,      192.000000
