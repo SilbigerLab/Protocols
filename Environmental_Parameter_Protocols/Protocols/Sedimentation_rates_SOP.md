@@ -32,11 +32,11 @@ Contents
     
 3. <a name="Figures_&_Equations"></a> **Figures & Equations**
 
-![Sediment Trap Design](https://github.com/SilbigerLab/Environmental_Parameter_Protocols/blob/master/Images/sedimenttrap.png)
+![Sediment Trap Design](https://github.com/SilbigerLab/Protocols/blob/master/Environmental_Parameter_Protocols/Images/sedimenttrap.png)
 
 Fig 1. Sediment trap design and dimensions used for this experiment. 
 
-![Area Equation](https://github.com/SilbigerLab/Environmental_Parameter_Protocols/blob/master/Images/areaequation.png)
+![Area Equation](https://github.com/SilbigerLab/Protocols/blob/master/Environmental_Parameter_Protocols/Images/areaequation.png)
 
 Eq 1. Area equation for calculating the average trap collection rate. 
 
