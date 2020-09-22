@@ -1,10 +1,11 @@
 # Respirometry
-Respirometry with temperature control, using the Apex aquarium controller, Oxy-10 probes, and PreSens Measurement software
 
-[Respirometer Manual](Respirometer_SOP.md)
+Respirometry with temperature control, using the Neptune Apex and InkBird controllers, Oxy-10, and PreSens Measurement software
 
-[Oxy-10 and PreSens](PreSens_SOP.md)
+* [Respirometer Manual](Respirometer_SOP.md)
 
-[Apex SOP](Apex_SOP.md)  
+* [Oxy-10 and PreSens](PreSens_SOP.md)
 
-[Troubleshooting Guide](Troubleshooting_Guide.md)
+* [Apex SOP](Apex_SOP.md)
+
+* [Troubleshooting Guide](Troubleshooting_Guide.md)

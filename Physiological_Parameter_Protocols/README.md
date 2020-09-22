@@ -1,23 +1,16 @@
-# Coral Physiological Parameter Protocols
+# Physiological Parameter Protocols
 
-Coral physiological parameter protocols used by the Silbiger Lab in Mo'orea, French Polynesia
+Coral tissue removal, ash-free dry weight, algal endosymbiont counts, chlorophyll a content, and general respirometry methods included
 
-Coral tissue removal, ash-free dry weight, algal endosymbiont counts, chlorophyll a content, and respirometry methods included.
+* [Algal endosymbiont counts protocol](Protocols/Counts_SOP.md)
 
+* [Ash-free dry weight protocol](Protocols/AFDW_SOP.md)
+    * [Box Furnace protocol](Protocols/Furnace_SOP.md)
 
-[Algal endosymbiont counts protocol](Protocols/Counts_SOP.md)
+* [Chlorophyll a content protocol](Protocols/Chlorophyll_SOP.md)
 
+* [Tissue removal protocol](Protocols/Tissue_removal_SOP.md)
 
-[Ash-free dry weight protocol](Protocols/AFDW_SOP.md)
+* [Tissue nitrogen content protocol](Protocols/Tissue_N_content_SOP.md)
 
-
-[Chlorophyll a content protocol](Protocols/Chlorophyll_SOP.md)
-
-
-[Tissue removal protocol](Protocols/Tissue_removal_SOP.md)
-
-
-[Tissue nitrogen content protocol](Protocols/Tissue_N_content_SOP.md)
-
-
-[Respirometry protocol](Protocols/Respirometry_Protocol)
+* [Respirometry protocol](Protocols/Respirometry_Protocol)

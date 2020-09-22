@@ -127,5 +127,5 @@ Data offload
 
 <a name="References"></a> **References**  
 
-* RAD7 User Manual found either [online here](https://durridge.com/documentation/RAD7%20Manual.pdf) or [on github here](Protocols/RAD7_Protocol/RAD7_Manual.pdf)
-* RAD Aqua Manual found either [online here](https://durridge.com/documentation/RAD%20AQUA%20Manual.pdf) or [on github here](Protocols/RAD7_Protocol/RAD_Aqua_Manual.pdf)
+* RAD7 User Manual found either [online here](https://durridge.com/documentation/RAD7%20Manual.pdf) or [on github here](https://github.com/SilbigerLab/Protocols/blob/master/References_and_Manuals/RAD7_and_RADaqua_Manual/RAD7_Manual.pdf)
+* RAD Aqua Manual found either [online here](https://durridge.com/documentation/RAD%20AQUA%20Manual.pdf) or [on github here](https://github.com/SilbigerLab/Protocols/blob/master/References_and_Manuals/RAD7_and_RADaqua_Manual/RAD_Aqua_Manual.pdf)

@@ -4,7 +4,7 @@
 
 ## Physiological Protocols  
 * [Ash Free Dry Weight](Physiological_Parameter_Protocols/Protocols/AFDW_SOP.md)
-  * [Box Furnace Procedure](Physiological_Parameter_Protocols/Protocols/Furnace_SOP)
+  * [Box Furnace Procedure](Physiological_Parameter_Protocols/Protocols/Furnace_SOP.md)
 * [Chlorophyll Extraction](Physiological_Parameter_Protocols/Protocols/Chlorophyll_SOP.md)
 * [Symbiont Cell Counts](Physiological_Parameter_Protocols/Protocols/Counts_SOP.md) 
 * [Tissue Removal](Physiological_Parameter_Protocols/Protocols/Tissue_removal_SOP.md)
