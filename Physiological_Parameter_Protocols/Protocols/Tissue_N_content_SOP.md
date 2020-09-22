@@ -22,7 +22,7 @@ Contents
 
 2. <a name="Protocol"></a> **Protocol**
 
-    1.  Remove coral tissue using an airbrush and our [tissue removal protocol](/Protocols/Tissue_removal_SOP.md) on fresh or thawed corals.
+    1.  Remove coral tissue using an airbrush and our [tissue removal protocol](Tissue_removal_SOP.md) on fresh or thawed corals.
     1.  Homoginize the tissue slurry and filter it through a 20 µm nylon net filter to remove fragments of skeleton.
     1.  Centrifuge sample in 15 mL centrifuge tubes at 2,000 g for 3-4 minutes to pellet the symbionts.
     1.  Decant the supernatant into a seperate 15mL centrifuge tube.
