@@ -41,7 +41,7 @@ Last Revised: 20200413
 * DO NOT expose the operating panel of the RAD7 electrical detector to rain or any other excess moisture.
   * For use in a harsh environment, provide some protection for the RAD7, even as simple as a plastic bag to enclose the electrical detector.
 * DO NOT allow liquid to be sucked into inlet tube.
-  * If liquid does get into the machine, please disconnect the power cord (if connected), turn off the power switch, and follow the instructions in Chapter 4.8.1 in the [Manual](Protocols/RAD7_Protocol/RAD7_Manual.pdf), Harsh and Hazardous Environments: Splashing Water. It will be necessary to return the RAD7 to DURRIDGE for repair. 
+  * If liquid does get into the machine, please disconnect the power cord (if connected), turn off the power switch, and follow the instructions in Chapter 4.8.1 in the [Manual](https://github.com/SilbigerLab/Protocols/blob/master/References_and_Manuals/RAD7_and_RADaqua_Manual/RAD7_Manual.pdf), Harsh and Hazardous Environments: Splashing Water. It will be necessary to return the RAD7 to DURRIDGE for repair. 
 * DO NOT open or attempt to repair the machine. The detector has an internal high voltage supply that can generate more than 2,500V. 
 * DO NOT allow liquid to enter the drying tube.  The desiccant will be ruined and in need of replacing if submerged or exposed to liquids.
 
