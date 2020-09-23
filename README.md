@@ -54,6 +54,7 @@
 * [miniDOT Oxygen Sensor](References_and_Manuals/miniDOT_Oxygen_Sensor_Manual)
 * [HOBO Conductivity and Temperature Logger](References_and_Manuals/HOBO_Conductivity_Logger)
 * [HOBO Pressure/Depth Logger](References_and_Manuals/HOBO_Pressure_Logger)
+* [HOBO pH Logger](References_and_Manuals/HOBO_pH_Logger)
 * [SpectraMax iD3](References_and_Manuals/SpectraMax_iD3_Manual)
 * [Spectronic Genesys 5](References_and_Manuals/Spectronic_Genesys_5_Manual)
 * [Smart Spec 3000](References_and_Manuals/Smart_Spec_3000_Manual)
