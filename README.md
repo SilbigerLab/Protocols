@@ -48,9 +48,12 @@
 
 ## Reference Manuals  
 * [Box Furnace](References_and_Manuals/BF51800_Box_Furnace_Manual)
-* [LI-COR PAR Sensor](References_and_Manuals/LI-COR_PAR_Sensor_Manual)
 * [RAD7 and RAD aqua](References_and_Manuals/RAD7_and_RADaqua_Manual)
 * [Respirometry](References_and_Manuals/Respirometry_Manual)
+* [LI-COR PAR Sensor](References_and_Manuals/LI-COR_PAR_Sensor_Manual)
+* [miniDOT Oxygen Sensor](References_and_Manuals/miniDOT_Oxygen_Sensor_Manual)
+* [HOBO Conductivity and Temperature Logger](References_and_Manuals/HOBO_Conductivity_Logger)
+* [HOBO Pressure/Depth Logger](References_and_Manuals/HOBO_Pressure_Logger)
 * [SpectraMax iD3](References_and_Manuals/SpectraMax_iD3_Manual)
 * [Spectronic Genesys 5](References_and_Manuals/Spectronic_Genesys_5_Manual)
 * [Smart Spec 3000](References_and_Manuals/Smart_Spec_3000_Manual)
