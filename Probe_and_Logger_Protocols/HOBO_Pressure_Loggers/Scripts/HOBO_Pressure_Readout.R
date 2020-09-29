@@ -1,57 +1,70 @@
+
+
+# created: 3-10-2020 by Danielle Barnas
+# modified: 9-29-2020
+
+### BEFORE RUNNING SCRIPT
+# Load HoboWare .hobo datafile in HoboWare software program
+# Select Series 1 and 2 for Measurements Abs Pres and Temp in kPa and degC, respectively
+# Deselect all events
+# Select the Barometric Compensation Assistant and click Proces...
+# Choose Salt Water (1,025.000 kg/m3)
+# Check to Use a Reference Water Level and enter 0.000 Meters
+# Select a Reference Time when Logger was exactly at the water surface prior to or post-deployment
+# Call Resultant Series Name: Water Level and click Create New Series
+# Check that Series 3 for Water Level in meters is selected and click Plot
+# Export file into your dated data folder (path below)
+
 rm(list=ls())
+
 library(tidyverse)
 library(lubridate)
-library(ggplot2)
-library(ggpubr)
-library(ggpmisc)
+library(here)
+
+here()
 
 ########################
 # File Names
 ########################
 
-foldername<-'20200310' # folder of the day
-filename<-'3-7-2020_Depth_20810872.csv' # concatenated data from miniDOT Logger
-Launch<-'2020-03-06 12:55:00' # Maintain date time format "2020-03-04 14:15:00"
+folder.date<-'20200310'
+foldername<-'Raw'
+Serial<-'872'
+Launch<-'2020-03-06 14:36:00' # Maintain date time format "2020-03-04 14:15:00"
 Retrieval<-'2020-03-07 17:02:00' # Maintain date time format "2020-03-04 21:30:00"
-Date <- 20200310 # today's date
+
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
 #################################################################################
 
-# Tidy Concatenation Data
-Concat_Data <- read_csv(paste0('HOBO_Pressure_Loggers/Data/',foldername,'/',filename),
-                        col_names = TRUE,
-                        skip=1) #skips first 1 rows containing instrument information
-# rename column headings
-Concat_Data <- Concat_Data %>%
-  rename(PST=contains("Date"), Abs_Pressure_kPA=contains("Abs Pres"),Temp_degC=contains("Temp"),Depth_m=contains("Water Level"))
-# Convert PST to date and time vector type
-Concat_Data$PST <- Concat_Data$PST %>%
-  parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
+# Read in Conductivity Calibration files
+path.p<-paste0('Probe_and_Logger_Protocols/HOBO_Pressure_Loggers/Data/',folder.date,'/',foldername)
+file.names<-basename(list.files(path.p, pattern = "csv$", recursive = F)) #list all csv file names in the folder and subfolders
+data.pres<-file.names %>%
+  map_dfr(~ read_csv(file.path(path.p, .),skip=1,col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
+
+# Filter specified probe by Serial number
+data.pres<-data.pres%>%
+  select(-contains('GMT-07:00'))%>%
+  select(contains('Date'),contains(Serial))%>%
+  mutate(Serial=Serial)%>%
+  rename(date=contains("Date"),TempInSitu=contains("Temp"),AbsPressure=contains("Abs Pres"),Depth=contains("Water Level"))%>%
+  drop_na()
+data.pres$date<-data.pres$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
 
 # Filter data to only include deployment data
-Launch <- Launch %>%
-  parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
-Retrieval <- Retrieval %>%
-  parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
-Concat_Data <- Concat_Data %>%
-  filter(between(PST,Launch,Retrieval)) %>%
-  select(-'#')
-View(Concat_Data)
+Launch<-Launch %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+Retrieval<-Retrieval %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+data.pres<-data.pres%>%filter(between(date,Launch,Retrieval)) 
 
 # Create simple csv file
-write_csv(Concat_Data,paste0('HOBO_Pressure_Loggers/Data/',foldername,'/',Date,'_HOBOdepth.csv'))
+write_csv(data.pres,paste0('Probe_and_Logger_Protocols/HOBO_Pressure_Loggers/Data/',folder.date,'/',Serial,'_HOBOdepth.csv'))
 
 # Plot the data
-Concat_Data %>% # this is the dataframe
-  ggplot(aes(x= PST, y= Temp_degC))+   #setup plot with x and y data
-  geom_line() #+ #adding lines
-Concat_Data %>% # this is the dataframe
-  ggplot(aes(x= PST, y= -Depth_m))+   #setup plot with x and y data
-  #ggplot(aes(x=PST, y= Temp_degC))+
-  geom_line()# + #adding lines
-# scale_y_continuous(sec.axis = sec_axis('Temp_degC', name=derive()))
+data.pres %>% # this is the dataframe
+  ggplot(aes(x= date, y= TempInSitu))+   #setup plot with x and y data
+  geom_line()
+data.pres %>% # this is the dataframe
+  ggplot(aes(x= date, y= -Depth))+   #setup plot with x and y data
+  geom_line()
