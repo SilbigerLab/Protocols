@@ -1,9 +1,16 @@
 # Preprocessing script for hobo logger data
 # Brings in sinlge raw .csv files and exports tidy files into both a general tidy folder for temporary storage and an output folder
 
+# created: 9-23-2020 by Danielle Barnas
+# modified: 9-29-2020
+
 rm(list=ls())
+
 library(tidyverse)
 library(lubridate)
+library(here)
+
+here()
 
 ########################
 # File Names
