@@ -1,64 +1,79 @@
 rm(list=ls())
+
 library(tidyverse)
 library(lubridate)
-library(ggplot2)
-library(ggpubr)
-library(ggpmisc)
+library(here)
+
+here()
+
+## BEFORE BRINGING IN HOBO DATA
+# Check the last three digist of each probe's serial number
+# Make sure the "Organize based on CT probe Serial Number" section has script for those specific serial numbers
 
 ########################
 # File Names
 ########################
 
-foldername<-'20200310' # folder of the day
-filename_cat<-'3-8-2020_CT_20739332.csv' # concatenated data from miniDOT Logger
-Serial<- '332' # Logger's serial number ID
-Launch<-'2020-03-08 15:10:00' # Maintain date time format "2020-03-04 14:15:00"
-Retrieval<-'2020-03-08 15:50:00' # Maintain date time format "2020-03-04 21:30:00"
-Date <- 20200308 # today's date
+folderCal<-'20200310/Calibration/' # CT Calibration file
+folderLog<-'20200310/Raw' # CT logged data
+Serial<-'331' # last three digits of CT probe Serial Number
+
+# Date of calibrations - Maintain date time format "YYYY-MM-DD HH:MM:SS"
+# Deployment Calibration 
+startCal1<-'2020-03-05 17:06:58' 
+endCal1<-'2020-03-05 17:11:08'
+# Retrieval Calibration 
+startCal2<-'2020-03-05 17:06:58' 
+endCal2<-'2020-03-05 17:11:08'
+
+# Date of in situ logs start and end
+Launch<-'2020-03-06 14:38:00' # Maintain date time format "YYYY-MM-DD HH:MM:SS"
+Retrieval<-'2020-03-07 17:05:40' # Maintain date time format "YYYY-MM-DD HH:MM:SS"
+
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
 #################################################################################
 
-# Tidy Concatenation Data
-Concat_Data <- read_csv(paste0('HOBO_CT_Loggers/Data/',foldername,'/',filename_cat),
-                        col_names = TRUE,
-                        skip=1) #skips first 1 rows containing instrument information
-# Split merged cell into column headings
-# note that all vectors are character type
-Concat_Data <- Concat_Data %>%
-  rename(
-         PST=contains("Date"),
-         Temp_degC=contains("Temp"),
-         Sp_Conductance=contains("Specific Conductance"),
-         Salinity_ppt=contains("Salinity"))
+# group data from all Hobo CT logger files together
+# import all csv files in the 'foldername' directory
+path.p<-paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',foldername,'/Raw')
+file.names<-basename(list.files(path = path.p, pattern = "csv$", recursive = F)) #list all csv file names in the folder and subfolders
+# read in all the files, skipping the first line of each file containing logger system information
+C.data <- file.names %>%
+  map_dfr(~ read_csv(file.path(path.p, .),skip=1,
+                 col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),
+                                               "Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
 
-# Convert PST to date and time vector type
-Concat_Data$PST <- Concat_Data$PST %>%
-  parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
+# parse launch and retrival date and time into date and time format
+Launch <- Launch %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+Retrieval <- Retrieval %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
+
+#############################
+# Organize based on CT probe Serial Number and combine into one dataframe
+#############################
+
+# Probe 331
+C.data <- C.data%>%
+  select(contains('Date'),contains('331'))%>%
+  mutate(Serial='331')%>%
+  rename(date=contains("Date"),TempInSitu=contains("Temp"),Sp_Conductance=contains("Specific Conductance"),SalinityInSitu=contains("Salinity"))%>%
+  drop_na()
+C.data$date<-C.data$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
+
+
 
 # Filter data to only include deployment data
-Launch <- Launch %>%
-  parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
-Retrieval <- Retrieval %>%
-  parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),
-                 locale = default_locale(), trim_ws = TRUE)
-Concat_Data <- Concat_Data %>%
-  filter(between(PST,Launch,Retrieval)) %>%
-  select(-'#')
-View(Concat_Data)
+CT.data <- CT.data %>% filter(between(date,Launch,Retrieval)) 
+View(CT.data)
 
 # Create simple csv file
-write_csv(Concat_Data,paste0('HOBO_CT_Loggers/Data/',foldername,'/',Date,'_CT_',Serial,'.csv'))
+write_csv(CT.data,paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',foldername,'/',Sys.Date(),'_CT.csv'))
 
 # Plot the data
-Concat_Data %>% # this is the dataframe
-  ggplot(aes(x= PST, y= Temp_degC))+   #setup plot with x and y data
+ggplot(data=CT.data, aes(x= date, y= TempInSitu, colour=Serial))+   #setup plot with x and y data
   geom_line() #+ #adding lines
-Concat_Data %>% # this is the dataframe
-  ggplot(aes(x= PST, y= Salinity_ppt))+   #setup plot with x and y data
-  #ggplot(aes(x=PST, y= Temp_degC))+
+
+ggplot(data=CT.data, aes(x= date, y= SalinityInSitu, colour=Serial))+   #setup plot with x and y data
   geom_line()# + #adding lines
-# scale_y_continuous(sec.axis = sec_axis('Temp_degC', name=derive()))
+
