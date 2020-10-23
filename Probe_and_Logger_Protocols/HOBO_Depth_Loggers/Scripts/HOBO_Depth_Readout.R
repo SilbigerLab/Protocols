@@ -30,7 +30,9 @@ here()
 folder.date<-'20200310'
 foldername<-'Raw'
 Serial<-'872'
-Launch<-'2020-03-06 14:36:00' # Maintain date time format "2020-03-04 14:15:00"
+
+# Date of in situ logs
+Launch<-'2020-03-06 14:42:00' # Maintain date time format "2020-03-04 14:15:00"
 Retrieval<-'2020-03-07 17:02:00' # Maintain date time format "2020-03-04 21:30:00"
 
 
@@ -46,7 +48,6 @@ data.pres<-file.names %>%
 
 # Filter specified probe by Serial number
 data.pres<-data.pres%>%
-  select(-contains('GMT-07:00'))%>%
   select(contains('Date'),contains(Serial))%>%
   mutate(Serial=Serial)%>%
   rename(date=contains("Date"),TempInSitu=contains("Temp"),AbsPressure=contains("Abs Pres"),Depth=contains("Water Level"))%>%
