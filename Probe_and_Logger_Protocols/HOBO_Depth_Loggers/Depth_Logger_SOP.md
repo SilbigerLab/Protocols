@@ -1,7 +1,5 @@
 # Protocol for the calibration, use, and maintenance of HOBO pressure/depth loggers
 
-# Protocol for the calibration, use, and maintenance of HOBO conductivity and temperature loggers
-
 **Contents**  
 - [**Materials**](#Materials)  
 - [**Configuration and Launching**](#Configuration)
