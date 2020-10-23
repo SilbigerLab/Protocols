@@ -8,7 +8,7 @@
 - [**Data Retrieval**](#Data_Retrieval)
   - [In situ readout](#in_situ_readout)
   - [Ex situ readout](#ex_situ_readout)
-- [**Maintenance and Storage**](#Matinenance)
+- [**Maintenance and Storage**](#Maintenance)
 
 <a name="Materials"></a> **Materials**  
 - HOBOware software installed on computer
