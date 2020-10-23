@@ -41,7 +41,7 @@
 1. If not deploying right away, either Stop deployment and [Readout](#ex_situ_readout) calibration data using HOBOware, or allow the instrument to continue logging until deployment.
 
 <a name=Deployment></a> **Deployment**  
-1. If the logger is not already logging, [Launch the logger](#Confuguration).
+1. If the logger is not already logging, [Launch the logger](#Configuration).
 1. Place the black rubber cap on the round end of the logger to protect the connection sensor
 1. Deploy the logger so that it is secure and will not be moved by currents or surge.  Make sure the conductivity sensor will not be bumped or scratched while deployed.
 1. Note the time of deployment with the last three digits of the Serial Number and the GPS coordinates.
