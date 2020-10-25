@@ -5,8 +5,8 @@ library(seacarb)
 library(broom)
 
 ## bring in pH calibration files and raw data files
-pHcalib<-read_csv('Data/Hannibal/Tris_Calibration/Tris_Calibration_Log.csv')
-pHData<-read_csv('Data/Hannibal/Tris_Calibration/Raw_Data/Test_Data.csv')
+pHcalib<-read_csv('Probe_and_Logger_Protocols/Orion_Multiparameter_Sensor/Data/Tris_Calibration.csv')
+pHData<-read_csv('Probe_and_Logger_Protocols/Orion_Multiparameter_Sensor/Data/Test_Data.csv')
 
 ## take the mV calibration files by each date and use them to calculate pH
 pHSlope<-pHcalib %>%
@@ -21,7 +21,7 @@ pHSlope<-pHcalib %>%
   #mutate(pH_insitu = pHinsi(pH = pH, ALK = TA_Raw, Tinsi = TempInSitu, Tlab = Temp, S = Salinity_lab_Silbiger)) %>%
   select(date, SampleID,Salinity_lab,pH, TempInSitu) ## need to calculate pH insi then it is done
 
-# or
+# or if the above doesn't work
 pHSlope<-pHcalib %>%
   nest_by(date)%>%
   mutate(fitpH = list(lm(mVTris~TTris, data = data))) %>% # linear regression of mV and temp of the tris
@@ -37,4 +37,4 @@ pHSlope<-pHcalib %>%
 View(pHSlope)
 
 ## write the data
-write.csv(x = pHSlope, file = 'Data/test.csv')
+write_csv(pHSlope, paste0('Probe_and_Logger_Protocols/Orion_Multiparameter_Sensor/Data/pH_',Sys.Date(),'.csv'))
