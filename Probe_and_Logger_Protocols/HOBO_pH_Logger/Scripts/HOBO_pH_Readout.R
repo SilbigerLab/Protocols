@@ -17,7 +17,7 @@ here()
 ########################
 
 folder.date<-'20200303' # Dated logger folder
-folderLog<-'Raw' # Logged in situ file path
+folderLog<-'Raw' # Logged in situ file path within folder.date
 Serial<-'197' # pH Probe Serial Number
 
 # Date of in situ logs
