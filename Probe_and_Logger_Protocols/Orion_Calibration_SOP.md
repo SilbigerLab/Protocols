@@ -74,10 +74,10 @@ Contents
     1. As soon as the Orion value has stabilized, record the thermometer temperature first, then the mV value (note that mV values should be negative).
     1. To lower the temperature to each subsequent temperature in your calibration, place a few ice chips at a time in the water bath and record each temperature with its paired mV value.
     1. Once you have recorded the lowest temperature and its paired mV value, unscrew the cap with probes from the tris falcon tube and place the probes back into the DI falcon tube, screwing the cap back on if you intend to record your in situ values immediately.  If you will not be recording your in situ values yet, remove the pH probe from the cap and place the electrode tip back in its storage solution until ready to record.
-    1. Save your temperature and mV values as a .csv file.
+    1. Save your temperature and mV values as a .csv file with the following column headings (without quotes): "date", "TTris", and "mVTris"
 1. Measurements
     1. When recording your values in situ, always record the temperature first from the Traceable Thermometer before the stabilized mV value from the Orion.
-    1. In tandem with recording the temperature and mV of your water sample, also record the salinity and save three three metrics with your sample ID's in a .csv file.
+    1. In tandem with recording the temperature and mV of your water sample, also record the salinity and save three three metrics with your sample ID's in a .csv file with the following column headings (without quotes): "date", "SampleID", "Salinity_lab", "mV", "TempInSitu"
     1. Use the calibration file created above and this in situ file in the Tris_pH_Slope.R in the [Silbiger Lab pH_Spec GitHub Repository](https://github.com/SilbigerLab/pH_Spec/blob/master/Scripts/Tris_pH_Slope.R)
 
 ***
