@@ -23,8 +23,8 @@
 * [Tide Pool Water Sampling](Intertidal_Ecosystem_Function_Protocols/TidePoolSampling_SOP.md)
 
 ## Probe and Logger Protocols  
-* [YSI 2030 Calibration](Probe_and_Logger_Protocols/YSI2030_Calibration_SOP.md)
-* [Orion Calibration](Probe_and_Logger_Protocols/Orion_Calibration_SOP.md)
+* [YSI 2030 Calibration](Probe_and_Logger_Protocols/YSI_2030/YSI2030_Calibration_SOP.md)
+* [Orion Calibration](Probe_and_Logger_Protocols/Orion_Multiparameter_Sensor/Orion_Calibration_SOP.md)
 * [HOBO Conductivity and Temperature Logger](Probe_and_Logger_Protocols/HOBO_CT_Loggers)
 * [HOBO Depth/Pressure Logger](Probe_and_Logger_Protocols/HOBO_Pressure_Loggers)
 * [LI-COR PAR Sensor](Probe_and_Logger_Protocols/LI-COR_PAR_Sensor_Manual)
