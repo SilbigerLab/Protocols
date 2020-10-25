@@ -22,8 +22,8 @@ here()
 ###################################
 
 folder.date<-'20200310' # Dated logger folder
-folderCal<-'Calibration/Raw' # Calibration file path
-folderLog<-'Raw/Raw' # Logged in situ file path
+folderCal<-'Calibration' # Calibration file path
+folderLog<-'Raw' # Logged in situ file path
 Serial<-'331' # CT Probe Serial Number
 
 ###################################
@@ -31,10 +31,11 @@ Serial<-'331' # CT Probe Serial Number
 ###################################
 
 # COMMENT OUT ONE OF THE FOLLOWING
-### If pairing with Pressure/Depth data
+
+### If pairing with Pressure/Depth Logger data
 Serial.depth<-'872' # Serial number of paired hobo pressure logger
 
-### If choosing pressure (bar) data were recorded at
+### If data were recorded at a consistent pressure (bar)
 #Pres_bar<-0
 
 ###################################
@@ -51,7 +52,7 @@ startCal2<-'2020-03-05 17:06:58' # Retrieval Calibration
 endCal2<-'2020-03-05 17:11:08'
 
 # Date of in situ logs
-Launch<-'2020-03-06 14:38:00'
+Launch<-'2020-03-06 14:42:00'
 Retrieval<-'2020-03-07 17:05:40'
 
 ###################################
@@ -62,8 +63,8 @@ Retrieval<-'2020-03-07 17:05:40'
 oneCal<-50000 # uS/cm
 
 # Two-Point Calibration Standards
-lowCondcal<-1413 # uS/cm
-highCondcal<-12880 # uS/cm
+lowCondcal<-1413 # uS/cm ; ThermoScientific Orion Application Solution: 1413 uS/cm at 25degC Conductivity Standard
+highCondcal<-12880 # uS/cm ; ThermoScientific Orion Application Solution: 12.9 mS/cm at 25degC Conductivity Standard
 
 # In Situ Recording Interval
 int<-10 #seconds
@@ -121,15 +122,16 @@ condLog<-condLog%>%filter(between(date,Launch,Retrieval))
 # Use PSS-78 Equations for Salinity calculation
 # Convert from Electrical Conductivity to Practical Salinity
 condCal<-condCal%>%
-  mutate(SalinityInSitu=gsw_SP_from_C(E_Conductivity*0.001, TempInSitu, p=0))
+  mutate(SalinityInSitu=gsw_SP_from_C(C = E_Conductivity*0.001, t = TempInSitu, p=0)) # *0.001 for unit conversion to mS
 condLog<-condLog%>%
-  mutate(SalinityInSitu=gsw_SP_from_C(E_Conductivity*0.001, TempInSitu, p=0))
+  mutate(SalinityInSitu=gsw_SP_from_C(C = E_Conductivity*0.001, t = TempInSitu, p=0))
 CT.data<-union(condCal,condLog) # Join Calibration and Logged files
 
 ### 2. Calculate the temperature coefficient using the temperature coefficient equation (Taylor series)
 # non-linear temperature coefficient is generated that is a function of temperature and salinity
 # Calculate the non-linear temperature coefficient (a)
 # A good regression solution was the Taylor series depicted below:
+# a = A+B*T+C*S+D*T^2+E*S^2+F*T*S
 # WHERE: 
 A<-as.numeric('1.86221444E+00')
 B<-as.numeric('7.99141780E-03')
@@ -140,10 +142,11 @@ F<-as.numeric('-1.55721008E-05')
 # TempInSitu = T = sea water temperature in degrees C
 # SalinityInSitu = S = Uncorrected sea water salinity calculated in PSS-78 using the conductivity and temperature pair
 CT.data<-CT.data%>%
-  mutate(a = A+B*TempInSitu+C*SalinityInSitu+D*TempInSitu^2+E*SalinityInSitu^2+F*TempInSitu*SalinityInSitu)
+  mutate(a = A+(B*TempInSitu)+(C*SalinityInSitu)+(D*(TempInSitu^2))+(E*(SalinityInSitu^2))+(F*TempInSitu*SalinityInSitu))
 
 ### 3. Calculate specific conductance using the temperature coefficient (a) for each pair.
 # specific conductance (Cs) at 25°C for sea water: 
+# Cs = Ye /(1 - ((25-T) * a / 100))
 # Where: 
 # E_Conductivity = Ye = Electrical Conductivity
 # a = “see above” % / degrees C (temp. coeff.) 
@@ -170,10 +173,9 @@ CT.data<-CT.data%>% # ammend to larger dataframe
 # Drift correction factor
 
 # each correction is based on linear drift over time
-# data taken closer to initial calibratin are corrected less than data taken toward the end of the monitoring period
+# data taken closer to initial calibration are corrected less than data taken toward the end of the monitoring period
 t<-int #seconds  # t = the time interval for each data point that has passed since deployment
-total.t<-as.duration(Retrieval-Launch) #seconds # total.t = total deployment time
-total.t<-as.numeric(total.t, "seconds")
+total.t<-as.numeric(as.duration(Retrieval-Launch),"seconds") #seconds # total.t = total deployment time
 ft<-(t / total.t) # ft = correction factor
 
 ############################################################
@@ -181,6 +183,7 @@ ft<-(t / total.t) # ft = correction factor
 # One Point Calibration with Drift
 
 # one-point calibrations
+# C1<-m+ft*(si-sf)
 # C = drift-corrected water quality parameter value
 # Sp_Conductance = m = uncorrected value (mS/cm)
 si<-oneCal #uS/cm # value of the calibration standard
@@ -191,7 +194,7 @@ sf<-as.numeric(sf[1,])
 
 CT.data<-CT.data%>%
   mutate(C1_mS.cm=Sp_Conductance*0.001+ft*(si-sf))%>% # Sp_Conductance in mS/cm
-  mutate(SalinityInSituC1=gsw_SP_from_C(C1_mS.cm, TempInSitu, p=AbsPressure_bar)) # Use PSS-78 Equations for Salinity calculation
+  mutate(SalinityInSituC1=gsw_SP_from_C(C = C1_mS.cm, t = TempInSitu, p=AbsPressure_bar)) # Use PSS-78 Equations for Salinity calculation
 
 ############################################################
 ############################################################
@@ -211,6 +214,10 @@ CT.data<-CT.data%>%
 # Use PSS-78 Equations for Salinity calculation
 # Convert from Electrical Conductivity to Practical Salinity
 
+
+############################################################
+############################################################
+# Write CSV file and graph data
 write_csv(CT.data,paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/CT_',Serial,'_',Sys.Date(),'.csv'))
 View(CT.data)
 
