@@ -27,6 +27,7 @@
 * [Orion Calibration](Probe_and_Logger_Protocols/Orion_Multiparameter_Sensor/Orion_Calibration_SOP.md)
 * [HOBO Conductivity and Temperature Logger](Probe_and_Logger_Protocols/HOBO_CT_Loggers)
 * [HOBO Depth/Pressure Logger](Probe_and_Logger_Protocols/HOBO_Pressure_Loggers)
+* [HOBO pH Logger](Probe_and_Logger_Protocols/HOBO_pH_Logger)
 * [LI-COR PAR Sensor](Probe_and_Logger_Protocols/LI-COR_PAR_Sensor_Manual)
 * [miniDOT Oxygen Sensor](Probe_and_Logger_Protocols/miniDOT_Oxygen_Sensors)
 
