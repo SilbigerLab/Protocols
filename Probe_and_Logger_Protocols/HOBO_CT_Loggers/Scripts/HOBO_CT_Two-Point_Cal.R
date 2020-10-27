@@ -21,10 +21,10 @@ here()
 # File Paths and Serial Numbers
 ###################################
 
-folder.date<-'20200310' # Dated logger folder
-folderCal<-'Calibration' # Calibration file path
+folder.date<-'20201026' # Dated logger folder
+folderCal<-'Raw' # Calibration file path
 folderLog<-'Raw' # Logged in situ file path
-Serial<-'331' # CT Probe Serial Number
+Serial<-'738' # CT Probe Serial Number
 
 ###################################
 # Pressure data
@@ -33,10 +33,10 @@ Serial<-'331' # CT Probe Serial Number
 # COMMENT OUT ONE OF THE FOLLOWING
 
 ### If pairing with Pressure/Depth Logger data
-Serial.depth<-'872' # Serial number of paired hobo pressure logger
+#Serial.depth<-'872' # Serial number of paired hobo pressure logger
 
 ### If data were recorded at a consistent pressure (bar)
-#Pres_bar<-0
+Pres_bar<-0
 
 ###################################
 # Date and Time
@@ -45,22 +45,19 @@ Serial.depth<-'872' # Serial number of paired hobo pressure logger
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of calibrations
-startCal1<-'2020-03-05 17:06:58' # Deployment Calibration 
-endCal1<-'2020-03-05 17:11:08'
+startCal1<-'2020-10-19 15:53:00' # First Calibration for Two-Point Cal (1413 uS/cm)
+endCal1<-'2020-10-19 15:55:20'
 
-startCal2<-'2020-03-05 17:06:58' # Retrieval Calibration 
-endCal2<-'2020-03-05 17:11:08'
+startCal2<-'2020-10-19 15:57:40' # Second Calibration for Two-Point Cal (12.9 mS/cm)
+endCal2<-'2020-10-19 16:00:20'
 
 # Date of in situ logs
-Launch<-'2020-03-06 14:42:00'
-Retrieval<-'2020-03-07 17:05:40'
+Launch<-'2020-10-19 16:18:00'
+Retrieval<-'2020-10-21 00:37:50'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
 ###################################
-
-# One-Point Calibration Standard
-oneCal<-50000 # uS/cm
 
 # Two-Point Calibration Standards
 lowCondcal<-1413 # uS/cm ; ThermoScientific Orion Application Solution: 1413 uS/cm at 25degC Conductivity Standard
@@ -110,7 +107,7 @@ Launch<-Launch %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character()
 Retrieval<-Retrieval %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 
 # Filter out dates
-condCal<-condCal%>%filter(between(date,startCal1,endCal1)&between(date,startCal2,endCal2)) 
+condCal<-condCal%>%filter(between(date,startCal1,endCal1)|between(date,startCal2,endCal2)) 
 condLog<-condLog%>%filter(between(date,Launch,Retrieval)) 
 
 
@@ -180,24 +177,6 @@ ft<-(t / total.t) # ft = correction factor
 
 ############################################################
 ############################################################
-# One Point Calibration with Drift
-
-# one-point calibrations
-# C1<-m+ft*(si-sf)
-# C = drift-corrected water quality parameter value
-# Sp_Conductance = m = uncorrected value (mS/cm)
-si<-oneCal #uS/cm # value of the calibration standard
-sf<-CT.data%>% # the value read by the instrument for the calibration standard after the total deployment time (total.t)
-  filter(between(date,startCal1,endCal1))%>%
-         summarise(Middle=median(Sp_Conductance)) # use a middle point during calibration to avoid skew by placing logger in or taking logger out of calibration solution
-sf<-as.numeric(sf[1,])
-
-CT.data<-CT.data%>%
-  mutate(C1_mS.cm=Sp_Conductance*0.001+ft*(si-sf))%>% # Sp_Conductance in mS/cm
-  mutate(SalinityInSituC1=gsw_SP_from_C(C = C1_mS.cm, t = TempInSitu, p=AbsPressure_bar)) # Use PSS-78 Equations for Salinity calculation
-
-############################################################
-############################################################
 # Two Point Calibration with Drift
 
 # C = drift-corrected water quality parameter value
@@ -209,8 +188,8 @@ bi<-highCondcal*0.001 # bi = value of the high calibration standard (mS/cm)
 # Sp_Conductance = bf = value read by the instrument for the high calibration standard after the total deployment time (mS/cm)
 
 CT.data<-CT.data%>%
-  mutate(at=ai+ft*(ai-Sp_Conductance*0.001),bt=bi-ft*(bi-Sp_Conductance*0.001),C2_mS.cm=(((Sp_Conductance*0.001-at)/(bt-at))*(bi-ai)+ai))%>%
-  mutate(SalinityInSituC2=gsw_SP_from_C(C2_mS.cm, TempInSitu, p=AbsPressure_bar))
+  mutate(at=ai+ft*(ai-Sp_Conductance*0.001),bt=bi-ft*(bi-Sp_Conductance*0.001),Sp_Cond_mS.cm=(((Sp_Conductance*0.001-at)/(bt-at))*(bi-ai)+ai))%>%
+  mutate(SalinityInSitu_2pCal=gsw_SP_from_C(Sp_Cond_mS.cm, TempInSitu, p=AbsPressure_bar))
 # Use PSS-78 Equations for Salinity calculation
 # Convert from Electrical Conductivity to Practical Salinity
 
@@ -223,7 +202,7 @@ View(CT.data)
 
 CT.data%>%
   filter(between(date,Launch,Retrieval))%>%
-  ggplot(aes(x=date,y=SalinityInSituC1))+
+  ggplot(aes(x=date,y=SalinityInSitu_2pCal))+
   geom_line()
 
 ################################################################################
@@ -235,15 +214,15 @@ CT.data%>%
 # non-linear temperature coefficient is generated that is a function of temperature and salinity
 # Calculate the non-linear temperature coefficient (a)
 # A good regression solution was the Taylor series depicted below:
- # a = A+B*T+C*S+D*T^2+E*S^2+F*T*S
- # WHERE: A = 1.86221444E+00
- # B = 7.99141780E-03
- # C = -2.04882760E-03
- # D = -4.79386353E-05
- # E = 1.67997158E-05
- # F = -1.55721008E-05
- # AND: T = sea water temperature in degrees C
- # S = sea water salinity 
+# a = A+B*T+C*S+D*T^2+E*S^2+F*T*S
+# WHERE: A = 1.86221444E+00
+# B = 7.99141780E-03
+# C = -2.04882760E-03
+# D = -4.79386353E-05
+# E = 1.67997158E-05
+# F = -1.55721008E-05
+# AND: T = sea water temperature in degrees C
+# S = sea water salinity 
 
 # specific conductance (Cs) at 25°C for sea water with the following equation: 
 # Cs = Ye /(1 - ((25-T) * a / 100))
@@ -257,10 +236,10 @@ CT.data%>%
 # 2. Reads the recorded conductivity and temperature pair for each selected range. 
 # 3. Calculates the preliminary salinity using PSS-78 for each pair. 
 # 4. Calculates the temperature coefficient using the temperature coefficient equation (Taylor series) with salinity and 
- # temperature for each pair.
+# temperature for each pair.
 # 5. Calculates specific conductance using the temperature coefficient for each pair.
 # 6. Calculates the hand-held meter specific conductance points and adjusts the specific conductance dataset
- # of the logger per the calibration data (if the “Use measured points for calibration” option is selected).
+# of the logger per the calibration data (if the “Use measured points for calibration” option is selected).
 # 7. Calculates final Salinity using the specific conductance dataset at 25°C in PSS-78. 
 
 
