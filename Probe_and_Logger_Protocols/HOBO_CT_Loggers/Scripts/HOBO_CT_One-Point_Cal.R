@@ -22,9 +22,9 @@ here()
 ###################################
 
 folder.date<-'20201026' # Dated logger folder
-folderCal<-'Raw' # Calibration file path
+folderCal<-'20201028' # Calibration file path
 folderLog<-'Raw' # Logged in situ file path
-Serial<-'740' # CT Probe Serial Number
+Serial<-'738' # CT Probe Serial Number
 
 ###################################
 # Pressure data
@@ -45,12 +45,12 @@ Pres_bar<-0
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 # Date of calibrations
-startCal1<-'2020-10-19 15:56:30' 
-endCal1<-'2020-10-19 16:01:40'
+startCal1<-'2020-10-28 16:59:00' 
+endCal1<-'2020-10-28 17:07:00'
 
 # Date of in situ logs
 Launch<-'2020-10-19 16:18:00'
-Retrieval<-'2020-10-21 00:39:50'
+Retrieval<-'2020-10-21 00:37:50'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
@@ -60,7 +60,7 @@ Retrieval<-'2020-10-21 00:39:50'
 oneCal<-50000 # uS/cm
 
 # In Situ Recording Interval
-int<-10 #seconds
+int<-1 #seconds
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------

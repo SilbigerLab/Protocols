@@ -16,13 +16,13 @@ here()
 # File Names
 ########################
 
-folder.date<-'20200303' # Dated logger folder
+folder.date<-'20201028' # Dated logger folder
 folderLog<-'Raw' # Logged in situ file path within folder.date
-Serial<-'197' # pH Probe Serial Number
+Serial<-'196' # pH Probe Serial Number
 
 # Date of in situ logs
-Launch<-'2020-03-03 10:43:00' # Maintain date time format "YYYY-MM-DD HH:MM:SS"
-Retrieval<-'2020-03-03 15:19:00' # Maintain date time format "YYYY-MM-DD HH:MM:SS"
+Launch<-'2020-10-28 16:25:00' # Maintain date time format "YYYY-MM-DD HH:MM:SS"
+Retrieval<-'2020-10-28 20:05:47' # Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
 
 #################################################################################
@@ -39,7 +39,7 @@ pHLog<-pHLog%>% # Filter specified probe by Serial number
   mutate(Serial=Serial)%>%
   rename(date=contains("Date"),TempInSitu=contains("Temp"))%>%
   drop_na()
-pHLog$date<-pHLog$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
+#pHLog$date<-pHLog$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
 
 # Parse date filters into date and type vector types
 Launch<-Launch %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
