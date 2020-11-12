@@ -7,8 +7,8 @@ library(here)
 here()
 rm(list=ls())
 
-foldername<-'Probe_and_Logger_Protocols/HOBO_pH_Logger/Data/20200303/'
-filename<-'pH_197_2020-10-14.csv'
+foldername<-'Probe_and_Logger_Protocols/HOBO_pH_Logger/Data/20201028/'
+filename<-'pH_196_2020-11-12.csv'
 
 ## bring in pH calibration files and raw data files
 pHcalib<-read_csv('Probe_and_Logger_Protocols/HOBO_pH_Logger/Data/Tris_Calibration_Log.csv')
