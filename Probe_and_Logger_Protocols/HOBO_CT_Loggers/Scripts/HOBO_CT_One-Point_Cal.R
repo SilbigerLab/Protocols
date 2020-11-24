@@ -21,10 +21,10 @@ here()
 # File Paths and Serial Numbers
 ###################################
 
-folder.date<-'20201026' # Dated logger folder
-folderCal<-'20201028' # Calibration file path
+folder.date<-'20201118' # Dated logger folder
+folderCal<-'Raw' # Calibration file path
 folderLog<-'Raw' # Logged in situ file path
-Serial<-'738' # CT Probe Serial Number
+Serial<-'352' # CT Probe Serial Number
 
 ###################################
 # Pressure data
@@ -44,13 +44,13 @@ Pres_bar<-0
 
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
-# Date of calibrations
-startCal1<-'2020-10-28 16:59:00' 
-endCal1<-'2020-10-28 17:07:00'
+# Date of initial calibrations
+startCal1<-'2020-11-18 15:10:00'
+endCal1<-'2020-11-18 15:17:00'
 
 # Date of in situ logs
-Launch<-'2020-10-19 16:18:00'
-Retrieval<-'2020-10-21 00:37:50'
+Launch<-'2020-11-18 15:30:00'
+Retrieval<-'2020-11-18 18:10:00'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
@@ -60,7 +60,7 @@ Retrieval<-'2020-10-21 00:37:50'
 oneCal<-50000 # uS/cm
 
 # In Situ Recording Interval
-int<-1 #seconds
+int<-10 #seconds
 
 #################################################################################
 # DO NOT CHANGE ANYTHING BELOW HERE ----------------------------------
@@ -74,9 +74,10 @@ int<-1 #seconds
 path.Cal<-paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/',folderCal)
 file.names.Cal<-basename(list.files(path.Cal, pattern = "csv$", recursive = F)) #list all csv file names in the folder and subfolders
 condCal <- file.names.Cal %>%
-  map_dfr(~ read_csv(file.path(path.Cal, .),skip=1,col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
+  map_dfr(~ read_csv(file.path(path.Cal, .),skip=1,col_names=TRUE)) #,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
 condCal<-condCal%>% # Filter specified probe by Serial number
   select(contains('Date'),contains(Serial))%>%
+  select(!contains('Low Range'))%>%
   mutate(Serial=Serial)%>%
   rename(date=contains("Date"),TempInSitu=contains("Temp"),E_Conductivity=contains("High Range"))%>%
   drop_na()
@@ -86,15 +87,16 @@ condCal$date<-condCal$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na 
 path.Log<-paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/',folderLog)
 file.names.Log<-basename(list.files(path.Log, pattern = "csv$", recursive = F)) #list all csv file names in the folder and subfolders
 condLog <- file.names.Log %>%
-  map_dfr(~ read_csv(file.path(path.Log, .),skip=1,col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
+  map_dfr(~ read_csv(file.path(path.Log, .),skip=1,col_names=TRUE)) #,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
 condLog<-condLog%>% # Filter specified probe by Serial number
   select(contains('Date'),contains(Serial))%>%
+  select(!contains('Low Range'))%>%
   mutate(Serial=Serial)%>%
   rename(date=contains("Date"),TempInSitu=contains("Temp"),E_Conductivity=contains("High Range"))%>%
   drop_na()
 condLog$date<-condLog$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na = character(), locale = default_locale(), trim_ws = TRUE) # Convert 'date' to date and time vector type
 
-# Parse date filters into date and type vector types
+ # Parse date filters into date and type vector types
 startCal1<-startCal1%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 endCal1<-endCal1%>%parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
 Launch<-Launch %>% parse_datetime(format = "%Y-%m-%d %H:%M:%S", na = character(),locale = default_locale(), trim_ws = TRUE)
@@ -153,12 +155,32 @@ If(Serial.depth = TRUE) {
   data.pres<-data.pres%>%
     filter(between(date,Launch,Retrieval))%>%
     rename(Serial.depth=Serial,TempInSitu.depth=TempInSitu)%>%
-    mutate(AbsPressure_bar=AbsPressure*0.01) # convert kPa to Bar (converstion: 1 kPa = 0.01 Bar)
+    mutate(AbsPressure_bar=AbsPressure*0.01) # convert kPa to Bar (conversion: 1 kPa = 0.01 Bar)
 } else {
   data.pres<-tibble(date=CT.data$date, AbsPressure_bar=Pres_bar)
 }
-CT.data<-CT.data%>% # ammend to larger dataframe
+CT.data<-CT.data%>% # amend to larger dataframe
   left_join(data.pres,by='date')
+
+############################################################
+############################################################
+# One Point Calibration
+
+CT.data<-CT.data%>%
+  mutate(Sp_Cond_mS.cm=Sp_Conductance*0.001)%>% # Sp_Conductance in mS/cm
+  mutate(SalinityInSitu_1pCal=gsw_SP_from_C(C = Sp_Cond_mS.cm, t = TempInSitu, p=AbsPressure_bar)) # Use PSS-78 Equations for Salinity calculation
+
+############################################################
+############################################################
+# Write CSV file and graph data
+write_csv(CT.data,paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/CT_',Serial,'_',Sys.Date(),'_1pCal.csv'))
+View(CT.data)
+
+CT.data%>%
+  filter(between(date,Launch,Retrieval))%>%
+  ggplot(aes(x=date,y=SalinityInSitu_1pCal))+
+  geom_line()
+
 ############################################################
 ############################################################
 # Drift correction factor
@@ -177,8 +199,8 @@ ft<-(t / total.t) # ft = correction factor
 # C1<-m+ft*(si-sf)
 # C = drift-corrected water quality parameter value
 # Sp_Conductance = m = uncorrected value (mS/cm)
-si<-oneCal #uS/cm # value of the calibration standard
-sf<-CT.data%>% # the value read by the instrument for the calibration standard after the total deployment time (total.t)
+si<-oneCal # the calibration standard
+sf<-CT.data%>% # the value read by the instrument in the calibration standard after the total deployment time (total.t)
   filter(between(date,startCal1,endCal1))%>%
          summarise(Middle=median(Sp_Conductance)) # use a middle point during calibration to avoid skew by placing logger in or taking logger out of calibration solution
 sf<-as.numeric(sf[1,])
@@ -191,7 +213,7 @@ CT.data<-CT.data%>%
 ############################################################
 ############################################################
 # Write CSV file and graph data
-write_csv(CT.data,paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/CT_',Serial,'_',Sys.Date(),'.csv'))
+write_csv(CT.data,paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/CT_',Serial,'_',Sys.Date(),'_1pCal.csv'))
 View(CT.data)
 
 CT.data%>%
@@ -243,7 +265,7 @@ CT.data%>%
 ## reference: https://hasenmuellerlab.weebly.com/uploads/3/1/8/7/31874303/2019_shaughnessy_et_al_ema.pdf
 
 # each correction is based on linear drift over time
-# data taken closer to initial calibratin are corrected less than data taken toward the end of the monitoring period
+# data taken closer to initial calibration are corrected less than data taken toward the end of the monitoring period
 # ft = correction factor
 # t = the time interval for each data point that has passed since deployment
 # total.t = total deployment time
