@@ -21,10 +21,10 @@ here()
 # File Paths and Serial Numbers
 ###################################
 
-folder.date<-'20201026' # Dated logger folder
+folder.date<-'20201118' # Dated logger folder
 folderCal<-'Raw' # Calibration file path
 folderLog<-'Raw' # Logged in situ file path
-Serial<-'738' # CT Probe Serial Number
+Serial<-'352' # CT Probe Serial Number
 
 ###################################
 # Pressure data
@@ -44,16 +44,16 @@ Pres_bar<-0
 
 ### Maintain date time format "YYYY-MM-DD HH:MM:SS"
 
-# Date of calibrations
-startCal1<-'2020-10-19 15:53:00' # First Calibration for Two-Point Cal (1413 uS/cm)
-endCal1<-'2020-10-19 15:55:20'
+# Date of initial calibrations
+startCal1<-'2020-11-18 15:19:00' # First Calibration for Two-Point Cal (1413 uS/cm)
+endCal1<-'2020-11-18 15:23:00'
 
-startCal2<-'2020-10-19 15:57:40' # Second Calibration for Two-Point Cal (12.9 mS/cm)
-endCal2<-'2020-10-19 16:00:20'
+startCal2<-'2020-11-18 15:10:00' # Second Calibration for Two-Point Cal (50.0 mS/cm)
+endCal2<-'2020-11-18 15:17:00'
 
 # Date of in situ logs
-Launch<-'2020-10-19 16:18:00'
-Retrieval<-'2020-10-21 00:37:50'
+Launch<-'2020-11-18 15:30:00'
+Retrieval<-'2020-11-18 18:10:00'
 
 ###################################
 # Conductivity Calibration Standards and Logging Interval
@@ -61,7 +61,7 @@ Retrieval<-'2020-10-21 00:37:50'
 
 # Two-Point Calibration Standards
 lowCondcal<-1413 # uS/cm ; ThermoScientific Orion Application Solution: 1413 uS/cm at 25degC Conductivity Standard
-highCondcal<-12880 # uS/cm ; ThermoScientific Orion Application Solution: 12.9 mS/cm at 25degC Conductivity Standard
+highCondcal<-50000 # uS/cm ; ThermoScientific Orion Application Solution: 12.9 mS/cm at 25degC Conductivity Standard
 
 # In Situ Recording Interval
 int<-10 #seconds
@@ -78,9 +78,10 @@ int<-10 #seconds
 path.Cal<-paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/',folderCal)
 file.names.Cal<-basename(list.files(path.Cal, pattern = "csv$", recursive = F)) #list all csv file names in the folder and subfolders
 condCal <- file.names.Cal %>%
-  map_dfr(~ read_csv(file.path(path.Cal, .),skip=1,col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
+  map_dfr(~ read_csv(file.path(path.Cal, .),skip=1,col_names=TRUE)) #,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
 condCal<-condCal%>% # Filter specified probe by Serial number
   select(contains('Date'),contains(Serial))%>%
+  select(!contains('Low Range'))%>%
   mutate(Serial=Serial)%>%
   rename(date=contains("Date"),TempInSitu=contains("Temp"),E_Conductivity=contains("High Range"))%>%
   drop_na()
@@ -90,9 +91,10 @@ condCal$date<-condCal$date%>%parse_datetime(format = "%m/%d/%y %H:%M:%S %p", na 
 path.Log<-paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/',folderLog)
 file.names.Log<-basename(list.files(path.Log, pattern = "csv$", recursive = F)) #list all csv file names in the folder and subfolders
 condLog <- file.names.Log %>%
-  map_dfr(~ read_csv(file.path(path.Log, .),skip=1,col_names=TRUE,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
+  map_dfr(~ read_csv(file.path(path.Log, .),skip=1,col_names=TRUE)) #,col_types=list("Button Down"=col_skip(),"Button Up"=col_skip(),"Host Connect"=col_skip(),"Stopped"=col_skip(),"EOF"=col_skip())))
 condLog<-condLog%>% # Filter specified probe by Serial number
   select(contains('Date'),contains(Serial))%>%
+  select(!contains('Low Range'))%>%
   mutate(Serial=Serial)%>%
   rename(date=contains("Date"),TempInSitu=contains("Temp"),E_Conductivity=contains("High Range"))%>%
   drop_na()
@@ -115,7 +117,7 @@ condLog<-condLog%>%filter(between(date,Launch,Retrieval))
 ############################################################
 ## ONSET HOBO CONDUCTIVITY ASSISTANT CALCULATIONS
 
-### 1. Calculate preliminary salinity from eletrical conductivity
+### 1. Calculate preliminary salinity from electrical conductivity
 # Use PSS-78 Equations for Salinity calculation
 # Convert from Electrical Conductivity to Practical Salinity
 condCal<-condCal%>%
@@ -159,12 +161,32 @@ If(Serial.depth = TRUE) {
   data.pres<-data.pres%>%
     filter(between(date,Launch,Retrieval))%>%
     rename(Serial.depth=Serial,TempInSitu.depth=TempInSitu)%>%
-    mutate(AbsPressure_bar=AbsPressure*0.01) # convert kPa to Bar (converstion: 1 kPa = 0.01 Bar)
+    mutate(AbsPressure_bar=AbsPressure*0.01) # convert kPa to Bar (conversion: 1 kPa = 0.01 Bar)
 } else {
   data.pres<-tibble(date=CT.data$date, AbsPressure_bar=Pres_bar)
 }
 CT.data<-CT.data%>% # ammend to larger dataframe
   left_join(data.pres,by='date')
+
+############################################################
+############################################################
+# Two Point Calibration 
+
+CT.data<-CT.data %>%
+  mutate(Sp_Cond_mS.cm =(((Sp_Conductance-lowCondcal)*(highCondcal-lowCondcal))/(max(Sp_Conductance)-min(Sp_Conductance))+lowCondcal)*0.001) %>%
+  mutate(SalinityInSitu_2pCal=gsw_SP_from_C(Sp_Cond_mS.cm, TempInSitu, p=AbsPressure_bar))
+
+############################################################
+############################################################
+# Write CSV file and graph data
+write_csv(CT.data,paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/CT_',Serial,'_',Sys.Date(),'_2pCal.csv'))
+View(CT.data)
+
+CT.data%>%
+  filter(between(date,Launch,Retrieval))%>%
+  ggplot(aes(x=date,y=SalinityInSitu_2pCal))+
+  geom_line()
+
 ############################################################
 ############################################################
 # Drift correction factor
@@ -182,14 +204,16 @@ ft<-(t / total.t) # ft = correction factor
 # C = drift-corrected water quality parameter value
 # at = intermediate calibration standard correction factor for the low standard
 # bt = intermediate calibration standard correction factor for the high standard
-ai<-lowCondcal*0.001 # ai = value of the low calibratin standard (mS/cm)
+ai<-lowCondcal*0.001 # ai = value of the low calibration standard (mS/cm)
 bi<-highCondcal*0.001 # bi = value of the high calibration standard (mS/cm)
-# Sp_Conductance = af = value read by the instrument for the low calibration standard after the total deployment time (mS/cm)
-# Sp_Conductance = bf = value read by the instrument for the high calibration standard after the total deployment time (mS/cm)
+# af = value read by the instrument for the low calibration standard after the total deployment time (mS/cm)
+# bf = value read by the instrument for the high calibration standard after the total deployment time (mS/cm)
 
-CT.data<-CT.data%>%
-  mutate(at=ai+ft*(ai-Sp_Conductance*0.001),bt=bi-ft*(bi-Sp_Conductance*0.001),Sp_Cond_mS.cm=(((Sp_Conductance*0.001-at)/(bt-at))*(bi-ai)+ai))%>%
-  mutate(SalinityInSitu_2pCal=gsw_SP_from_C(Sp_Cond_mS.cm, TempInSitu, p=AbsPressure_bar))
+#CT.data<-CT.data%>%
+#  mutate(at=ai+ft*(ai-ai),
+#         bt=bi-ft*(bi-bi),
+#         Sp_Cond_mS.cm=(((Sp_Conductance*0.001-at)/(bt-at))*(bi-ai)+ai))%>%
+#  mutate(SalinityInSitu_2pCal=gsw_SP_from_C(Sp_Cond_mS.cm, TempInSitu, p=AbsPressure_bar))
 # Use PSS-78 Equations for Salinity calculation
 # Convert from Electrical Conductivity to Practical Salinity
 
@@ -197,13 +221,13 @@ CT.data<-CT.data%>%
 ############################################################
 ############################################################
 # Write CSV file and graph data
-write_csv(CT.data,paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/CT_',Serial,'_',Sys.Date(),'.csv'))
-View(CT.data)
+#write_csv(CT.data,paste0('Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/',folder.date,'/CT_',Serial,'_',Sys.Date(),'_2pCal.csv'))
+#View(CT.data)
 
-CT.data%>%
-  filter(between(date,Launch,Retrieval))%>%
-  ggplot(aes(x=date,y=SalinityInSitu_2pCal))+
-  geom_line()
+#CT.data%>%
+#  filter(between(date,Launch,Retrieval))%>%
+#  ggplot(aes(x=date,y=SalinityInSitu_2pCal))+
+#  geom_line()
 
 ################################################################################
 ################################################################################
@@ -249,7 +273,7 @@ CT.data%>%
 ## reference: https://hasenmuellerlab.weebly.com/uploads/3/1/8/7/31874303/2019_shaughnessy_et_al_ema.pdf
 
 # each correction is based on linear drift over time
-# data taken closer to initial calibratin are corrected less than data taken toward the end of the monitoring period
+# data taken closer to initial calibration are corrected less than data taken toward the end of the monitoring period
 # ft = correction factor
 # t = the time interval for each data point that has passed since deployment
 # total.t = total deployment time
