@@ -1,4 +1,4 @@
-# Two-point Conductivity Calibrations for the HOBO CT Loggers using raw data off of HOBOware
+# One-point Conductivity Calibrations for the HOBO CT Loggers using raw data off of HOBOware
 
 # https://hasenmuellerlab.weebly.com/uploads/3/1/8/7/31874303/2019_shaughnessy_et_al_ema.pdf
 
