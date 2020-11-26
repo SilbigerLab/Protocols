@@ -27,18 +27,20 @@
     1. If no lights turn on, push the blue coupler down further on the Shuttle and try again.
 1. Along the bottom of the HOBOware window, the name and/or serial number of the logger should be displayed to indicate a successful connection.
 1. Along the top bar of the HOBOware window, click Device, then Launch.
-1. Select to log the Low Range and High Range (choose units - uS/cm).  Temperature will automatically be selected.
+1. Select to log the High Range (deselect Low Range) and choose units - uS/cm.  Temperature will automatically be selected.
 1. Set the logging interval (down to 1 second intervals).
 1. Set the logger to begin recording "on the next logging interval".
 1. Click Launch and wait for a 'successful configuration' notification before disconnecting the logger.
 
 <a name=Calibration></a> **Calibration**  
 1. Using either a one-calibration solution or two-calibration solutions, pour the contents into a container which the Logger can be placed into to fully submerge the conductivity sensor.
+    1. For a two-point calibration, use 1413 uS/cm and 50,000 uS/cm for SGD deployments.
 1. Launch logger using the HOBOware software if the logger is not already recording.
 1. Record the time the logger is placed in the first calibration solution and the last three digits of the logger's Serial Number
 1. Leave the logger to sit for a few minutes to stabilize, then record the time the logger is taken out of the solution.
 1. If doing a two-point calibration, rinse the logger wtih DI, then dry with a kim wipe before placing it into the second solution, also recording the time in and time out after a few minutes.
 1. If not deploying right away, either Stop deployment and [Readout](#ex_situ_readout) calibration data using HOBOware, or allow the instrument to continue logging until deployment.
+1. Store all files in a Raw folder within your dated file folder for the CT logs.
 
 <a name=Deployment></a> **Deployment**  
 1. If the logger is not already logging, [Launch the logger](#Configuration).
