@@ -90,7 +90,7 @@
     1. Click File and Export Table Data.
     1. Include all remaining Measurements (Abs. Pressure, Water Level, and Temperature), and click Export.
     1. Save file (include Serial Number in filename) as a .csv file in a dated Raw folder in "Probe_and_Logger_Protocols/HOBO_Depth_Loggers/Data/" (ex. "Probe_and_Logger_Protocols/HOBO_Depth_Loggers/Data/20201023/Raw/")
-1. Run [the HOBO_Depth_Readout script](Scripts/HOBO_Depth_Readout.R) for data processing.
+1. Run [the HOBO_Depth_Readout script](https://github.com/SilbigerLab/Protocols/blob/master/Probe_and_Logger_Protocols/HOBO_Depth_Loggers/Scripts/HOBO_Depth_Readout.R) for data processing.
     1. Processed data will automatically be saved in the dated folder (ex. "Probe_and_Logger_Protocols/HOBO_Depth_Loggers/Data/20201023/") with Serial Number identification
 
 <a name="Maintenance"></a> **Maintenance and Storage**  
