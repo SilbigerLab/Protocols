@@ -1,6 +1,6 @@
 # System Information for the SpectraMax iD3 located in Magnolia Hall 4109 lab  
 
-**Molecular Devices SpectraMax iD3 Multi-Mode Microlate Reader**  
+**Molecular Devices SpectraMax iD3 Multi-Mode Microplate Reader**  
 **Instrument Serial Number:** 3867  
 **Mac Address:** 00-13-95-33-55-5E  
 **Assigned IP:** 169.254.246.83  
