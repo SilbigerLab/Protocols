@@ -51,13 +51,13 @@ Contents
 1.  Calculate the surface area of your wooden dowels using the surface area equation:
   - SA = 4πr<sup>2</sup>
 1.  Plot the relationship of the surface area (cm<sup>2</sup>) on the x-axis to the weight of the wax (g) on the y-axis to check if your standard curve has an R<sup>2</sup> value greater than 0.9.
-1. Using the plot, calculate the curve coefficients for the slope and  the y-intercept to apply as the standard.
-  - y=mx+c
-  - x=(y-c)/m
+1. Using the plot, calculate the curve coefficients for the slope and the y-intercept to apply as the standard (this information will be used later to calculate the surface area for your samples).
+  - y=mx+b
+  - x=(y-b)/m
+  - slope = 0.025
+  - y-intercept = 0.0043
 
-INSERT PHOTO HERE OF CURVE 
-
-
+![Example Standard Curve](https://raw.githubusercontent.com/SilbigerLab/Protocols/master/Physiological_Parameter_Protocols/Images/SA_StCurve.png)
 
 
 
@@ -71,8 +71,18 @@ INSERT PHOTO HERE OF CURVE
 1.  Place dipped coral skeletons onto labeled aluminum foil.
 1.  Allow coral skeletons to dry to room temperature before taking the final weight.
 1.  Once the dipped corals cool to room temperature, weigh each coral sample to the nearest 0.0001 grams.
+1.  Make a table to calculate the surface area of your individual samples. Use the equation below in the surface area column:
+
+  - =(weight of wax + slope) / y-intercept
+  - =(A4+0.0043)/0.025
+
+  **colony_id**|**weight1.g**|**weight2.g**|**weight.of.wax.g**|**surface.area.cm2**|
+  :-----:|:-----:|:-----:|:-----:|:-----:|
+  POC-47	|	16.277 | 18.785 | 2.508 | 100.5
+
 
 
 3. <a name="References"></a> **References**
 
-    1.  (Stimson and Kinzie III 1991; Veal et al. 2010).
+    1.  Stimson, J. and Kinzie III, R.A., 1991. The temporal pattern and rate of release of zooxanthellae from the reef coral Pocillopora damicornis (Linnaeus) under nitrogen-enrichment and control conditions. Journal of Experimental Marine Biology and Ecology, 153(1), pp.63-74.
+    1.  Veal, C.J., Carmi, M., Fine, M. and Hoegh-Guldberg, O., 2010. Increasing the accuracy of surface area estimation using single wax dipping of coral fragments. Coral Reefs, 29(4), pp.893-897.
