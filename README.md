@@ -18,6 +18,7 @@
 * [Volume Dye Method Protocols](Environmental_Parameter_Protocols/Protocols/Volume_Dye_Method)
 * [RAD Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)
 * [Light Spectrum Protocols](Environmental_Parameter_Protocols/Protocols/Light_Spectrum)
+* [Sub-surface Automated Sampler User Manual](Environmental_Parameter_Protocols/Protocols/SAS_User_Manual.pdf) 
 
 ## Intertidal Ecosystem Function Protocols  
 * [Tide Pool Water Sampling](Intertidal_Ecosystem_Function_Protocols/TidePoolSampling_SOP.md)
