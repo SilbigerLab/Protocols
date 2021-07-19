@@ -50,9 +50,11 @@ Contents
     1.  After running the Baseline, make a label for sample ID under the SAMPLE TABLE not STANDARD TABLE, the Sample table is usually underneath Standard, but you can enlarge the Sample Table for convenience
     1.  Once you run the Baseline, run the same blank again, this time pressing the READ UNKNOWN button to make sure it reads 0 under all wavelengths in your sample ID row 1 (label sample ID as Blank.1, the number should correspond to which sample set you are doing) 
     1.  Label the sample ID row 2, 3 and 4 for each replicate you do (ex: T1.1, T1.2, T1.3 for colony tissue sample 1, replicate 1, 2 and 3)
+    	1. for pH measurements using the m-cresol method: label three rows for triplicate seawater samples, then label the next three rows for those same samples with added m-cresol dye, such that you have 6 labeled rows for each sample set. (ex. S1.1.nodye, S1.2.nodye, S1.3.nodye, S1.1.dye, S1.2.dye, S1.3.dye)
     1.  Take out blank and dispose of it in the appropriate waste container (or pour down the sink if DI). 
     1.  Pipette 3mL of first sample into cuvette, repeat the last 2 steps for your samples using appropriate sample labels
-    1.  Press the READ UNKNOWN button, repeat with each sample for each sample set
+    1.  Press the READ UNKNOWN button, repeat with each sample for each sample set.
+    	1. for pH measurements using the m-cresol method: in 3mL of seawater or tris, add 50uL of m-cresol dye and allow to diffuse
     1.  In between each sample set with 3 replicates, run a blank of DI and press the READ UNKNOWN button to make sure it reads 0 for all wavelengths before running next sample set
     1.  Make sure to save the data throughout the sampling period, also copy all values down into the notebook
     	1. To save the data, copy and paste cells from the output sample table into an excel sheet
