@@ -11,9 +11,11 @@ Contents
 1. <a name="Materials"></a> **Materials**  
     1. 	Shimadzu UV 2450 spectrophotometer
     1.  Desktop computer
-    1.  UV probe software
+    1.  UV Probe software
     1.  3mL glass cuvettes  
-    1.  100% acetone
+    1.  Blank solution
+    	1. Chlorophyll: 100% acetone
+    	2. pH using the m-cresol method: DI water
     1.  Chiller (attached to spectrophotometer)
 
 2. <a name="Protocol"></a> **Protocol**  
