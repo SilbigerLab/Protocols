@@ -26,6 +26,7 @@ Contents
     	1. If the computer requires a log in password, look under the keyboard.
     1.  Fine to leave spec on as you set up samples and organize 
     1.  Once everything is green, click OK
+    	1. On the Polyp Lab system at CSUN, 'RAM Check' will say 'Failed', which is normal.  On the Mo'orea system, RAM Check should not fail.  If it does, notify Kathryn.
     1.  Then click on the icon with a circle and capital M in the middle for 'Methods'
     1.  Add three wavelengths as your WL points
     	1.  Chlorophyll: 630nm, 663nm, 750nm
