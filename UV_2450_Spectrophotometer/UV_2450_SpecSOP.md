@@ -19,7 +19,7 @@ Contents
     1.  Chiller (attached to spectrophotometer)
 
 2. <a name="Protocol"></a> **Protocol**  
-    1. 	Turn the chiller switch to ON
+    1. 	Turn on the spec and turn the chiller switch to ON
     1.  All the square coils must be submerged in water, usually are already but double check before turning on
     1.  The chiller should be set to 25°C
     1.  Open the UV Probe program and press CONNECT once loaded, takes around 10 minutes to warm up and go through automatic checks.  All checks need to be green before you begin (if the Mo'orea spec has any errors, notify Kathryn Scafidi at kathryn.scafidi@csun.edu).
