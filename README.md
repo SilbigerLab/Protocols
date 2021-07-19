@@ -46,7 +46,7 @@
 * [Preparing the Well Plate](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Prepare_Well_Plate_SOP.md)
 * [Export Data](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Export_Data_SOP.md)  
 
-[UV 2450 Spectrophotometer Protocol](UV_2450_Spectrophotometer/UV_2450_SpecSOP.md)  
+[UV 2450 Spectrophotometer Protocol (Mo'orea and Polyp Lab)](UV_2450_Spectrophotometer/UV_2450_SpecSOP.md)  
 
 ## Reference Manuals  
 * [Box Furnace](References_and_Manuals/BF51800_Box_Furnace_Manual)
