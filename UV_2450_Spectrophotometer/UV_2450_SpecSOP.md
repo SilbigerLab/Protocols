@@ -54,15 +54,16 @@ Contents
     1.  Baseline takes around 2 minutes to run through, do this once 
     1.  After running the Baseline, make a label for your sample ID under the SAMPLE TABLE (not STANDARD TABLE. The Sample table is usually underneath Standard, but you can enlarge the Sample Table for convenience). The first sample ID should be 'Blank.1'.
     1.  Press Enter after typing out each label ID to save and move on to the next sample ID.
-    1.  Once you run the Baseline, run the same blank again, this time pressing the READ UNKNOWN button to make sure it reads 0 under all wavelengths in your sample ID row 1 (label first sample ID as Blank.1, the number should correspond to which sample set you are running) 
+    1.  Once you run the Baseline, run the same blank sample again, this time pressing the READ UNKNOWN button. Check that the absorbance reads 0 under all wavelengths in your sample ID row 1, so ensure the instrument is reading this sample as a Blank (label first sample ID as Blank.1, the number should correspond to which sample set you are running).  
+    	1. If the sample read is not 0.00, run Baseline again to calibrate the blank read.
     1.  Label the sample ID row 2, 3 and 4 for each replicate you do (ex: T1.1, T1.2, T1.3 for colony tissue sample 1, replicate 1, 2 and 3)
     	1. for pH measurements using the m-cresol method: label one blank row, then label six rows alternating between a sample with no dye and with m-cresol dye, such that you have 7 labeled rows for each sample set. (ex. Blank.1, S1.1.nodye, S1.1.dye, S1.2.nodye, S1.2.dye, S1.3.nodye, S1.3.dye)
     1.  Take out blank and dispose of it in the appropriate waste container (or pour down the sink if DI). 
     1.  Pipette 3mL of first sample into cuvette, repeat the last few steps for your samples using appropriate sample labels: Label the sample ID rows, pipette sample into a cuvette, place cuvette into the spec and press READ UNKNOWN to read the absorbance values.
     1.  For each sample, press the READ UNKNOWN button, and repeat with each sample of each sample set.
     	1. for pH measurements using the m-cresol method: in *3 mL* of seawater or tris, add *50 uL* of m-cresol dye, and then slowly take up and release the sample using the pipette to fully mix the dye into the sample. Discard the pipette tip in an appropriate waste container after use.
-    1.  Between each full sample set of replicates, run a blank and press the READ UNKNOWN button to make sure it reads 0 for all wavelengths before running the next sample set.
-    	1. If the blank no longer reads zero, run a Baseline to reset the blank, and then run the blank again using READ UNKNOWN to make sure the blank now reads 0.
+    1.  Between each full sample set of replicates, run a blank and press the READ UNKNOWN button to make sure it reads zero for all wavelengths before running the next sample set.
+    	1. If the blank no longer reads 0.00, run a Baseline to recalibrate the blank, and then run the blank again using READ UNKNOWN to make sure the blank now reads zero.
     1.  Make sure to save the data throughout the sampling period, also copy all values down into a lab notebook
     	1. To save the data, open an excel sheet, and copy and paste cells from the output sample table into an excel sheet
     1.  Press the DISCONNECT button when finished
