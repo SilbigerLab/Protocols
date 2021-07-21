@@ -11,15 +11,15 @@ Contents
 
 <a name="Materials"></a> **Materials**
 
-    1. m-Cresol purple
-    1. DI water
-    1. HCL
-    1. NaOH
-    1. Beaker
-    1. Stir plate
-    1. Stirring rods
-    1. Sea water
-    1. Scintillation vials
+1. m-Cresol purple
+1. DI water
+1. HCL
+1. NaOH
+1. Beaker
+1. Stir plate
+1. Stirring rods
+1. Sea water
+1. Scintillation vials
  
 <a name="Protocol"></a> **Protocol**  
 
