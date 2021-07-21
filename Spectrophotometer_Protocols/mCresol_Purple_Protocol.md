@@ -10,6 +10,7 @@ Contents
 - [**References**](#References)
 
 <a name="Materials"></a> **Materials**
+
     1. m-Cresol purple
     1. DI water
     1. HCL
@@ -21,6 +22,7 @@ Contents
     1. Scintillation vials
  
 <a name="Protocol"></a> **Protocol**  
+
     1. Create concentrated 2mmol/dm^3 m-Cresol dye solution using m-Cresol powder and DI water. Measure out dye using scale. Place in beaker and add water. Using a stir plate, stir until well mixed.
         1. Molecular mass of m-Cresol (C_{21}H_{18}O_5S) is 382.43 g/mol, meaning to create a 1L solution of 2mmol/dm3 m-Cresol dye you will dilute 0.764872 grams of dye in DI water.
         1. Scaling down, to create 125 mL of solution you will dilute 0.0956075 grams of m-Cresol in DI water. 
