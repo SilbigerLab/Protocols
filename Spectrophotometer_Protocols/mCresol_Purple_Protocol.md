@@ -45,4 +45,4 @@ Last Revised: February 2020
     
 <a name="References"></a> **References**
 
-* [Dickinson SOP 6b](Spectrophotometer_Protocols/Dickinson_SOP_6b.pdf)
+* [Dickinson SOP 6b](Dickinson_SOP_6b.pdf)
