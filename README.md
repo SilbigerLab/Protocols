@@ -40,6 +40,8 @@
 * [Mixing Mercuric Chloride solution for poisoning water samples](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/Mercuric_Chloride_SOP.md)
 
 ## Spectrophotometer Protocols  
+* [m-Cresol Purple Protocol](Spectrophotometer_Protocols/mCresol_Purple_Protocol.md)
+ 
 [SpectraMax iD3 Repository](https://github.com/SilbigerLab/pH_Spec)  
 * [Startup Procedures](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Startup_SOP.md)
 * [Plate Read Setup](https://github.com/SilbigerLab/pH_Spec/blob/master/Protocols/Plate_Read_Setup_SOP.md)
