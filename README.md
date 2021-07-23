@@ -16,7 +16,8 @@
 * [Macroalgal CHN Content](Environmental_Parameter_Protocols/Protocols/Macroalgal_CHN_SOP.md)
 * [Sedimentation Rates](Environmental_Parameter_Protocols/Protocols/Sedimentation_rates_SOP.md)
 * [Volume Dye Method Protocols](Environmental_Parameter_Protocols/Protocols/Volume_Dye_Method)
-* [RAD Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)
+* [RAD7 Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)
+* [RAD Float Setup](Environmental_Parameter_Protocols/Protocols/RAD_Float_Setup.md) 
 * [Light Spectrum Protocols](Environmental_Parameter_Protocols/Protocols/Light_Spectrum)
 * [Sub-surface Automated Sampler User Manual](Environmental_Parameter_Protocols/Protocols/SAS_User_Manual.pdf) 
 
