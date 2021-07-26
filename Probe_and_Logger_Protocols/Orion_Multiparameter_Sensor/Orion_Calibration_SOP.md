@@ -25,6 +25,7 @@ Contents
 1. Calibrating pH
     1. pH should be calibrated <24 hours before use.
     1. Fill a small clean beaker with DI water, and pour the three calibration solutions (pH of 4, 7, and 10) into three clean beakers, and place near your work station.
+    1. Plug in the pH probe (spring loaded). If you are only using the pH probe for measurements, only plug in the spring loaded end of the 
     1. Turn on the meter and wait for the measurement screen to appear.
         1. Make sure the current measurement is for pH.  If not, Either change the Channel (press F3 to swap between probe inputs) or Mode (pressing the Mode button on the meter to swap between measurements using the current Channel's probe) until the instrument is reading pH.
     1. Press F1 to select "cal" and go into Calibration settings.  You should see a prompt screen for the meter to read the first calibration solution.
@@ -32,17 +33,20 @@ Contents
         1. First unscrew the lid from the small storage container.
         1. Once the probe and storage cap are able to be lifted from the storage container, slide the cap off the probe.
     1. Rinse the probe in DI water to remove any storage solution, and dry the probe (but not the sensor tip) with a chem wipe.
-    1. Place the probe into the pH 4 solution, fully submerging the sensor tip, and agitate the probe tip back and forth briefly.
-    1. Press F2 to Start the first calibration and wait for the reading to stabilize.
+    1. Place the probe into the pH 4 solution, fully submerging the sensor tip, and gently agitate the probe tip back and forth.
+    1. Press F3 to Start the first calibration and wait for the reading to stabilize.
         1. The probe should read 4.01 at the lab's ambient temperature of 22-23 &deg; C
     1. Once the reading has stabilized at a reasonable value, press F2 for the Next calibration.
-    1. Rinse the probe in DI and dry with a chem wipe (again avoiding the sensor tip) before placing the probe in the pH 7 solution, and then agitate the probe tip back and forth briefly.
+    1. Rinse the probe in DI and dry with a chem wipe (again avoiding the sensor tip) before placing the probe in the pH 7 solution, and then gently agitate the probe tip back and forth.
     1. Wait for a stable reading (7.01 at 22-23 &deg; C) then press F2 for the Next calibration.
     1. Rinse the probe in DI and dry with a chem wipe (again avoiding the sensor tip) before placing the probe in the pH 10 solution, and then agitate the probe tip back and forth briefly.
     1. Wait for a stable reading (10.04 at 22-23 &deg; C) then press F3 to Finish calibration.
     1. If you are satisfied with the three calibration values on the summary screen, press F1 to return to the Measurement screen.
 1. Calibrating Conductivity
-<a name="Cleaning and Storage"></a> 1. Cleaning and Storage
+    1.  
+
+<a name="Cleaning and Storage"></a> 
+1. Cleaning and Storage
     1. When you have finished using the meter, thoroughly rinse all probes, especially sensor tips, with DI water.
     1. Dry probes (avoiding sensor tips) with chem wipes.
     1. pH probe
