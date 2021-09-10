@@ -8,7 +8,7 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 **Contents**
 - [**Materials**](#Materials) 
 - [**General Protocol**](#GeneralProtocol) 
-- [**Sample Bag Attachment**](#SampleBagAttachment)
+- [**Sample Bag Attachment & Deployment**](#SampleBagAttachment)
 - [**Reminders**](#Reminders)
 - [**References**](#References)
 
@@ -34,14 +34,15 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 6. Return to top of <TIME SET> screen and navigate to <SETTINGS>. Confirm that settings are “Mode: Once” and “VOL: 900” (900 mL); if not, change using cursor, then scroll to “ENTER SET” and press enter.
 7. Return to top of <SETTINGS> screen and navigate to <PUMP A>. Set T (time) and D (date) to the time and date for Pump A to turn on, then scroll to “ENTER SET” and press enter. Time is 24H time, HH:MM. Date is DD/MM/YY. Return to top of <PUMP A> screen, navigate to <PUMP B>, and repeat steps to program time and date for Pump B to turn on.
 8. Return to top of <PUMP B> screen and navigate to <INITIATE>. Scroll to “Press Enter” and press enter. 
-9. To wake sampler, move magnet back and forth horizontally across reed switch. When display says “Interrupt”, hold magnet in position until main screen turns on. Initiation (step 5) must be pressed again if you wish to return to sampling mode.
-10. When removing battries, make sure to remove battery from compartment #2 BEFORE compartment #1. 
+9. To wake sampler, move magnet back and forth horizontally across reed switch. When display says “Interrupt”, hold magnet in position until main screen turns on. Initiate (step 5) must be pressed again if you wish to return to sampling mode.
+10. When removing batteries, make sure to remove battery from compartment #2 BEFORE compartment #1. 
 
  
-<a name="SampleBagAttachment"></a> **Sample Bag Attachment**
+<a name="SampleBagAttachment"></a> **Sample Bag Attachment & Deployment**
  
-Instructional video for attaching one Mylar and one Tedlar bag to the sampler [here.](https://youtu.be/R16RRaiNpqU) 
-Be sure to keep Tedlar bag valve closed unless SAS is actively sampling. Close valve after deployment before removing SAS from the field. 
+* Instructional video for attaching one Mylar and one Tedlar bag to the sampler [here.](https://youtu.be/R16RRaiNpqU) 
+* Be sure to keep Tedlar bag valve closed unless SAS is actively sampling. Close valve after deployment before removing SAS from the field. 
+* The same set of Lithium Ion batteries can be used for multiple deployments, 
 
 <a name="Reminders"></a> **Reminders** 
 
@@ -56,6 +57,7 @@ Be sure to keep Tedlar bag valve closed unless SAS is actively sampling. Close v
 1. Use magnet to wake sampler, hold at “Interrupt.”
 1. Battery pack OUT: #2 before #1. 
 1. Check that Tedlar bag valve is closed unless actively deploying.
+1. Check to make sure
  
 <a name="References"></a> **References** 
  
