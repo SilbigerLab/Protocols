@@ -19,7 +19,7 @@
 * [RAD7 Protocols](Environmental_Parameter_Protocols/Protocols/RAD7_Protocol)
 * [RAD Float Setup](Environmental_Parameter_Protocols/Protocols/RAD_Float_Setup.md) 
 * [Light Spectrum Protocols](Environmental_Parameter_Protocols/Protocols/Light_Spectrum)
-* [Sub-surface Automated Sampler User Manual](Environmental_Parameter_Protocols/Protocols/SAS_User_Manual.pdf) 
+* [Sub-surface Automated Sampler Protocols](Environmental_Parameter_Protocols/Protocols/SAS_Protocol.md) 
 
 ## Intertidal Ecosystem Function Protocols  
 * [Tide Pool Water Sampling](Intertidal_Ecosystem_Function_Protocols/TidePoolSampling_SOP.md)
