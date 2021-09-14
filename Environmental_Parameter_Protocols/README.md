@@ -14,5 +14,5 @@ Macroalgal CHN content, *in situ* nutrient sampling, sedimentation rate methods,
 
 * [Light Spectrum protocol](Protocols/Light_Spectrum)
 
-
+* [Sub-surface Automated Sampler Protocol](Protocols/SAS_Protocol.md)
 
