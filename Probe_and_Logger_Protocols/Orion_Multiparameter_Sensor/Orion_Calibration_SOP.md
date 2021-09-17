@@ -7,6 +7,7 @@ Contents
 - [**Protocol**](#Protocol)
   - [NBS Calibration](#NBS)
   - [Tris Calibration](#Tris)
+  - [Conductivity Calibration](#Conductivity)
 - [**Cleaning and Storage**](#Cleaning_and_Storage)
 - [**References**](#References)
  
@@ -42,20 +43,7 @@ Contents
     1. Rinse the probe in DI and dry with a chem wipe (again avoiding the sensor tip) before placing the probe in the pH 10 solution, and then agitate the probe tip back and forth briefly.
     1. Wait for a stable reading (10.04 at 22-23 &deg; C) then press F3 to Finish calibration.
     1. If you are satisfied with the three calibration values on the summary screen, press F1 to return to the Measurement screen.
-1. Calibrating Conductivity
-    1.  
 
-<a name="Cleaning and Storage"></a> 
-1. Cleaning and Storage
-    1. When you have finished using the meter, thoroughly rinse all probes, especially sensor tips, with DI water.
-    1. Dry probes (avoiding sensor tips) with chem wipes.
-    1. pH probe
-        1. Unscrew the storage container cap from the container, and slide the cap onto the probe shaft, far enough that the sensor tip will be submerged in the storage solution, but not so far that the cap will not full screw onto the container.
-        1. If needed, refill the storage solution.
-        1. Place the probe into the container and screw on the cap.
-        1. Check to make sure the sensor tip is fully submerged.
-        1. **Do not** try to force the sensor tip further into the solution while the cap is screwed on or you may damage the probe.
-    
 <a name="Tris"></a> **Tris Calibration**  
 1. Calibrating pH
     1. pH should be calibrated <48 hours before use.
@@ -83,6 +71,36 @@ Contents
     1. When recording your values in situ, always record the temperature first from the Traceable Thermometer before the stabilized mV value from the Orion.
     1. In tandem with recording the temperature and mV of your water sample, also record the salinity and save three three metrics with your sample ID's in a .csv file with the following column headings (without quotes): "date", "SampleID", "Salinity_lab", "mV", "TempInSitu"
     1. Use the calibration file created above and this in situ file to calculate pH on the Total Scale using the [Tris_pH_Slope.R script](https://github.com/SilbigerLab/Protocols/blob/master/Probe_and_Logger_Protocols/Orion_Multiparameter_Sensor/Scripts/Tris_pH_Slope.R)
+
+<a name = "Conductivity"></a> **Calibrating Conductivity**
+    1. Conductivity should be calibrated <48 hours before use.
+    1. Fill a small clean beaker with DI water, and pour the two calibration solutions (1413 uS/cm and 12.9 mS/cm or 50 mS/cm) into two clean beakers or titration cups, and place near your work station.
+    1. Plug in the conductivity probe (Cond/ATC).
+    1. Turn on the Orion and wait for the measurement screen to appear.
+        1. Make sure the current measurement is for Salt (left) and psu (right).  If not, Either change the Channel (press F3 to swap between probe inputs until you see Salt) or Mode (pressing the Mode button on the meter to swap between measurements using the current Channel's probe until you see psu) until the instrument is reading Salinity.
+    1. Press F1 to select "cal" and go into Calibration settings.  You should see a prompt screen for the meter to read the first calibration solution.
+    1. Follow the prompts to place the probe into the lower calibration solution first (1413 uS/cm).  Wait for the reading to stabilize, and make sure the read solution value matches the calibration solution value.
+    1. Press F2 to accept the value and then to move to the next calibration.
+    1. Place the probe in DI to rinse off the previous solution and wipe until dry with a kim wipe
+    1. Place the probe in the next calibration solution (higher solution).  Wait for the reading to stabilize, and make sure the read solution value matches the calibration solution value.
+    1. Press F2 to accept the value and then finish calibration.
+    1. If you are satisfied with the two calibration values on the summary screen, press F1 to return to the Measurement screen.
+
+<a name="Cleaning and Storage"></a> 
+1. Cleaning and Storage
+    1. When you have finished using the meter, thoroughly rinse all probes, especially sensor tips, with DI water.
+    1. Dry probes (avoiding sensor tips) with chem wipes.
+    1. pH probe
+        1. Unscrew the storage container cap from the container, and slide the cap onto the probe shaft, far enough that the sensor tip will be submerged in the storage solution, but not so far that the cap will not full screw onto the container.
+        1. If needed, refill the storage solution.
+        1. Place the probe into the container and screw on the cap.
+        1. Check to make sure the sensor tip is fully submerged.
+        1. **Do not** try to force the sensor tip further into the solution while the cap is screwed on or you may damage the probe.
+    
+
+
+
+
 
 ***
 <a name="References"></a> **References**
