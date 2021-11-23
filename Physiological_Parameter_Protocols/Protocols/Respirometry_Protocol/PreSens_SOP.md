@@ -110,7 +110,7 @@ If one of your probes
 
 <a name="references"></a> **References**  
 * [Oxygen Dipping Probe DP-PSt7 specifications](https://www.presens.de/products/detail/oxygen-dipping-probe-dp-pst7)
-* [Oxygen Dipping Probe Manual] (https://github.com/SilbigerLab/Protocols/blob/master/Physiological_Parameter_Protocols/Protocols/Respirometry_Protocol/O2%20Dipping%20Probe%20Manual.pdf) 
+* [Oxygen Dipping Probe Manual](https://github.com/SilbigerLab/Protocols/blob/master/Physiological_Parameter_Protocols/Protocols/Respirometry_Protocol/O2%20Dipping%20Probe%20Manual.pdf) 
 * [Pt100 Temperature Sensor specifications](https://www.presens.de/products/detail/pt100-temperature-sensor)
   * [Specification Brochure](#Images/Presens_O2_and_Temp_specs)
 * [Oxygen Optical Sensors and Meters Brochure](https://www.presens.de/fileadmin/user_upload/brochures/190731_cawe_Presens_O2_Broschuere_07-19_dv3_web.pdf)
