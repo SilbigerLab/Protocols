@@ -1,36 +1,25 @@
 # Connecting the Apex Jr. and Apex El to a PC/Mac computer
 
 **Contents:**  
-- [Connecting to Apex Jr.](#connect_apex_jr)  
-  - [Changing computer network settings](#network_settings)  
-    - [PC](#pc)  
-    - [Mac](#mac)  
-- [Connecting to Apex El](#connect_apex_el)  
-  - [Wireless connection to Local Dashboard](#wireless_computer_connection)  
-  - [Link ApexEl to Apex Fusion](#apex_fusion_link)  
-- [Display Module settings](#display_module_settings)  
-- [Accessing the Apex Classic Dashboard](#apex_classic_dashboard)  
-- [Apex set Up and Operating Procedures](#setup_and_sop)
-  - [Materials](#materials)
-  - [Apex Display Configuration](#apex_display_configuration)
-  - [Apex Classic Dashboard (no internet needed)](#classic_dashboard)
-  
-- [References](#references)  
+- PC Computer
+    - [Connecting to Apex Jr.](#pc_apex_jr)  
+    - [Connecting to Apex El](#pc_apex_el)  
+ 
+- Mac Computer
+    - [Connecting to Apex Jr.](#mac_apex_jr)  
+    - [Connecting to Apex El](#mac_apex_el)  
 
-<a name="connect_apex_jr"></a> **Connecting to Apex Jr**  
+- [Using Your Apex: SOP](#using_apex)  
 
-<a name="network_settings"></a> **Changing Computer Network Settings**  
+<a name="pc_apex_jr"></a> **Connecting PC to Apex Jr**  
 
-1. Plug the Apex Jr’s temperature probe into the temperature connector on the base unit, and the Apex Display into either aquabus port.  Connect any other compatible probes in the additional port.
-1. Plug an Ethernet cable into the Ethernet jack on the Jr base module, and plug the other end of the cable into an unused port on your router (or computer if establishing a LAN).  Once the Ethernet connection has been established, plug the Apex Jr into a power outlet
-  - **The Ethernet must be connected before powering on**
-  - Note: The Apex should be plugged into a router for initial configuration.
-1. If your computer network is already set up for the Apex, skip to the [Display Module network settings](#display_module_settings)
-
-<a name="pc"></a> **PC Network Settings:**  
-
-- Connect the Apex to your computer with an Ethernet Cable
-  - For Windows 10 (on the Yoga)
+1. Turning on the Apex
+    1. Plug the Apex Jr’s temperature probe into the temperature connector on the base unit, and the Apex Display into either aquabus port.  Connect any other compatible probes in the additional port.
+    2. Plug an Ethernet cable into the Ethernet jack on the Jr base module, and plug the other end of the cable into your computer to establish a LAN connection (or an unused port on your router to connect via internet).  
+    3. Plug the Apex Jr into a power outlet.
+        - **The Ethernet must be connected before powering on**
+        - Note: The Apex should be plugged into a router for initial configuration.
+2. Change computer network settings (Windows 10)
     1. Right click the network Icon in the lower right corner of the dashboard task bar (small wifi symbol), and click Open Network and Internet Settings.
     1. Click on Change Adapter Options
     1. Find the Local Area Connection/Ethernet and right click
@@ -44,97 +33,218 @@
       Default Gate: 10.0.2.1  
     1. Click OK
     1. Click OK in Local Area Connection Properties
+    1. Other systems:
+        - For Windows 7 and Windows Server 2008 R2, do one of the following, and then follow steps to change IP address as shown above:
+            1. In Control Panel, in Adjust your computer’s settings, when View by is set to Category, click Network and Internet, and then click Network and Sharing Center.
+            2. In Control Panel, in Adjust your computer’s settings, when View by is set to either Large icons or Small icons, click Network and Sharing Center.
+        - For Windows Vista and Windows Server 2008, do one of the following, and then follow steps to change IP address as shown above:
+            1. If you use the Control Panel Home view, under Network and Internet section, click View network status and tasks.
+            2. If you use the Classic View, double-click Network and Sharing Center.
+    1. Optional: If you think the computer may not be recognizing the Apex, check connection status by downloading the Apex Browse Utilities Tool.  There is a Windows PC and Mac version.
+        - PC: http://www.neptunesystems.com/ApexBrowse_pc.zip
+3. Connect PC to Apex Jr by ethernet cable  
+    1. Change Apex network settings using the Display Module
+        1. Press the center button to enter the main menu. Use the arrow keys to navicate, and press the center button again to select
+        1. System => Net Setup => turn DHCP OFF
+        1. Go to IP Address in the same menu
+        1. Change the IP address to 10.0.2.75 (for PC)
+        1. Press OK
+        1. Go to Gateway menu
+        1. Change Gateway to 10.0.2.1 (for PC)
+        1. Press OK
+        1. In the same menu, select Restart
+        1. Once the above settings are preset for the computer and apex, any future connections should be as simple as connecting the apex and computer via Ethernet cable, then turning on the apex
+    1. Access Apex control through your internet browswer
+        1. Open the internet web browser page
+        1. Type into the address bar http://10.0.2.75 (for PC)
+        1. Enter the default Username: admin and Password: 1234
+        1. Begin controlling your Apex from your computer. See [Using Your Apex: SOP](#using_apex) for more information on the Apex procedures and pogramming.
 
-- For Windows 7 and Windows Server 2008 R2, do one of the following, and then follow steps to change IP address as shown above:
-  - In Control Panel, in Adjust your computer’s settings, when View by is set to Category, click Network and Internet, and then click Network and Sharing Center.
-  - In Control Panel, in Adjust your computer’s settings, when View by is set to either Large icons or Small icons, click Network and Sharing Center.
+<a name="pc_apex_el"></a> **Connecting PC to Apex El**  
 
-- For Windows Vista and Windows Server 2008, do one of the following, and then follow steps to change IP address as shown above:
-  - If you use the Control Panel Home view, under Network and Internet section, click View network status and tasks.
-  - If you use the Classic View, double-click Network and Sharing Center.
-
-Optional: If you think the computer may not be recognizing the Apex, check connection status by downloading the Apex Browse Utilities Tool.  There is a Windows PC and Mac version.
-- PC: http://www.neptunesystems.com/ApexBrowse_pc.zip
-- Mac: http://www.neptunesystems.com/ApexBrowse_mac.zip
-
-<a name="mac"></a> **Mac Network Settings:**  
-
-1. Connect the Apex to your computer with an Ethernet Cable
-1. Open System Preferences => Network
-1. Select the Ethernet connection
-1. Change Configure IPv4 to Manually
-1. Write in the following:  
-  IP Address: 192.168.2.75  
-  Subnet Mask: 255.255.255.0  
-  Router: 192.168.2.1  
-1. Click Apply 
-
-<a name="connect_apex_el"></a> **Connecting to Apex El**
-
-1. Connect the ApexEL (base unit) to the Energy Bar (EB8):
-  1. Connect the AquaBus cable into one of the two AquaBus ports on the base unit
-  1. Connect the other end of the cable into one of the three AquaBus ports on the EB8
-  - **Do not plug in Ethernet or any other modules including the Display Module at this time**
-1. Plug in the EB8 to a power outlet
-  1. The base unit status light will go from Green > Purple > Green > Orange > Blue
-  1. The EB8 status light will flash rapidly while establishing communications with the base, then will turn solid Orange
-1. LED State and Status
-  - Off: Aquabus is not powered
-  - Blinking Yellow: Aquabus is in boot loader mode and has not been configured by the Apex
-  - Solid Yellow: Aquabus is in boot loader mode and has been configured by the Apex
-  - Blinking Green: Aquabus is running but has not received commands from the Apex.   Outlets are in Fallback mode
-  - Solid Green: Aquabus is running and is receiving commands from the Apex base unit
-
-<a name="wireless_computer_connection"></a> **Wireless connection to the Apex Local Dashboard**  
-
-1. Wait for the light on the base to turn Blue (indicating it is ready for a wireless connection)
-    1. If the base unit light turns solid Orange instead of solid Blue, use a pin to press Reset on the unit for 10 seconds or until you see a Blue light.  Release the reset and let the Apex run through the lights until it stabilizes on Blue.
-1. PC:  
-    1. Click on the network settings icon in the bottom right hand corner of your screen  
-1. Mac:  
+1. Turning on the Apex
+    1. Connect the ApexEL (base unit) to the Energy Bar (EB8):
+        1. Connect the AquaBus cable into one of the two AquaBus ports on the base unit
+        1. Connect the other end of the cable into one of the three AquaBus ports on the EB8
+            - **Do not plug in Ethernet or any other modules including the Display Module at this time**
+    1. Plug in the EB8 to a power outlet
+        1. The base unit status light will go from Green > Purple > Green > Orange > Blue
+        1. The EB8 status light will flash rapidly while establishing communications with the base, then will turn solid Orange
+    1. LED State and Status
+        - Off: Aquabus is not powered
+        - Blinking Yellow: Aquabus is in boot loader mode and has not been configured by the Apex
+        - Solid Yellow: Aquabus is in boot loader mode and has been configured by the Apex
+        - Blinking Green: Aquabus is running but has not received commands from the Apex.   Outlets are in Fallback mode
+        - Solid Green: Aquabus is running and is receiving commands from the Apex base unit
+2. Choose connection mode:  
+   [Connect PC to Apex El by ethernet cable](#pc_el_ethernet)  
+   [Connect PC to Apex El on wifi](#pc_el_wifi)  
+3. Connect PC to Apex EL by ethenet cable <a name="pc_el_ethernet"></a>  
+    1. Change computer network settings (Windows 10)
+        1. Right click the network Icon in the lower right corner of the dashboard task bar (small wifi symbol), and click Open Network and Internet Settings.
+        1. Click on Change Adapter Options
+        1. Find the Local Area Connection/Ethernet and right click
+        1. Go to Properties
+        1. Double click on Internet protocol Version 4(TCP/IPv4)
+            1. If nothing happens click Properties in the new window
+        1. Change to ‘Use the Following IP address’
+        1. Write in the following:  
+           IP Address: 10.0.2.150  
+           Subnet Mask: 255.255.255.0  
+           Default Gate: 10.0.2.1  
+        1. Click OK
+        1. Click OK in Local Area Connection Properties
+        1. Other systems:
+            - For Windows 7 and Windows Server 2008 R2, do one of the following, and then follow steps to change IP address as shown above:
+                1. In Control Panel, in Adjust your computer’s settings, when View by is set to Category, click Network and Internet, and then click Network and Sharing Center.
+                2. In Control Panel, in Adjust your computer’s settings, when View by is set to either Large icons or Small icons, click Network and Sharing Center.
+            - For Windows Vista and Windows Server 2008, do one of the following, and then follow steps to change IP address as shown above:
+                1. If you use the Control Panel Home view, under Network and Internet section, click View network status and tasks.
+                2. If you use the Classic View, double-click Network and Sharing Center.
+        1. Optional: If you think the computer may not be recognizing the Apex, check connection status by downloading the Apex Browse Utilities Tool.  There is a Windows PC and Mac version.
+            - PC: http://www.neptunesystems.com/ApexBrowse_pc.zip
+    1. Change Apex network settings using the Display Module
+        1. Press the center button to enter the main menu. Use the arrow keys to navicate, and press the center button again to select
+        1. System => Net Setup => turn DHCP OFF
+        1. Go to IP Address in the same menu
+        1. Change the IP address to 10.0.2.75 (for PC)
+        1. Press OK
+        1. Go to Gateway menu
+        1. Change Gateway to 10.0.2.1 (for PC)
+        1. Press OK
+        1. In the same menu, select Restart
+        1. Once the above settings are preset for the computer and apex, any future connections should be as simple as connecting the apex and computer via Ethernet cable, then turning on the apex
+    1. Access Apex control through your internet browswer
+        1. Open the internet web browser page
+        1. Type into the address bar http://10.0.2.75 (for PC)
+        1. Enter the default Username: admin and Password: 1234
+        1. Begin controlling your Apex from your computer. See [Using Your Apex: SOP](#using_apex) for more information on the Apex procedures and pogramming.
+4. Connect PC to Apex EL on wifi <a name="pc_el_wifi"></a>  
+    1. Wait for the light on the base to turn Blue (indicating it is ready for a wireless connection)
+        1. If the base unit light turns solid Orange instead of solid Blue, use a pin to press Reset on the unit for 10 seconds or until you see a Blue light.  Release the reset and let the Apex run through the lights until it stabilizes on Blue.
     1. Click the wifi icon in the upper right corner of your screen
-1. Select the Wi-Fi network called Apex Setup_### (where ### is the ApexEL’s serial number), select Connect
-    1. It’s recommended to not select the “connect automatically” option
-1. Once connected, type into browser http://172.16.0.1 or http://apex.local
-1. Login with Username: admin and Password: 1234 and select your local wifi.  Enter your local wifi’s password and press Connect
-    1. Example: At Gump Station in Mo'orea: select wifi Gump Guest #8 (or whichever # is strongest in your location around the station) with Password eD7hI0yPht1K
-1. Wait for the base light to turn Orange (light will turn from Off > Green > Purple > Green > Solid Orange), then in networks select your local wifi (if this does not happen automatically in a few seconds)
-1. Close that browser window.  Open a new window, and again type into browser http://172.16.0.1 or http://apex.local
+    1. Select the Wi-Fi network called Apex Setup_### (where ### is the ApexEL’s serial number), select Connect
+        1. It’s recommended to not select the “connect automatically” option
+    1. Once connected, type into browser http://apex.local
+    1. Login with Username: **admin** and Password: **1234**
+    1. Select your local wifi.  Enter your local wifi’s password and press Connect
+        1. Example: At Gump Station in Mo'orea: select wifi Gump Guest #8 (or whichever # is strongest in your location around the station) with Password eD7hI0yPht1K
+    1. Wait for the base light to turn Orange (light will turn from Off > Green > Purple > Green > Solid Orange), then in networks select your local wifi (if this does not happen automatically in a few seconds)
+    1. Close that browser window.  
+    1. To access the Apex from the Local Dashboard, open a new window, and again type into browser http://apex.local
+    1. Or to access the Apex from ApexFusion:
+        1. Type into browser http://www.apexfusion.com
+        1. If not already logged in, click Get Control on the Fusion Home Page to access the login screen.
+        1. If you haven’t already created an account, click Create Account and follow the steps through Fusion
+        1. Once logged in, you will be directed to a Home Page with your Linked Apex List
+        1. To link the Apex for the first time, click the upper left Link Apex icon (image of a link chain).  You will only need to do this once, after which your Apex will then always be available in your List
+            1. To Link Apex to Fusion from the Apex Dashboard: Choose Link to Fusion on your Apex Dashboard
+            1. To Link Apex to Fusion from the Apex Display Module: Go to Main Menu by pressing the Center Button on the Module, select ApexFusion: Link using the Center Button.
+        1. You’ll be provided a token ID
+        1. Within 10 minutes, enter that token in the box provided to link your Apex to Apex Fusion and click Link Apex
+        1. You should now see your apex in your Apex List
+        1. Select your Apex from your Apex List and begin controlling from your computer
+        1. Begin controlling your Apex from your computer. See [Using Your Apex: SOP](#using_apex) for more information on the Apex procedures and pogramming.
 
-<a name="apex_fusion_link"></a> **Link ApexEL on Apex Fusion:**  
 
-1. Type into browser http://www.apexfusion.com
-1. If not already logged in, click Get Control on the Fusion Home Page to access the login screen.
-1. If you haven’t already created an account, click Create Account and follow the steps through Fusion
-1. Once logged in, you will be directed to a Home Page with your Linked Apex List
-1. To link the Apex for the first time, click the upper left Link Apex icon (image of a link chain).  You will only need to do this once, after which your Apex will then always be available in your List
-    1. To Link Apex to Fusion from the Apex Dashboard: Choose Link to Fusion on your Apex Dashboard
-    1. To Link Apex to Fusion from the Apex Display Module: Go to Main Menu by pressing the Center Button on the Module, select ApexFusion: Link using the Center Button.
-1. You’ll be provided a token ID
-1. Within 10 minutes, enter that token in the box provided to link your Apex to Apex Fusion and click Link Apex
-1. You should now see your apex in your Apex List
-1. Select your Apex from your Apex List and begin controlling from your computer
+<a name="mac_apex_jr"></a> **Connecting Mac to Apex Jr**  
 
-<a name="display_module_settings"></a> **Apex Display Module Network Settings**  
+1. Turning on the Apex
+    1. Plug the Apex Jr’s temperature probe into the temperature connector on the base unit, and the Apex Display into either aquabus port.  Connect any other compatible probes in the additional port.
+    2. Plug an Ethernet cable into the Ethernet jack on the Jr base module, and plug the other end of the cable into your computer to establish a LAN connection (or an unused port on your router to connect via internet).  
+    3. Plug the Apex Jr into a power outlet.
+        - **The Ethernet must be connected before powering on**
+        - Note: The Apex should be plugged into a router for initial configuration.
+2. Change computer network settings (Mac iOS)
+    1. Connect the Apex to your computer with an Ethernet Cable
+    1. Open System Preferences => Network
+    1. Select the Ethernet connection
+    1. Change Configure IPv4 to Manually
+    1. Write in the following:  
+       IP Address: 192.168.2.75  
+       Subnet Mask: 255.255.255.0  
+       Router: 192.168.2.1  
+    1. Click Apply 
+    1. Optional: If you think the computer may not be recognizing the Apex, check connection status by downloading the Apex Browse Utilities Tool.  There is a Windows PC and Mac version.
+        - Mac: http://www.neptunesystems.com/ApexBrowse_mac.zip
 
-1. System => Net Setup => turn DHCP OFF by pressing the center button
-1. Go to IP Address in the same menu
-1. Change the IP address to 10.0.2.75 (for PC) or 192.168.2.50 (for Mac)
-1. Press OK
-1. Go to Gateway menu
-1. Change Gateway to 10.0.2.1 (for PC) or 192.168.2.1 (for Mac)
-1. Press OK
-1. In the same menu, select Restart
+<a name="mac_apex_el"></a> **Connecting Mac to Apex El**  
 
-<a name="apex_classic_dashboard"></a> **Accessing the Apex Classic Dashboard**  
-Once the above settings are preset for the computer and apex, any future connections should be as simple as connecting the apex and computer via Ethernet cable, then turning on the apex
+1. Turning on the Apex
+    1. Connect the ApexEL (base unit) to the Energy Bar (EB8):
+        1. Connect the AquaBus cable into one of the two AquaBus ports on the base unit
+        1. Connect the other end of the cable into one of the three AquaBus ports on the EB8
+            - **Do not plug in Ethernet or any other modules including the Display Module at this time**
+    1. Plug in the EB8 to a power outlet
+        1. The base unit status light will go from Green > Purple > Green > Orange > Blue
+        1. The EB8 status light will flash rapidly while establishing communications with the base, then will turn solid Orange
+    1. LED State and Status
+        - Off: Aquabus is not powered
+        - Blinking Yellow: Aquabus is in boot loader mode and has not been configured by the Apex
+        - Solid Yellow: Aquabus is in boot loader mode and has been configured by the Apex
+        - Blinking Green: Aquabus is running but has not received commands from the Apex.   Outlets are in Fallback mode
+        - Solid Green: Aquabus is running and is receiving commands from the Apex base unit
+2. Choose connection mode:  
+   [Connect Mac to Apex El by ethernet cable](#mac_el_ethernet)  
+   [Connect Mac to Apex El on wifi](#mac_el_wifi)  
+3. Connect Mac to Apex EL by ethenet cable <a name="mac_el_ethernet"></a>  
+    1. Change computer network settings (Mac iOS)
+        1. Connect the Apex to your computer with an Ethernet Cable
+        1. Open System Preferences => Network
+        1. Select the Ethernet connection
+        1. Change Configure IPv4 to Manually
+        1. Write in the following:  
+           IP Address: 192.168.2.75  
+           Subnet Mask: 255.255.255.0  
+           Router: 192.168.2.1  
+        1. Click Apply 
+        1. Optional: If you think the computer may not be recognizing the Apex, check connection status by downloading the Apex Browse Utilities Tool.  There is a Windows PC and Mac version.
+            - Mac: http://www.neptunesystems.com/ApexBrowse_mac.zip
+    1. Change Apex network settings using the Display Module
+        1. Press the center button to enter the main menu. Use the arrow keys to navicate, and press the center button again to select
+        1. System => Net Setup => turn DHCP OFF
+        1. Go to IP Address in the same menu
+        1. Change the IP address to 192.168.2.50 (for Mac)
+        1. Press OK
+        1. Go to Gateway menu
+        1. Change Gateway to 192.168.2.1 (for Mac)
+        1. Press OK
+        1. In the same menu, select Restart
+        1. Once the above settings are preset for the computer and apex, any future connections should be as simple as connecting the apex and computer via Ethernet cable, then turning on the apex
+    1. Access Apex control through your internet browswer
+        1. Open the internet web browser page
+        1. Type into the address bar http://192.168.2.50 (for Mac)
+        1. Enter the default Username: admin and Password: 1234
+        1. Begin controlling your Apex from your computer. See [Using Your Apex: SOP](#using_apex) for more information on the Apex procedures and pogramming.
+4. Connect Mac to Apex EL on wifi <a name="mac_el_wifi"></a>  
+    1. Wait for the light on the base to turn Blue (indicating it is ready for a wireless connection)
+        1. If the base unit light turns solid Orange instead of solid Blue, use a pin to press Reset on the unit for 10 seconds or until you see a Blue light.  Release the reset and let the Apex run through the lights until it stabilizes on Blue.
+    1. Click the wifi icon in the upper right corner of your screen
+    1. Select the Wi-Fi network called Apex Setup_### (where ### is the ApexEL’s serial number), select Connect
+        1. It’s recommended to not select the “connect automatically” option
+    1. Once connected, type into browser http://172.16.0.1 (the numers refer to the IP address of the Apex that you configured)
+    1. Login with Username: **admin** and Password: **1234**
+    1. Select your local wifi.  Enter your local wifi’s password and press Connect
+        1. Example: At Gump Station in Mo'orea: select wifi Gump Guest #8 (or whichever # is strongest in your location around the station) with Password eD7hI0yPht1K
+    1. Wait for the base light to turn Orange (light will turn from Off > Green > Purple > Green > Solid Orange), then in networks select your local wifi (if this does not happen automatically in a few seconds)
+    1. Close that browser window.  
+    1. To access the Apex from the Local Dashboard, open a new window, and again type into browser http://172.16.0.1
+    1. Or to access the Aped from ApexFusion:
+        1. Type into browser http://www.apexfusion.com
+        1. If not already logged in, click Get Control on the Fusion Home Page to access the login screen.
+        1. If you haven’t already created an account, click Create Account and follow the steps through Fusion
+        1. Once logged in, you will be directed to a Home Page with your Linked Apex List
+        1. To link the Apex for the first time, click the upper left Link Apex icon (image of a link chain).  You will only need to do this once, after which your Apex will then always be available in your List
+            1. To Link Apex to Fusion from the Apex Dashboard: Choose Link to Fusion on your Apex Dashboard
+            1. To Link Apex to Fusion from the Apex Display Module: Go to Main Menu by pressing the Center Button on the Module, select ApexFusion: Link using the Center Button.
+        1. You’ll be provided a token ID
+        1. Within 10 minutes, enter that token in the box provided to link your Apex to Apex Fusion and click Link Apex
+        1. You should now see your apex in your Apex List
+        1. Select your Apex from your Apex List and begin controlling from your computer
+        1. Begin controlling your Apex from your computer. See [Using Your Apex: SOP](#using_apex) for more information on the Apex procedures and pogramming.
 
-1. Open the internet web browser page
-1. Type into the address bar http://10.0.2.75 (for PC) or http://192.168.2.50 (for Mac)
-1. Enter the default Username: admin and Password: 1234
-1. Begin controlling your Apex from your computer
 
-<a name="setup_and_sop"></a> **Apex set up and operating procedures**
+<a name="using_apex"></a> **Using Your Apex: Standard Operating Procedures**
 
 <a name="materials"></a> **Materials:**
 - Apex base unit
