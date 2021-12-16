@@ -2,7 +2,7 @@
 
 Respirometry with temperature control, using the Neptune Apex and InkBird controllers, Oxy-10, and PreSens Measurement software
 
-* [Respirometer Manual](Respirometer_SOP.md)
+* [Respirometer Setup and Procedures](Respirometer_SOP.md)
 
 * [Oxy-10 and PreSens](PreSens_SOP.md)
 
