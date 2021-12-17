@@ -116,22 +116,22 @@ If using the respirometer at more than one temperature
 1. While you wait for the temperature in your bath water to stabilize, collect water samples, if needed for your data set, or start [preparing the chambers](#Chambers) with the new source water using the same steps above.
 
 <a name=Changeover_with_temp_rampup></a>
-1. Follow these steps for thorough changeover procedures during respiration with temperature ramp-ups:
+**Follow these steps for thorough changeover procedures during respiration with temperature ramp-ups:**
 
-    1. Stop each channel individually and write down the stop time
-    2. On the Apex Dashboard, edit the temperature programs for the next temperature treatment to bring water bath to target temp
-    3. In PreSens, export the last run's data files in the desired folder location. Open one of the csv files to make sure they exported correctly (is there data?)
-    4. Assign the next run's files to each channel
-    5. In RStudio Terminal:
-        - git pull
-        - git add .
-        - git commit -a -m "some commit message here"
-        - git push
-    6. As temperature nears target in the water bath, use the digital thermometer to spot check the temperature and Calibrate the Apex 'tmp' probe to the actual temperature
-    7. Once the water bath is at or near the target, fill the chambers in a filler bath already at target temperature and put chambers on the respirometry stand with probes in preparation
-    8. Once all chambers are placed, with stir bars going, no bubbles, and at target temperature, start the run for each individual channel at write down the time (turn off the light if necessary)
-    9. After starting the run, change the temperature setting on the inkbird to the next target temperature to begin bringing up the filler bath temp in preparation for the next run
-    10. If needed, in the last few minutes of the current run, move over the 800W heater from the water bath to assist in temperature ramp up in the filler bath. Make sure you move the 800W heater back to the water bath once the run has ended so the water bath temperature can ramp up quickly
+1. Stop each channel individually and write down the stop time.
+2. On the Apex Dashboard, edit the temperature programs for the next temperature treatment to bring water bath to target temp.
+3. In PreSens, export the last run's data files in the desired folder location. Open one of the csv files to make sure they exported correctly (is there data?).
+4. Assign the next run's files to each channel.
+5. In RStudio Terminal:
+    - git pull
+    - git add .
+    - git commit -a -m "relevant commit message here"
+    - git push
+6. As temperature nears target in the water bath, use the digital thermometer to spot check the temperature and Calibrate the Apex 'tmp' probe to the actual temperature.
+7. Once the water bath is at or near the target, fill the chambers in a filler bath (chamber source water) already at target temperature and put chambers on the respirometry stand with probes in preparation.
+8. Once all chambers are placed, with stir bars going, no bubbles, and at target temperature, start the run for each individual channel at write down the time (turn off the light if necessary).
+9. After starting the run, change the temperature setting on the inkbird to the next target temperature to begin bringing up the filler bath temp in preparation for the next run.
+10. If needed, in the last few minutes of the current run, move over the 800W heater from the water bath to assist in temperature ramp up in the filler bath. Make sure you move the 800W heater back to the water bath once the run has ended so the water bath temperature can ramp up quickly.
 
 <a name="Removing"></a> **Removing Chambers from Respirometer**
 
