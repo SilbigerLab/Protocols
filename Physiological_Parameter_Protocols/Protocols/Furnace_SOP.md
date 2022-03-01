@@ -81,12 +81,13 @@ Single Setpoint Mode allows the user to select a single target temperature setpo
 Programming Mode allows the user to enter a series of setpoint and time values.The controller will follow these sequences of instructions to energize the heating equipment until the entire sequence is complete.
 
 1. Accessing the Programming Menu
-    1. Assure the indicators beside "RUN" and "L" on the controller display are off. If either indicator is illuminated, press and hold the "SET/ENT" button until the display shows "modE", Select “rES" in the lower display with the "arrow" buttons. Press and release the “SET/ENT” button once.
-    1. Press the "SET/ENT" button for 3 seconds to display "modE" in the upper display and "rES" (Reset) in the lower display.
-    1. Press and release “SET/ENT” until "LoC" is displayed. Make sure the display below "LoC" is "0" (zero). If it is not "0", use “DOWN ARROW” to select ''0'' and press and release "SET/ENT” button to register the change to "0".
-    1. Press and release the "SET/ENT" button until "PrG" is displayed.
-    1. At "PrG" display, press the “UP ARROW” to make the lower display "1".
-    1. Press and release the "SET/ENT" button once to enter the programming menu.
+    1. Assure the indicators beside "RUN" and "L" on the controller display are off. If either indicator is illuminated, press and hold the "SET/ENT" button until the display shows "modE", 
+    2. Select “rES" in the lower display with the "arrow" buttons. Press and release the “SET/ENT” button once.
+    3. Press the "SET/ENT" button for 3 seconds to display "modE" in the upper display and "rES" (Reset) in the lower display.
+    4. Press and release “SET/ENT” until "LoC" is displayed. Make sure the display below "LoC" is "0" (zero). If it is not "0", use “DOWN ARROW” to select ''0'' and press and release "SET/ENT” button to register the change to "0".
+    5. Press and release the "SET/ENT" button until "PrG" is displayed.
+    6. At "PrG" display, press the “UP ARROW” to make the lower display "1".
+    7. Press and release the "SET/ENT" button once to enter the programming menu.
 1. Entering Program Parameters
     1. The first display is the Start Set Point parameter, shown as "SSP" in the upper display. The value assigned to SSP is usually the current room temperature, 25 °C.
     1. If the value is not 25, use the arrow buttons to select "25" (or your desired start set point parameter) in the below "SSP" display, then press and release the "SET/ENT" button twice to enter this new value for "SSP", then press and release the "SET/ENT" button once to advance to the "StC" display.
