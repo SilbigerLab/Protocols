@@ -1,7 +1,7 @@
 # Standard Protocol for the ThermoFisher Box Furnace
 
 Original: 20190530  
-Last Revised: 20190530  
+Last Revised: 20220302 
 
 Contents  
 - [**Product Information**](#Product_Info)
