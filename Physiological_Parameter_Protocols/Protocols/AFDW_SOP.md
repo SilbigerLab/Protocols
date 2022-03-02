@@ -16,15 +16,16 @@ Contents
     1. 	Analytical balance (0.0001 g)
 
 2. <a name="Protocol"></a> **Protocol**
-    1.  Obtain aluminum weigh pans to be used in AFDW determination
-    1.  Label each pan with an ID number. May use a spatula to scrape a # into bottom of pan, or use pencil. Marker WILL burn
+    1.  Make sure desiccant in lab is blue in color. If pink/purple, put in *drying* oven at 60°C for a few hours using alumnium foil tray or until the material is blue again. 
+    2.  Obtain aluminum weigh pans to be used in AFDW determination
+    3.  Label each pan with an ID number. May use a spatula to scrape a # into bottom of pan, or use pencil. Marker WILL burn
     	off!
     1.  After labeling, burn in the muffle furnace at 450°C for 4-6 h (some papers use 500°C for 4 or 6). After, remove from
     	the muffle furnace, place in a glass desiccator and transport to the scale room.
 	** Take care after this point that pans are not touched without gloves on, and that pans are ALWAYS sat on burned
 	aluminum foil on tabletops and in ovens/furnaces/scales **
     1.  Record weight of burned pans on 4-decimal place scale (= “C” in Table 1.)
-    1.  Keep pans in desiccator until used
+    1.  Keep pans in desiccator until used.
     1.  Pipette three triplicate 1mL blastate samples into pre-burned pans, dry in drying oven at 60°C for at least 24 h. 
     	Should be “at constant weight”. Preliminary steps may be needed to ensure samples have reached a constant weight. 
 	Leaving samples in drying oven longer than 24 h may be necessary, and is likely not detrimental.
