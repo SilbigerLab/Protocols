@@ -1,7 +1,7 @@
 # Standard protocol for ash-free dry weight 
 
 Original: 20190131
-Last Revised: 20180131
+Last Revised: 20220302
 
 Contents
 - [**Materials**](#Materials)  
@@ -17,11 +17,12 @@ Contents
 
 2. <a name="Protocol"></a> **Protocol**
     1.  Make sure desiccant in lab is blue in color. If pink/purple, put in *drying* oven at 60°C for a few hours using alumnium foil tray or until the material is blue again. 
-    2.  Obtain aluminum weigh pans to be used in AFDW determination
-    3.  Label each pan with an ID number. May use a spatula to scrape a # into bottom of pan, or use pencil. Marker WILL burn
+    1.  Obtain aluminum weigh pans to be used in AFDW determination
+    1.  Label each pan with an ID number. May use a spatula to scrape a # into bottom of pan, or use pencil. Marker WILL burn
     	off!
-    1.  After labeling, burn in the muffle furnace at 450°C for 4-6 h (some papers use 500°C for 4 or 6). After, remove from
-    	the muffle furnace, place in a glass desiccator and transport to the scale room.
+    1.  After labeling, burn in the muffle furnace at 450°C for 4-6 h (some papers use 500°C for 4 or 6). 
+    1.  After 4-6 h, reduce temperature to ~ 100°C by opening up the furnance vent and powering down the system. You can also periodically open the door to teh furnance if needed. This will take ~ 1 h. 
+    1.  After a cooldown period, remove from the muffle furnace using metal tongs and place in directly in a glass desiccator and transport to the scale room.
 	** Take care after this point that pans are not touched without gloves on, and that pans are ALWAYS sat on burned
 	aluminum foil on tabletops and in ovens/furnaces/scales **
     1.  Record weight of burned pans on 4-decimal place scale (= “C” in Table 1.)
