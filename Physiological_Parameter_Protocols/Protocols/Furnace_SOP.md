@@ -37,7 +37,7 @@ Precautions
  * Never stand in front of an open furnace
  * Do not allow the load to touch the furnace walls
  * Use tongs to insert and remove furnace load
- * Do not transfer items to plastic or glassware after removal from furnance.
+ * Do not transfer items to plastic or glassware after removal from furnance
  
 <a name="Startup_Protocol"></a> **Startup Protocol**  
 1. Adjust the vent plug
