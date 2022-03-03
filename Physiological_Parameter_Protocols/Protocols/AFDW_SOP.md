@@ -20,7 +20,7 @@ Contents
     1.  Obtain aluminum weigh pans to be used in AFDW determination
     1.  Label each pan with an ID number. May use a spatula to scrape a # into bottom of pan, or use pencil. Marker WILL burn
     	off!
-    1.  After labeling, burn in the muffle furnace at 450°C for 4-6 h (some papers use 500°C for 4 or 6). 
+    1.  After labeling, stack the trays and note/draw diagram of how they are placed in the furnance in case labels burn off. Place in the muffle furnace at 450°C for 4-6 h (some papers use 500°C for 4 or 6). 
     1.  After 4-6 h, reduce temperature to ~ 100°C before transfering items by opening up the furnance vent and powering down the system. You can also periodically open the door to teh furnance if needed. This will take ~ 1 h. 
     1.  After a cooldown period, remove from the muffle furnace using metal tongs and place in directly in a glass desiccator and transport to the scale room.
 	** Take care after this point that pans are not touched without gloves on, and that pans are ALWAYS sat on burned
