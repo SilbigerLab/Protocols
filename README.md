@@ -51,6 +51,12 @@
 
 [UV 2450 Spectrophotometer Protocol (Mo'orea and Polyp Lab)](UV_2450_Spectrophotometer/UV_2450_SpecSOP.md)  
 
+## Mo'orea Guides
+[Private Repository for navigating Mo'orea travel](https://github.com/SilbigerLab/Student_Lab_Guide/tree/master/Moorea_Guide)
+
+## Student Resources
+[Private Repository with guides and information for students navigating a CSUN Biology Masters degree program](https://github.com/SilbigerLab/Student_Lab_Guide)
+
 ## Reference Manuals  
 * [Box Furnace](References_and_Manuals/BF51800_Box_Furnace_Manual)
 * [RAD7 and RAD aqua](References_and_Manuals/RAD7_and_RADaqua_Manual)
