@@ -56,9 +56,9 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
   
 <a name="SAScalibration"></a> **SAS Calibration**
 
-*Why: Some motors are faster than others. This shows the water volume each pump motor pumps within the calibration time with the current SAS configuration. May be easier with two people*
+*Why: Some motors are faster than others. This shows the water volume each pump motor pumps within the calibration time (10 seconds) with the current SAS configuration. May be easier with two people*
 1. Navigate to <PUMPCAL> menu and see what mL the pump has previously calibrated to 
-1. Grab a 15-25 mL graduated cylinder depending on previous calibration
+1. Grab a 25-100 mL graduated cylinder depending on previous calibration
 1. Place input tube into water and output tube into graduated cylinder for Pump A
 1. Navigate to <RUNCAL> and select Start for Pump A
 1. Hold tube in inflow and outflow for the calibration time and see how much mL in the graduated cylinder
