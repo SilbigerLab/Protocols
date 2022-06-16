@@ -40,6 +40,7 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 
   
 <a name="SASsetup"></a> **SAS setup** 
+
 *When not in use, keep lying in horizontal position. You can prepare SAS 48 hours ahead of deployment. Do not put fresh batteries in before the 48 hour mark. Use different batteries for calibration and put a fresh set of batteries in for deployment.* 
 1. Remove screws, loosening each one a little and moving on to the next in a circular motion so as not to crack the screen. Remove plastic screen and gently lift out inner compartment. 
 2. Remove battery packs, load batteries, and plug packs into sampler. Make sure to plug battery pack into compartment #1 BEFORE compartment #2. 
@@ -54,6 +55,7 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 
   
 <a name="SAScalibration"></a> **SAS Calibration**
+
 *Why: Some motors are faster than others. This shows the water volume each pump motor pumps within the calibration time with the current SAS configuration. May be easier with two people*
 1. Navigate to <PUMPCAL> menu and see what mL the pump has previously calibrated to 
 1. Grab a 15-25 mL graduated cylinder depending on previous calibration
