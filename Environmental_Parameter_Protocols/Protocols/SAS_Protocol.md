@@ -7,7 +7,7 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 
 **Contents**
 - [**Materials**](#Materials) 
-- [**General Protocol**](#GeneralProtocol) 
+- [**To set up the SAS for deployment main tasks**](#GeneralProtocol) 
 - [**SAS setup**](#SASsetup)
 - [**Sample Bag Attachment & Deployment**](#SampleBagAttachment)
 - [**Reminders**](#Reminders)
@@ -26,17 +26,17 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 1. Carabiners
 
 
-<a name="GeneralProtocol"></a> **General Protocol** 
-To set up the SAS for deployment:
-Clean with Q-tip to remove dust/particles and use silicone lube on motor sides and tubing
-Clean top section with Q-tip to remove dust/particles and use silicone lube for o-ring on top of SAS
-Set SAS time and sampling time for both pumps
-Calibrate both pumps
-Connect outflow tubing to Tedlar bag
-Replace with fresh batteries
-Double check main screen status menu: check if the time and date is right, sample mode, volume, and batteries
-If battery voltage is below 11V changes batteries
-Initiate to put the SAS to sleep
+<a name="GeneralProtocol"></a> **To set up the SAS for deployment main tasks** 
+To set up the SAS for deployment main tasks
+1. Clean with Q-tip to remove dust/particles and use silicone lube on motor sides and tubing
+1. Clean top section with Q-tip to remove dust/particles and use silicone lube for o-ring on top of SAS
+1. Set SAS time and sampling time for both pumps
+1. Calibrate both pumps
+1. Mark outflow tubing or connect outflow tubing directly to Tedlar bag
+1. Replace with fresh batteries after calibration
+1. Double check main screen status menu: check if the time and date is right, sample mode, volume, and batteries
+  1. If battery voltage is below 11V changes batteries
+1. Initiate to put the SAS to sleep
 
   
 <a name="SASsetup"></a> **SAS setup** 
