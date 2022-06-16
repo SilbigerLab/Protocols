@@ -39,6 +39,7 @@
 * [Automatically transfer weights from mettler balance to titrator or excel file](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/BalanceSOP.md)
 * [Acid washing bottles](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/AcidWashing.md)
 * [Mixing Mercuric Chloride solution for poisoning water samples](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/Mercuric_Chloride_SOP.md)
+* [Ordering and returning carbonate chemistry solutions to Dickson Lab](https://github.com/SilbigerLab/Titrator/blob/master/Protocols/Ordering-Returning_Solutions_SOP.md)
 
 ## Spectrophotometer Protocols  
 * [m-Cresol Purple Protocol](Spectrophotometer_Protocols/mCresol_Purple_Protocol.md)
