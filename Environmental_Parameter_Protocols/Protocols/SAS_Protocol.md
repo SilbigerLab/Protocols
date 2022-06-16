@@ -8,6 +8,7 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 **Contents**
 - [**Materials**](#Materials) 
 - [**General Protocol**](#GeneralProtocol) 
+- [**SAS setup**](#SASsetup)
 - [**Sample Bag Attachment & Deployment**](#SampleBagAttachment)
 - [**Reminders**](#Reminders)
 - [**References**](#References)
@@ -23,9 +24,22 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 1. Lithium ion batteries (x8)
 1. Large black zipties
 1. Carabiners
- 
-<a name="GeneralProtocol"></a> **General Protocol**  
 
+
+<a name="GeneralProtocol"></a> **General Protocol** 
+To set up the SAS for deployment:
+Clean with Q-tip to remove dust/particles and use silicone lube on motor sides and tubing
+Clean top section with Q-tip to remove dust/particles and use silicone lube for o-ring on top of SAS
+Set SAS time and sampling time for both pumps
+Calibrate both pumps
+Connect outflow tubing to Tedlar bag
+Replace with fresh batteries
+Double check main screen status menu: check if the time and date is right, sample mode, volume, and batteries
+If battery voltage is below 11V changes batteries
+Initiate to put the SAS to sleep
+
+  
+<a name="SASsetup"></a> **SAS setup** 
 *When not in use, keep lying in horizontal position.* 
 1. Remove screws, loosening each one a little and moving on to the next in a circular motion so as not to crack the screen. Remove plastic screen and gently lift out inner compartment. 
 2. Remove battery packs, load batteries, and plug packs into sampler. Make sure to plug battery pack into compartment #1 BEFORE compartment #2. 
