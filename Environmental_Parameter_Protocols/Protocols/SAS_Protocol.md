@@ -9,7 +9,7 @@ For more detailed instructions, see [**SAS User Manual**](https://github.com/Sil
 - [**Materials**](#Materials) 
 - [**To set up the SAS for deployment main tasks**](#GeneralProtocol) 
 - [**SAS setup**](#SASsetup)
-- [**SAS calibration](#SAScalibration)
+- [**SAS calibration**](#SAScalibration)
 - [**Sample bag attachment & deployment**](#SampleBagAttachment)
 - [**Reminders**](#Reminders)
 - [**References**](#References)
