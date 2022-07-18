@@ -45,7 +45,7 @@ Last Revised: February 2020
 1. Calculate the delta A1/A2 by subtracting the second from the first.
 1. Plot deltas and calculate a trend line. The slope and intercept of your line will be used for dye batch correction in spec analysis.
 1. Run 3 replicate Tris samples using the dye to ensure dye quality (remember to place in water bath for 1 hour prior to running tris).
-1. Run R code for the Tris output. % off of Tris should be around 0.1 % off. 
+1. Run R code for the Tris output. % off of Tris should be around 0.1 % off and not above 0.15%
     
 <a name="References"></a> **References**
 
