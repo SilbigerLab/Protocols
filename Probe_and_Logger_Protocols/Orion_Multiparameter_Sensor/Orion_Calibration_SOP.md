@@ -14,7 +14,8 @@ Contents
 ***
 <a name="Materials"></a> **Materials**
   *  Orion Star multiparameter meter (measures pH, mV, ORP, conductivity, total dissolved solids (TDS), salinity, resistivity, and temperature)
-  *  3-point pH calibration solutions (4, 7, and 10 at 25 &deg; C)
+  *  3-point pH calibration solutions (4, 7, and 10 at 25 &deg; C) (for NBS Scale cal)
+  *  Tris standard from the Dickson lab at Scripps (for Total Scale cal)
   *  Chem Wipes
   *  DI water
   *  Orion Star User Manual
@@ -24,7 +25,7 @@ Contents
 
 <a name="NBS"></a> **NBS Calibration**  
 1. Calibrating pH
-    1. pH should be calibrated <24 hours before use.
+    1. pH should be calibrated <24 hours before use. (You do *not* need to Tris calibrate for an NBS calibration)
     1. Fill a small clean beaker with DI water, and pour the three calibration solutions (pH of 4, 7, and 10) into three clean beakers, and place near your work station.
     1. Plug in the pH probe (spring loaded). If you are only using the pH probe for measurements, only plug in the spring loaded end of the 
     1. Turn on the meter and wait for the measurement screen to appear.
@@ -46,13 +47,13 @@ Contents
 
 <a name="Tris"></a> **Tris Calibration**  
 1. Calibrating pH
-    1. pH should be calibrated <48 hours before use.
-    1. Fill a small clean beaker with DI water and fill about half of a 50mL falcon tube with fresh Tris Buffer (from Scripps CO2 Lab). 
+    1. pH should be calibrated <48 hours before use. (You do *not* need to use the 4,7,10 buffers before a Tris calibration.)
+    1. Fill a small clean beaker with DI water.
+    1. Fill about half of a 50mL falcon tube with fresh Tris Buffer (from Scripps CO2 Lab). 
         1. If a tris buffer has already been allocated within the previous 3 weeks and properly sealed and stored in the fume hood, you may use this solution for the calibration.
         1. Place the sealed falcon tube in a container to keep it mostly  upright.
-    1. Collect ice chips from Magnolia Hall in a clean beaker or other container and set to the side of your work statino
-    1. Follow the steps above for the [NBS calibration](#NBS) using the 4, 7, and 10 pH buffers.
-    1. Once calibrated for the NBS scale, rinse the electrode in DI water, wipe the probe casing dry, slip on the falcon tube cap with a large and small hole cut into the top about halfway up the probe casing, and then place the electrode into the tris tube and screw on the cap.
+    1. Collect ice chips from Magnolia Hall in a clean beaker or other container and set to the side of your work station.
+    1. Once you unscrew and remove the KCl storage cap from the probe, rinse the electrode in DI water, wipe the probe casing dry, slip on the falcon tube cap (cap with a large and small hole cut into the top) about halfway up the probe casing, and then place the electrode into the tris tube and screw on the cap.
     1. Place the Traceable Thermometer probe tip into the small hole of the cap and slide down to the same level as the pH electrode.  Turn on the Thermometer.
     1. Turn on the meter and wait for the measurement screen to appear.
         1. Make sure the current measurement is for mV.  If not, either change the Channel (press F3 to swap between probe inputs) or Mode (pressing the Mode button on the meter to swap between measurements using the current Channel's probe) until the instrument is reading mV.
