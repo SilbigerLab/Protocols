@@ -66,7 +66,7 @@ Day 1: Measuring and Burning Pans
  
    2.  Obtain aluminum weigh boats; these will be used for ashing and in AFDW determination calculations. 
        
-![Aluminum Weighboat](<img src="https://static.grainger.com/rp/s/is/image/Grainger/8AU22_AW01?$adapimg$&hei=166&wid=166"  width="30" />)
+![Aluminum Weighboat]("https://static.grainger.com/rp/s/is/image/Grainger/8AU22_AW01?$adapimg$&hei=166&wid=166")
  
    3.  Use a sharp tool to scrape labels into the bottom of the weigh boat, labeling each pan with an ID number (marker will burn). 
        Each pan will match the organism ID. It is recommended to draw a diagram to map out the placement of the organisms. 
