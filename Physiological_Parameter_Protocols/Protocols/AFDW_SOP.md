@@ -59,7 +59,9 @@ Ex. 1 | 1.0 | 4.5632 | 4.8005 | 0.237 | 4.7542 | 0.0463 |
 
 
 4. <a name="Protocol_for_snails"></a> **Protocol for snails**
-5. <a name="Table_for_snails"></a> **Table for snails**
+1.  Let pans cool for at least 2 hrs with vent open before transfering to dessicant container
+
+6. <a name="Table_for_snails"></a> **Table for snails**
 
 6. <a name="References"></a> **References**
     1.  Fitt et al., 2000. Seasonal patterns of tissue biomass and densities of symbiotic dinoflagellates in reef corals and 
