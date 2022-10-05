@@ -64,13 +64,15 @@ Day 1: Measuring and Burning Pans
 
    1.  All organisms weighed for mass and measured for volume prior to freezing.
  
-   2.  Obtain aluminum weigh pans; these will be used for ashing and in AFDW determination calculations. 
+   2.  Obtain aluminum weigh boats; these will be used for ashing and in AFDW determination calculations. 
+       
+       ![Aluminum Weighboat](https://static.grainger.com/rp/s/is/image/Grainger/8AU22_AW01?$adapimg$&hei=166&wid=166)
  
-   3.  Use a sharp tool to scrape labels into the bottom of the pan, labeling each pan with an ID number (marker will burn). 
+   3.  Use a sharp tool to scrape labels into the bottom of the weigh boat, labeling each pan with an ID number (marker will burn). 
        Each pan will match the organism ID. It is recommended to draw a diagram to map out the placement of the organisms. 
        
        
-<a href= "https://github.com/SilbigerLab/Protocols/raw/f6220ec8166af60e4ff223a5f7045367519bf313/Physiological_Parameter_Protocols/Template/Aluminum_Tray_Diagram_Template.xlsx">[Download: Physiological_Parameter_Protocols/Template/Aluminum_Tray_Diagram_Template.xlsx]</a>
+<a href= "https://github.com/SilbigerLab/Protocols/raw/f6220ec8166af60e4ff223a5f7045367519bf313/Physiological_Parameter_Protocols/Template/Aluminum_Tray_Diagram_Template.xlsx">[Download: Aluminum_Tray_Diagram_Template.xlsx]</a>
    
    Diagram 
    
@@ -125,6 +127,8 @@ Sample ID | Blotted Wet mass (g) | Burned pan (g) | Burned pan + Dry residue (g)
 Calculations | | | | = D-C | | = D-F |
 Ex. 1 | 3.0 | 4.5632 | 4.8005 | 0.237 | 4.7542 | 0.0463 |
 
+ <a href= "https://github.com/SilbigerLab/Protocols/raw/f6220ec8166af60e4ff223a5f7045367519bf313/Physiological_Parameter_Protocols/Template/Calculations_Datasheet.xlsx">[Download: Calculations_Datasheet.xlsx]</a>
+ 
  
 6. <a name="References"></a> **References**
     1.  Fitt et al., 2000. Seasonal patterns of tissue biomass and densities of symbiotic dinoflagellates in reef corals and 
