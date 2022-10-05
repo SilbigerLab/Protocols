@@ -58,15 +58,77 @@ Calculations | | | | = D-C | | = D-F |
 Ex. 1 | 1.0 | 4.5632 | 4.8005 | 0.237 | 4.7542 | 0.0463 |
 
 
-4. <a name="Protocol_for_snails"></a> **Protocol for snails**
-1.  Let pans cool for at least 2 hrs with vent open before transfering to dessicant container
+4. <a name="Protocol_for_snails"></a> **Protocol for Snails**
 
-6. <a name="Table_for_snails"></a> **Table for snails**
+Day 1: Measuring and Burning Pans
 
+   1.  All organisms weighed for mass and measured for volume prior to freezing.
+ 
+   2.  Obtain aluminum weigh pans; these will be used for ashing and in AFDW determination calculations. 
+ 
+   3.  Use a sharp tool to scrape labels into the bottom of the pan, labeling each pan with an ID number (marker will burn). 
+       Each pan will match the organism ID. It is recommended to draw a diagram to map out the placement of the organisms. 
+   
+   Diagram 
+   
+   4.  After labeling, burn in the muffle furnace at 450°C for 4 h (turn on the fume hood). Oven stays hot after turning off,
+       so even at 4h (30 ramp up, 30 min ramp down + residual heat in oven…) the oven will be hot for some time  (Paine, 1971). 
+       Let the pans cool with the door open,  for at least 1-2 hours before you take them out and put them in the desiccant. 
+  
+   5.  Remove using metal tongs from the muffle furnace, place in a glass desiccator with blue desiccant (if desiccant is not blue
+       then dry), and transport to the scale room. *NOTE: This point onwards, ensure that pans are not touched without gloves on and
+       that pans are ALWAYS sat on burned aluminum foil on tabletops and in ovens/furnaces/scales 
+  
+   6.  Record weight of burned pans using metal tongs to transform pan to teh scale and weigh on a 4-decimal place scale (= “C” in
+       Table 2.)
+   
+Day 2: Measuring and Drying Organisms 
+
+   1. Remove organisms from freezer to thaw a few hours prior to beginning the following protocol steps. 
+
+   2. Prepare organisms for burning. For snails, since the shell does not respire and we are only concerned with body mass that
+      respires, we separate shells from body tissue. Using forceps, pull out tissue and place the shells to the side. 
+      *NOTE: Make sure organism tissue is clearly labeled as the label placed on the shells will no longer be attached to  them. 
+
+   3. Place each individual organism into a pre-burned aluminum weigh pan, drying in the oven at 60°C for at least 24 h. Ensure 
+      that the organism's weights no longer change and remain constant by weighing multiple times (they may sit in the drying oven
+      for as long as needed, e.g., 48 -72 hours).
+
+   4. After samples have reached a constant weight, weigh pan + dried samples on a 4- decimal scale and record weight (= “D” in Table
+      2.) The difference in (D – C) is the dry tissue biomass (= “E” in Table 2.) This will give you the data for organism dry
+      weights. You can select a few individuals to do this with to ensure the weight is not increase 0.003g.
+
+Day 3: Measuring and Drying Organisms 
+
+   1. After recording the weight of the burned pan + dry tissue (and salts), place in the muffle furnace at 450°C for 4 h. 
+      *NOTE: The organic fraction will burn off at 450°C leaving only salt and inorganics behind. The difference between the dry
+      weight and burned weight is the organic fraction of organism biomass.
+
+   2. Let pans cool and place in desiccator and transport to the scale room. Avoid transporting when warm, it will cause water to
+      adhere to pans.
+
+   3. Measure weight of burned pan + burned tissue (“D” – “F” in Table 2.). This is the AFDW of the organic fraction - the data for
+      organism burn weights. 
+
+   4. The ash-free dry weight will be biomass (g) for each g of tissue.
+
+<a name="Table"></a> **Table for Snails**
+
+	Table 2. Example calculations:
+	
+ A  | B  | C  | D  | E  | F  |  G |
+----|----|----|----|----|----|----|
+Sample ID | Blotted Wet mass (g) | Burned pan (g) | Burned pan + Dry residue (g) | Dry tissue biomass (g) | Burned pan + burned residue (g) | AFDW (g/mL) 
+Calculations | | | | = D-C | | = D-F |
+Ex. 1 | 3.0 | 4.5632 | 4.8005 | 0.237 | 4.7542 | 0.0463 |
+
+ 
 6. <a name="References"></a> **References**
     1.  Fitt et al., 2000. Seasonal patterns of tissue biomass and densities of symbiotic dinoflagellates in reef corals and 
     	relation to coral bleaching. Limnol. Oceanogr., 45(3), 2000, 677–685
-    2.  Schoepf et al., 2013. Coral Energy Reserves and Calcification in a High-CO2 World at Two Temperatures. PLoS ONE 8:
+    2.  Paine, Robert T. "Energy Flow In A Natural Population Of The Herbivorous Gastropod Tegula funebralis." Limnology and Oceanography
+        16.1 (1971): 86-98.
+    4.  Schoepf et al., 2013. Coral Energy Reserves and Calcification in a High-CO2 World at Two Temperatures. PLoS ONE 8:
     	e75049
     3.  Wall, C. 2015. Ash-free dry weight biomass assay protocol. Dr. Ruth Gates’ Laboratory Hawaii Institute of Marine
     	Biology, University of Hawaii.
