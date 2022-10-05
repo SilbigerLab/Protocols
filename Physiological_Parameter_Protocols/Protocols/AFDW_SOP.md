@@ -5,8 +5,10 @@ Last Revised: 20220302
 
 Contents
 - [**Materials**](#Materials)  
-- [**Protocol**](#Protocol)
-- [**Table**](#Table)
+- [**Protocol for coral**](#Protocol_for_coral)
+- [**Table for coral**](#Table_for_coral)
+- [**Protocol for snails**](#Protocol_for_snails)
+- [**Table for snails**](#Table_for_snails)
 - [**References**](#References)
  
 1. <a name="Materials"></a> **Materials**
@@ -15,7 +17,7 @@ Contents
     1. 	Muffle furnace (450°C)
     1. 	Analytical balance (0.0001 g)
 
-2. <a name="Protocol"></a> **Protocol**
+2. <a name="Protocol_for_coral"></a> **Protocol for coral**
     1.  Make sure desiccant in lab is blue in color. If pink/purple, put in *drying* oven at 60°C for a few hours using alumnium foil tray or until the material is blue again. 
     1.  Obtain aluminum weigh pans to be used in AFDW determination
     1.  Label each pan with an ID number. May use a spatula to scrape a # into bottom of pan, or use pencil. Marker WILL burn
@@ -45,7 +47,7 @@ Contents
     1.  The AFDW will be biomass (g) for each ml of tissue added, or area of skeleton.
     1.  In Table 1. Ex: 0.0463 (g) / 3 ml tissue = 0.0154 (g) biomass/ml blastate
     
-3. <a name="Table"></a> **Table**
+3. <a name="Table"></a> **Table for coral**
 
 	Table 1. Example calculations:
 	
@@ -55,7 +57,11 @@ Sample ID | Sample volume (mL) | Burned pan (g) | Burned pan + Dry residue (g) |
 Calculations | | | | = D-C | | = D-F |
 Ex. 1 | 1.0 | 4.5632 | 4.8005 | 0.237 | 4.7542 | 0.0463 |
 
-4. <a name="References"></a> **References**
+
+4. <a name="Protocol_for_snails"></a> **Protocol for snails**
+5. <a name="Table_for_snails"></a> **Table for snails**
+
+6. <a name="References"></a> **References**
     1.  Fitt et al., 2000. Seasonal patterns of tissue biomass and densities of symbiotic dinoflagellates in reef corals and 
     	relation to coral bleaching. Limnol. Oceanogr., 45(3), 2000, 677–685
     2.  Schoepf et al., 2013. Coral Energy Reserves and Calcification in a High-CO2 World at Two Temperatures. PLoS ONE 8:
