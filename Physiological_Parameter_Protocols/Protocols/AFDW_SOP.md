@@ -69,7 +69,7 @@ Day 1: Measuring and Burning Pans
    3.  Use a sharp tool to scrape labels into the bottom of the pan, labeling each pan with an ID number (marker will burn). 
        Each pan will match the organism ID. It is recommended to draw a diagram to map out the placement of the organisms. 
        
-       <a href="Physiological_Parameter_Protocols/Template/Aluminum_Tray_Diagram_Template.xlsx">Download File</a>
+       <a href="[Physiological_Parameter_Protocols/Template/Aluminum_Tray_Diagram_Template.xlsx](https://github.com/SilbigerLab/Protocols/blob/f6220ec8166af60e4ff223a5f7045367519bf313/Physiological_Parameter_Protocols/Template/Aluminum_Tray_Diagram_Template.xlsx)">Download File</a>
    
    Diagram 
    
