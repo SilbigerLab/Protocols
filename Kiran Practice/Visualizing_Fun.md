@@ -33,12 +33,3 @@ visual_of_fun
 ```
 
 ![](Visualizing_Fun_files/figure-markdown_github/unnamed-chunk-3-1.png)
-
-## Step 4: This Picture, Just Because
-
-<figure>
-<img src="Kiran%20Practice/images/sticker.png"
-alt="Figure 1: a photo I found on the internet" />
-<figcaption aria-hidden="true"><strong>Figure 1</strong>: a photo I
-found on the internet</figcaption>
-</figure>

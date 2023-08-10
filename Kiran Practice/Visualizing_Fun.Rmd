@@ -37,7 +37,3 @@ visual_of_fun <- ggplot(are_we_having_fun_yet, aes(x=miles, y=fun))+
 
 visual_of_fun
 ```
-
-## Step 4: This Picture, Just Because
-
-![**Figure 1**: a photo I found on the internet](Kiran%20Practice/images/sticker.png)
