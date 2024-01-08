@@ -11,6 +11,7 @@
 - [**Maintenance and Storage**](#Maintenance)
 
 <a name="Materials"></a> **Materials**  
+
 - HOBOware software installed on computer
 - HOBO Waterproof Shuttle
 - HOBO Conductivity and Temperature Logger (U24-002-C) and black rubber cap
@@ -18,6 +19,7 @@
 - USB-HOBO Shuttle connector cable
 
 <a name=Configuration></a> **Configuration and Launching Logger**  
+
 1. Open HOBOware software on your computer.
 1. Attach the blue coupler to the HOBO Waterproof Shuttle and connect the Shuttle to your computer via USB cable.
 1. If capped, remove the black rubber cap from the Logger and insert the round end of the Logger into the coupler, aligning the arrow on the Logger with the arrow on the coupler.
@@ -32,9 +34,10 @@
 1. Set the logger to begin recording "on the next logging interval".
 1. Click Launch and wait for a 'successful configuration' notification before disconnecting the logger.
 
-<a name=Calibration></a> **Calibration**  
+<a name=Calibration></a> **Calibration (Direct)**  
+
 1. Using either a one-calibration solution or two-calibration solutions, pour the contents into a container which the Logger can be placed into to fully submerge the conductivity sensor.
-    1. For a two-point calibration, use 1413 uS/cm and 50,000 uS/cm for SGD deployments.
+    * For a two-point calibration, use 1413 uS/cm and 50,000 uS/cm for SGD deployments.
 1. Launch logger using the HOBOware software if the logger is not already recording.
 1. Record the time the logger is placed in the first calibration solution and the last three digits of the logger's Serial Number
 1. Leave the logger to sit for a few minutes to stabilize, then record the time the logger is taken out of the solution.
@@ -42,13 +45,33 @@
 1. If not deploying right away, either Stop deployment and [Readout](#ex_situ_readout) calibration data using HOBOware, or allow the instrument to continue logging until deployment.
 1. Store all files in a Raw folder within your dated file folder for the CT logs.
 
-<a name=Deployment></a> **Deployment**  
-1. If the logger is not already logging, [Launch the logger](#Configuration).
-1. Place the black rubber cap on the round end of the logger to protect the connection sensor
-1. Deploy the logger so that it is secure and will not be moved by currents or surge.  Make sure the conductivity sensor will not be bumped or scratched while deployed.
-1. Note the time of deployment with the last three digits of the Serial Number and the GPS coordinates.
+<a name=Calibration></a> **Calibration (Using YSI)** 
 
-<a name="Data_Retrieval"></a> **Data_Retrieval**  
+Aim to do a two-point calibration with this method (IE, do this once before you sample and once after you sample).
+
+1. [Calibrate YSI](https://github.com/SilbigerLab/Protocols/blob/master/Probe_and_Logger_Protocols/YSI_2030/YSI2030_Calibration_SOP.md)
+2. Place YSI and all HOBO CT loggers into a container of sea water (e.g. water table, bucket, or bin). Make sure YSI is as close to CTs as possible to ensure an accurate calibration.
+3. Record time and YSI measurements for 3+ sampling periods and take the average of all values for this time period.
+4. Record values in a [Calibration Log](https://github.com/njsilbiger/TPdP/blob/main/Data/CT_Calibration_Log.csv). This should include the following columns:
+  * **LoggerID** (typically last 3 digits of serial number)
+  * **date** (date the *calibration* was conducted)
+  * **pre_post** (whether the calibration was done pre-sampling or post-sampling)
+  * **time_in** (time the calibration started)
+  * **time_out** (time the calibration ended)
+  * **cond_HL** (whether water temp was set as for high (H) or low (L) in CT launch settings - typically, this is high if you are sampling in sea water)
+  * **cond_uS** (from YSI reading)
+  * **EC_SC**
+  * **temp_HL** (whether water temp was set as high (H) or low (L) in CT launch settings - typically, tropical is high and temperate is low)
+
+<a name=Deployment></a> **Deployment**  
+
+1. If the logger is not already logging, [Launch the logger](#Configuration).
+2. Place the black rubber cap on the round end of the logger to protect the connection sensor
+3. Deploy the logger so that it is secure and will not be moved by currents or surge.  Make sure the conductivity sensor will not be bumped or scratched while deployed.
+4. Note the time of deployment with the last three digits of the Serial Number and the GPS coordinates.
+
+<a name="Data_Retrieval"></a> **Data_Retrieval**
+  
 1. There are two methods of data retrieval:
     - In situ - logger remains in the field and continues logging
     - Ex situ - logger is removed from the field and connected directly to the computer
@@ -93,5 +116,6 @@
     1. If you are saving a calibration file separately from your data file, save this file into a folder called Calibration (nested in your dated folder) (ex. "Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/20201023/Calibration/")
     1. Processed data will automatically be saved in the dated folder (ex. "Probe_and_Logger_Protocols/HOBO_CT_Loggers/Data/20201023/") with Serial Number identification
 
-<a name="Maintenance"></a> **Maintenance and Storage**  
+<a name="Maintenance"></a> **Maintenance and Storage** 
+ 
 1. Remove black rubber caps from loggers, and soak or thoroughly rinse with DI water all instruments that were submerged in salt water, then let dry before storing.
