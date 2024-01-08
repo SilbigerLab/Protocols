@@ -60,7 +60,7 @@ Aim to do a two-point calibration with this method (IE, do this once before you 
 	  * **time_out** (time the calibration ended)
 	  * **cond_HL** (whether water temp was set as for high (H) or low (L) in CT launch settings - typically, this is high if you are sampling in sea water)
 	  * **cond_uS** (from YSI reading)
-	  * **EC_SC**
+	  * **EC_SC** (Whether you calibrate the YSI for Electrical Conductivity (EC) or Specific Conductivity (SC). Typically, this is SC)
 	  * **temp_HL** (whether water temp was set as high (H) or low (L) in CT launch settings - typically, tropical is high and temperate is low)
 
 <a name=Deployment></a> **Deployment**  
