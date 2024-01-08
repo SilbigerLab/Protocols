@@ -53,15 +53,15 @@ Aim to do a two-point calibration with this method (IE, do this once before you 
 2. Place YSI and all HOBO CT loggers into a container of sea water (e.g. water table, bucket, or bin). Make sure YSI is as close to CTs as possible to ensure an accurate calibration.
 3. Record time and YSI measurements for 3+ sampling periods and take the average of all values for this time period.
 4. Record values in a [Calibration Log](https://github.com/njsilbiger/TPdP/blob/main/Data/CT_Calibration_Log.csv). This should include the following columns:
-  * **LoggerID** (typically last 3 digits of serial number)
-  * **date** (date the *calibration* was conducted)
-  * **pre_post** (whether the calibration was done pre-sampling or post-sampling)
-  * **time_in** (time the calibration started)
-  * **time_out** (time the calibration ended)
-  * **cond_HL** (whether water temp was set as for high (H) or low (L) in CT launch settings - typically, this is high if you are sampling in sea water)
-  * **cond_uS** (from YSI reading)
-  * **EC_SC**
-  * **temp_HL** (whether water temp was set as high (H) or low (L) in CT launch settings - typically, tropical is high and temperate is low)
+	  * **LoggerID** (typically last 3 digits of serial number)
+	  * **date** (date the *calibration* was conducted)
+	  * **pre_post** (whether the calibration was done pre-sampling or post-sampling)
+	  * **time_in** (time the calibration started)
+	  * **time_out** (time the calibration ended)
+	  * **cond_HL** (whether water temp was set as for high (H) or low (L) in CT launch settings - typically, this is high if you are sampling in sea water)
+	  * **cond_uS** (from YSI reading)
+	  * **EC_SC**
+	  * **temp_HL** (whether water temp was set as high (H) or low (L) in CT launch settings - typically, tropical is high and temperate is low)
 
 <a name=Deployment></a> **Deployment**  
 
