@@ -32,13 +32,32 @@
 1. Set the logger to begin recording "on the next logging interval".
 1. Click Launch and wait for a 'successful configuration' notification before disconnecting the logger.
 
-<a name=Calibration></a> **Calibration**  
+<a name=Calibration></a> **Calibration (Direct)**  
 1. Using either a one-calibration solution or two-calibration solutions, pour the contents into a container which the Logger can be placed into to fully submerge the conductivity sensor.
 1. Launch logger using the HOBOware software if the logger is not already recording.
 1. Record the time the logger is placed in the first calibration solution and the last three digits of the logger's Serial Number
 1. Leave the logger to sit for a few minutes to stabilize, then record the time the logger is taken out of the solution.
 1. If doing a two-point calibration, rinse the logger wtih DI, then dry with a kim wipe before placing it into the second solution, also recording the time in and time out after a few minutes.
 1. If not deploying right away, either Stop deployment and [Readout](#ex_situ_readout) calibration data using HOBOware, or allow the instrument to continue logging until deployment.
+
+<a name=Calibration></a> **Calibration (Using YSI)** 
+
+Aim to do a two-point calibration with this method (IE, do this once before you sample and once after you sample).
+
+1. [Calibrate YSI](https://github.com/SilbigerLab/Protocols/blob/master/Probe_and_Logger_Protocols/YSI_2030/YSI2030_Calibration_SOP.md)
+2. Place YSI and all HOBO CT loggers into a container of sea water (e.g. water table, bucket, or bin). Make sure YSI is as close to CTs as possible to ensure an accurate calibration.
+3. Record time and YSI measurements for 3+ sampling periods and take the average of all values for this time period.
+4. Record values in a [Calibration Log](https://github.com/njsilbiger/TPdP/blob/main/Data/CT_Calibration_Log.csv). This should include the following columns:
+	  * **LoggerID** (typically last 3 digits of serial number)
+	  * **date** (date the *calibration* was conducted)
+	  * **pre_post** (whether the calibration was done pre-sampling or post-sampling)
+	  * **time_in** (time the calibration started)
+	  * **time_out** (time the calibration ended)
+	  * **cond_HL** (whether water temp was set as for high (H) or low (L) in CT launch settings - typically, this is high if you are sampling in sea water)
+	  * **cond_uS** (from YSI reading)
+	  * **EC_SC** (Whether you calibrate the YSI for Electrical Conductivity (EC) or Specific Conductivity (SC). Typically, this is SC)
+	  * **temp_HL** (whether water temp was set as high (H) or low (L) in CT launch settings - typically, tropical is high and temperate is low)
+
 
 <a name=Deployment></a> **Deployment**  
 1. If the logger is not already logging, [Launch the logger](#Configuration).
