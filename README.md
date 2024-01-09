@@ -33,6 +33,7 @@
 * [HOBO CT, Water Level, and pH Data Processing Dashboard (ShinyApp)](https://dmbarnas.shinyapps.io/HOBO_Logger_Processing/?_ga=2.135731953.1356479851.1664743184-126360781.1664743184)
 * [LI-COR PAR Sensor](Probe_and_Logger_Protocols/LI-COR_PAR_Sensor_Manual)
 * [miniDOT Oxygen Sensor](Probe_and_Logger_Protocols/miniDOT_Oxygen_Sensors)
+* [SLED Deployment and Collection](Probe_and_Logger_Protocols/SLED_Protocol)
 
 ## Titration Protocols  
 [Titration Repository](https://github.com/SilbigerLab/Titrator)  
