@@ -54,11 +54,11 @@
 ## <a name=deploying></a> **Deploying Instruments for the SLED**
 1. When you deploy the SLED, create or modify a ***LAUNCH LOG*** .csv file. This file should include the following columns of information on the loggers that are included on the SLED:
 
-  - Serial (serial number of logger)
-  - Log_Type (CT, WL, pendent, temp, pH, miniDOT, or miniPAR)
-  - time_start (the time you put the SLED out)
-  - time_end (the time you retrieved the SLED)
-  - Notes or other information you would like to add
+	  - Serial (serial number of logger)
+ 	  - Log_Type (CT, WL, pendent, temp, pH, miniDOT, or miniPAR)
+ 	  - time_start (the time you put the SLED out)
+ 	  - time_end (the time you retrieved the SLED)
+  	  - Notes or other information you would like to add
 
 2. Modify the launch log every time you deploy and retrieve the SLED.
 
@@ -140,7 +140,7 @@
 
 **Calibrate:**
 
-1. None needed
+1. None needed.
 
 -------------
 
@@ -230,7 +230,3 @@
 -------------   
 
 1. Follow the data retrieval and maintenance / storage instructions from the [miniPAR logger protocol](https://github.com/SilbigerLab/Protocols/tree/master/Probe_and_Logger_Protocols/LI-COR_PAR_Sensor_Manual).
-
-------------
-------------
------------------
