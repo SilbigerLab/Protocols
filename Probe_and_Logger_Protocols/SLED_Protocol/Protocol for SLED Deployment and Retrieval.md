@@ -176,9 +176,6 @@
 1. None. The miniPAR is factory calibrated - may need to check to see if maintenance is needed.
 
 
-------------
-------------
------------------
 
 ## <a name=retrieving></a> **After Retrieving the SLED**
 
