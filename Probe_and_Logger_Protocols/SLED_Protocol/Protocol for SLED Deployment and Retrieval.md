@@ -62,9 +62,9 @@
 
 2. Modify the launch log every time you deploy and retrieve the SLED.
 
--------------
-### <a name=ctd></a> **HOBO CT**
 ------------- 
+### <a name=ctd></a> **HOBO CT**
+
 
 **Prep:**
 
@@ -84,9 +84,9 @@
 
 3. Remember to enter information into a **CT calibration log**, as described in the HOBO CT logger protocol.
 
-------------- 
-### <a name=wld></a> **HOBO WL**
 -------------   
+### <a name=wld></a> **HOBO WL**
+
 
 **Prep:**
 
@@ -106,9 +106,9 @@
 
 3. Allow the instrument to continue logging until deployment. HOBOware will need these calibration points included with the deployment data for processing
 
-------------- 
+-------------  
 ### <a name=phd></a> **HOBO pH**
--------------   
+ 
 
 **Prep:**
 
@@ -126,7 +126,7 @@
 
 ------------- 
 ### <a name=luxd></a> **HOBO Lux Pendents**
-------------- 
+
 
 **Prep:**
 
@@ -142,10 +142,10 @@
 
 1. None needed.
 
--------------
+------------- 
 
 ### <a name=minidotd></a> **miniDOT**
--------------   
+  
 
 **Prep:**
 
@@ -162,7 +162,7 @@
 -------------
 
 ### <a name=minipard></a> **miniPAR**
--------------   
+ 
 **Prep:**
 
 1. Replace AA batteries. 
@@ -175,31 +175,32 @@
 
 1. None. The miniPAR is factory calibrated - may need to check to see if maintenance is needed.
 
-
+.
 
 ## <a name=retrieving></a> **After Retrieving the SLED**
 
-1. Modify your launch log with SLED retrieval times.
+1. Modify your **launch log** with SLED retrieval time.
 
--------------
-### <a name=ctr></a> **HOBO CT**
+
 ------------- 
+### <a name=ctr></a> **HOBO CT**
+
 
 1. Do a second calibration following the "Calibration (Using YSI)" method in the [HOBO CT logger protocol](https://github.com/SilbigerLab/Protocols/tree/master/Probe_and_Logger_Protocols/HOBO_CT_Loggers).
 	- Remember to enter information into your **CT calibration log**
 
 3. Follow the data retrieval (in situ or ex situ) and maintenance / storage instructions from the HOBO CT logger protocol.
 
-
-------------- 
-### <a name=wlr></a> **HOBO WL**
 -------------   
+
+### <a name=wlr></a> **HOBO WL**
+
 
 1. Follow the data retrieval (in situ or ex situ) and maintenance / storage instructions from the [HOBO WL logger protocol](https://github.com/SilbigerLab/Protocols/tree/master/Probe_and_Logger_Protocols/HOBO_Depth_Loggers).
 
-------------- 
-### <a name=phd></a> **HOBO pH**
 -------------   
+
+### <a name=phd></a> **HOBO pH**
 
 1. If pH probe was not tris calibrated before deployment, follow [HOBO pH logger protocol](https://github.com/SilbigerLab/Protocols/tree/master/Probe_and_Logger_Protocols/HOBO_pH_Logger) for calibration procedure.
 
@@ -207,23 +208,22 @@
 
 ------------- 
 ### <a name=luxd></a> **HOBO Lux Pendents**
-------------- 
+
 
 1. Connect to HOBOmobile app and follow prompts to stop recording and download data.
 
--------------
+------------- 
 
 ### <a name=minidotd></a> **miniDOT**
--------------   
+  
 
 1. If miniDOT was not calibrated before deployment, follow [miniDOT logger protocol](https://github.com/SilbigerLab/Protocols/tree/master/Probe_and_Logger_Protocols/miniDOT_Oxygen_Sensor) for calibration procedure.
 
 2. Follow the data retrieval and maintenance / storage instructions from the miniDOT logger protocol.
 
 
--------------
-
+-------------  
 ### <a name=minipard></a> **miniPAR**
--------------   
+ 
 
 1. Follow the data retrieval and maintenance / storage instructions from the [miniPAR logger protocol](https://github.com/SilbigerLab/Protocols/tree/master/Probe_and_Logger_Protocols/LI-COR_PAR_Sensor_Manual).
