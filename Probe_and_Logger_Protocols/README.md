@@ -6,3 +6,5 @@
 * [HOBO Depth/Pressure Logger](HOBO_Depth_Loggers)
 * [LI-COR PAR Sensor](LI-COR_PAR_Sensor_Manual)
 * [miniDOT Oxygen Sensor](miniDOT_Oxygen_Sensors)
+* [HOBO pH Logger](HOBO_pH_Logger)
+* [SLED protocol](SLED_Protocol)
