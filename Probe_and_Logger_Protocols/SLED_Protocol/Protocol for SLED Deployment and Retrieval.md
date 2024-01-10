@@ -1,21 +1,21 @@
 # Protocol for SLED Deployment and Retrieval
 ## **Contents**  
-- [**Materials**](#Materials)  
-- [**Deploying The Sled**](#Deploying)
-	- [**CT HOBO**](#CT) 
-	- [**WL HOBO**](#WL)
-	- [**pH HOBO**](#pH)
-	- [**Lux HOBO**](#lux)
-	- [**miniDOT**](#miniDOT)
-	- [**miniPAR**](#miniPAR)  
+- [**Materials**](#materials)  
+- [**Deploying The Sled**](#deploying-the-sled)
+	- [**CT HOBO**](#hobo-ct)
+	- [**WL HOBO**](#hobo-wl)
+	- [**pH HOBO**](#hobo-ph)
+	- [**Lux HOBO**](#hobo-lux-pendents)
+	- [**miniDOT**](#minidot)
+	- [**miniPAR**](#minipar)  
 
 - [**Retrieving The Sled**](#Deploying)
-	- [**CT HOBO**](#CT) 
-	- [**WL HOBO**](#WL)
-	- [**pH HOBO**](#pH)
-	- [**Lux HOBO**](#lux)
-	- [**miniDOT**](#miniDOT)
-	- [**miniPAR**](#miniPAR)
+	- [**CT HOBO**](#hobo-ct)
+	- [**WL HOBO**](#hobo-wl)
+	- [**pH HOBO**](#hobo-ph)
+	- [**Lux HOBO**](#hobo-lux-pendents)
+	- [**miniDOT**](#minidot)
+	- [**miniPAR**](#minipar)
 
 ## <a name="Materials"></a> **Materials**
 
@@ -141,7 +141,7 @@ Remember to record the following information in a ***LAUNCH LOG*** .csv file wit
 
 **Prep:**
 
-1. Make sure AA batteries are good to go
+1. Replace AA batteries 
 
 **Launch:**
 
@@ -157,7 +157,7 @@ Remember to record the following information in a ***LAUNCH LOG*** .csv file wit
 -------------   
 **Prep:**
 
-1. Make sure AA batteries are good to go
+1. Replace AA batteries 
 
 **Launch:**
 
