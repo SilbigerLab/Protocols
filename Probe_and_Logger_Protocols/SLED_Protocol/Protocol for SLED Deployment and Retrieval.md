@@ -1,11 +1,11 @@
 # Protocol for SLED Deployment and Retrieval
 ## **Contents**  
 - [**Materials**](#materials)  
-- [**Deploying The Sled**](#deploying-the-sled)
-	- [**CT HOBO**](#hobo-ct)
-	- [**WL HOBO**](#hobo-wl)
-	- [**pH HOBO**](#hobo-ph)
-	- [**Lux HOBO**](#hobo-lux-pendents)
+- [**Deploying The Sled**](#deploying)
+	- [**CT HOBO**](#ct)
+	- [**WL HOBO**](#wl)
+	- [**pH HOBO**](#ph)
+	- [**Lux HOBO**](#lux)
 	- [**miniDOT**](#minidot)
 	- [**miniPAR**](#minipar)  
 
@@ -17,7 +17,7 @@
 	- [**miniDOT**](#minidot)
 	- [**miniPAR**](#minipar)
 
-## <a name="Materials"></a> **Materials**
+## <a name="materials"></a> **Materials**
 
 1. Software:
 	- HOBOware software installed on computer
@@ -51,7 +51,7 @@
 	- Anti-fouling plates for miniDOT
 	- DI water
 
-## <a name=Deploying the SLED></a> **Deploying the SLED**
+## <a name=deploying></a> **Deploying the SLED**
 Remember to record the following information in a ***LAUNCH LOG*** .csv file with the following columns:
   
   - Serial (serial number of logger)
@@ -62,7 +62,7 @@ Remember to record the following information in a ***LAUNCH LOG*** .csv file wit
 
 
 -------------
-### <a name=CT HOBO></a> **HOBO CT**
+### <a name=ct></a> **HOBO CT**
 ------------- 
 
 **Prep:**
@@ -81,7 +81,7 @@ Remember to record the following information in a ***LAUNCH LOG*** .csv file wit
 2. Remember to enter information into a CT calibration log, as described in the HOBO CT logger protocol
 
 ------------- 
-### <a name=WL HOBO></a> **HOBO WL**
+### <a name=wl></a> **HOBO WL**
 -------------   
 
 **Prep:**
@@ -101,7 +101,7 @@ Remember to record the following information in a ***LAUNCH LOG*** .csv file wit
 3. Allow the instrument to continue logging until deployment. HOBOware will need these calibration points included with the deployment data for processing
 
 ------------- 
-### <a name=pH HOBO></a> **HOBO pH**
+### <a name=ph></a> **HOBO pH**
 -------------   
 
 **Prep:**
@@ -118,7 +118,7 @@ Remember to record the following information in a ***LAUNCH LOG*** .csv file wit
 2. Follow instructions from [HOBO pH Logger](https://github.com/SilbigerLab/Protocols/tree/master/Probe_and_Logger_Protocols/HOBO_pH_Logger) protocol for a tris calibration
 
 ------------- 
-### <a name=lux HOBO></a> **HOBO Lux Pendents**
+### <a name=lux></a> **HOBO Lux Pendents**
 ------------- 
 
 **Prep:**
@@ -136,7 +136,7 @@ Remember to record the following information in a ***LAUNCH LOG*** .csv file wit
 
 -------------
 
-### <a name=miniDOT></a> **miniDOT**
+### <a name=minidot></a> **miniDOT**
 -------------   
 
 **Prep:**
@@ -153,7 +153,7 @@ Remember to record the following information in a ***LAUNCH LOG*** .csv file wit
 
 -------------
 
-### <a name=miniPAR></a> **miniPAR**
+### <a name=minipar></a> **miniPAR**
 -------------   
 **Prep:**
 
