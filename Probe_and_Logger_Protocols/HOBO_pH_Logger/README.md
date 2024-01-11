@@ -32,7 +32,9 @@
 
 1. If the calibration is more than 7 days old, the HOBOmobile app will automatically prompt to recalibrate when you select "Configure & Start".
 
-2. Fill sensor cap with appropriate 4, 7, or 10 buffer and follow the apps instructions to calibrate.
+2. Rinse the probe with DI water.
+
+2. Fill sensor cap with appropriate 4, 7, or 10 buffer and follow the apps instructions to calibrate. Be sure to rinse probe with DI water between calibrating with each buffer.
 
 **Tris Calibration**
 
@@ -45,6 +47,8 @@
 1. After Tris calibrating, allow the instrument to continue logging until deployment. HOBOware will need these calibration points included with the deployment data for processing.
 
 2. Leave pH sensor submerged in KCl solution until ready to submerge in sea water.
+
+3. When ready to deploy, take off the KCl storage cap and attach the anti-biofouling copper guard to the sensor.
 
 3. Deploy the logger so that it is secure and will not be moved by currents or surge.
 
