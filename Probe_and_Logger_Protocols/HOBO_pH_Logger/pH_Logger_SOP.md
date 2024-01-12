@@ -17,6 +17,7 @@
 - Three-point calibration solution (pH 4, 7, 10)
 - Tris buffer
 - DI water
+- [pH logger manuals](https://github.com/SilbigerLab/Protocols/tree/master/References_and_Manuals/HOBO_pH_Logger)
 
 
 

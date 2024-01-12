@@ -1,6 +1,7 @@
 # Protocol for the calibration, use, and maintenance of HOBO conductivity and temperature loggers
 
 **Contents**  
+
 - [**Materials**](#Materials)  
 - [**Configuration and Launching**](#Configuration)
 - [**Calibration**](#Calibration)  
@@ -10,12 +11,14 @@
   - [Ex situ readout](#ex_situ_readout)
 - [**Maintenance and Storage**](#Maintenance)
 
-<a name="Materials"></a> **Materials**  
+<a name="Materials"></a> **Materials**
+  
 - HOBOware software installed on computer
 - HOBO Waterproof Shuttle
 - HOBO Conductivity and Temperature Logger (U24-002-C) and black rubber cap
 - Blue coupler for U24-002-C Logger connection to the Shuttle
 - USB-HOBO Shuttle connector cable
+- [CT Manuals](https://github.com/SilbigerLab/Protocols/tree/master/References_and_Manuals/HOBO_Conductivity_Logger)
 
 <a name=Configuration></a> **Configuration and Launching Logger**  
 1. Open HOBOware software on your computer.

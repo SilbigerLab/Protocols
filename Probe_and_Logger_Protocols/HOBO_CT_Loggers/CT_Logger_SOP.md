@@ -1,6 +1,7 @@
 # Protocol for the calibration, use, and maintenance of HOBO conductivity and temperature loggers
 
-**Contents**  
+**Contents** 
+ 
 - [**Materials**](#Materials)  
 - [**Configuration and Launching**](#Configuration)
 - [**Calibration**](#Calibration)  
@@ -17,6 +18,7 @@
 - HOBO Conductivity and Temperature Logger (U24-002-C) and black rubber cap
 - Blue coupler for U24-002-C Logger connection to the Shuttle
 - USB-HOBO Shuttle connector cable
+- [CT Manuals](https://github.com/SilbigerLab/Protocols/tree/master/References_and_Manuals/HOBO_Conductivity_Logger)
 
 <a name=Configuration></a> **Configuration and Launching Logger**  
 

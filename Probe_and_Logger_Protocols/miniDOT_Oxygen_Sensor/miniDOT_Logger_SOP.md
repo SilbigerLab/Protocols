@@ -11,8 +11,15 @@ editor_options:
 - [**Calibration**](#Calibration)\
 - [**Deployment**](#Deployment) - [**Data Retrieval**](#Data_Retrieval) - [**Maintenance and Storage**](#Matinenance)
 
-<a name="Materials"></a> **Materials**\
-\* miniDOT logger \* USB connection cable \* silicone o-ring lubricant \* screwdriver \* anti-fouling plate \* three anti-fouling plate screws
+<a name="Materials"></a> **Materials**
+
+* miniDOT logger 
+* USB connection cable 
+* silicone o-ring lubricant 
+* screwdriver 
+* anti-fouling plate 
+* three anti-fouling plate screws
+* [miniDOT logger manuals](https://github.com/SilbigerLab/Protocols/tree/master/References_and_Manuals/miniDOT_Oxygen_Sensor_Manual)
 
 <a name="Calibration"></a> **Calibration**\
 1.

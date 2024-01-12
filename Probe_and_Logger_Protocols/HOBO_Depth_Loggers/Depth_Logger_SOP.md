@@ -1,6 +1,7 @@
 # Protocol for the calibration, use, and maintenance of HOBO pressure/depth loggers
 
-**Contents**  
+**Contents** 
+ 
 - [**Materials**](#Materials)  
 - [**Configuration and Launching**](#Configuration)
 - [**Calibration**](#Calibration)  
@@ -10,14 +11,17 @@
   - [Ex situ readout](#ex_situ_readout)
 - [**Maintenance and Storage**](#Maintenance)
 
-<a name="Materials"></a> **Materials**  
+<a name="Materials"></a> **Materials** 
+ 
 - HOBOware software installed on computer
 - HOBO Waterproof Shuttle
 - HOBO Water Level Data Logger (U20-001)
 - White COUPLER2-B for U20-001 Logger connection to the Shuttle
 - USB-HOBO Shuttle connector cable
+- [WL Manuals](https://github.com/SilbigerLab/Protocols/tree/master/References_and_Manuals/HOBO_Depth_Logger)
 
 <a name=Configuration></a> **Configuration and Launching Logger**  
+
 1. Open HOBOware software on your computer.
 1. Attach the white coupler to the HOBO Waterproof Shuttle and connect the Shuttle to your computer via USB cable.
 1. If capped, Unscrew the black plastic end cap from the logger by turning it counter-clockwise and insert the end of the logger into the coupler.

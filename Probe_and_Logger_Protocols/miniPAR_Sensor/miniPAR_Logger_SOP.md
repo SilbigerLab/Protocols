@@ -7,10 +7,12 @@
 - [**Data Retrieval**](#Data_Retrieval)
 - [**Maintenance and Storage**](#Matinenance)
 
-<a name="Materials"></a> **Materials**  
+<a name="Materials"></a> **Materials** 
+ 
 * miniPAR logger
 * USB connection cable
 * silicone o-ring lubricant
+* [miniPAR logger manuals](https://github.com/SilbigerLab/Protocols/tree/master/References_and_Manuals/LI-COR_PAR_Sensor_Manual)
 
 <a name="Calibration"></a> **Calibration**  
 1. Calibration Constant and Calibration Multiplier

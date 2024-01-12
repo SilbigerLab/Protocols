@@ -14,6 +14,7 @@
 * screwdriver
 * anti-fouling plate
 * three anti-fouling plate screws
+* [miniDOT logger manuals](https://github.com/SilbigerLab/Protocols/tree/master/References_and_Manuals/miniDOT_Oxygen_Sensor_Manual)
 
 <a name="Calibration"></a> **Calibration**  
 1. Calibrate the miniDOT loggers overnight to 24 hours before deployment.
