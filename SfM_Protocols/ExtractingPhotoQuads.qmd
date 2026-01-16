@@ -1,0 +1,150 @@
+---
+title: "Extracting Photoquadrats"
+author: "Ashley Carreiro"
+format: html
+editor: visual
+---
+
+We are going to use QGIS, a free software that you can download here
+
+### Create Project and Upload Orthomosaics
+
+1.  Add the folder containing orthomosaics and files to the favoirtes
+2.  Load Orthomosaics Add all available orthomosaics for the site: - Add Layer → Add Raster Layer.
+
+```         
+-    Define the Coordinate System (Projection) Use this only if the raster does not already have a defined CRS.
+
+    -   Open Raster → Projections → Assign Projection
+
+    -   Assign CRS:
+
+        -   i.e: WGS 84 / UTM zone 52N (EPSG:32652) ***This is for Okinawa***
+```
+
+3.  Check the scale of the orthomosaic by measuring the known distance on the scale bars
+    -   Use the measure tool on the top right of the toolbar and measure between the two points on the scale bar (i.e: 0.25 m/25 cm)
+
+#### Extract Random Quadrats from Orthomosaic
+
+1.  <div>
+
+    ### **Create Polygon on top of Orthomosaic**
+
+    </div>
+
+    1.  Create a **polygon Layer**:
+
+        -   Use **Layer → Create Layer → New Shapefile Layer**
+
+            -   Filename: Sitename_ShapefilePolygon
+
+            -   File encoding: System
+
+            -   Geometry Type: Polygon
+
+            -   Additional Dimensions: None
+
+                -   Make sure coordinates are set to project coordinates
+
+    2.  Draw the Polygon
+
+        -   Right Click the orthomosaic layer and choose "zoom to layer"
+
+        -   Click the pencil in the toolbar
+
+        -   Right click the polygon shape and check "Advanced Digitizing Panel"
+
+        -   In the Digitizing panel click the ruler
+
+        -   Choose "Digitize shape" in the drawing icon
+
+        -   Place your curser on the edge of your orthomosaic and expand to draw a cirle covering the orthomosaic, try to avioid edges
+
+        -   Set d = 10 in the advanced digitizing panel, and hit the lock button to create a set circle size
+
+        -   Right click once the circle in the correct project, and give ID name
+
+        -   The Polygon should be visible on top of ortho mosaic
+
+            -   You will not see the polygon if it is behind (below the ortho in the layers)
+
+        -   Click the sweep to open the styles panel where you can change color/opacity of the polygon
+
+    3.  Create Random Points
+
+        -   Open **Processing Toolbox**
+
+        -   **Processing Toolbox → Vector Creation → Random Points Inside Polygons**.
+
+            -   **Input layer**: Sitename_ShapefilePolygon
+
+            -   Sampling Strategy: Points Count
+
+            -   **Number of points**: 25
+
+            -   **Minimum distance**: 1 meter
+
+            -   **Random points**: Leave Blank
+
+        -   You should now see 25 points inside the polygon
+
+    4.  Create Circular Buggers
+
+        -   Open Processing Toolbox
+
+        -   Processing Toolbox -\> Vector Geometry -\> Buffer
+
+            -   Input layer: Random Points
+
+            -   Distance: 0.3535 meters
+
+            -   segments: Default
+
+            -   Dissolve result: unchecked
+
+        -   You should now see circles around each point
+
+    5.  Create Quadrats
+
+        -   Processing toolbox -\> vector geometery -\> minimum bounding geometry
+
+            -   Input layer: buffered
+
+            -   Field: ID
+
+            -   Geometry type: Minimum oriented rectangle
+
+        -   You should now see 25 squares
+
+        -   In the style panel change the squares to have a red border and o opacity
+
+        -   Choose the line under fill and change width to 0.7
+
+    6.   Export Quadrats as JPG for coralNEt
+
+        -   Processing toolbox -\> GDAL -\>Raster Extraction -\> Clip raster by mask layer (or search for)
+
+            -   Input layer: Ortho
+
+            -   Mask Layer: Bounding Geometry - click the green arrows to make separate files for each quadrat
+
+            -   Source CRS: Project
+
+            -   Targe extent: Not Set
+
+            -   Assign a specified NoData: Not Set
+
+            -   CHECK : Create an output alpha band
+
+            -   CHECK: Match the extent of the clipped raster to the extent of the mask layer
+
+            -   CHECK: Keep resolution of input raster
+
+            -   UNCHECK: Set output file resolution
+
+            -   Do not set x and y resolution to output bans
+
+            -   Clipped: Save to folder that you wish with naming convention (i.e: Oki03_2025.08_PhotoQuad), Save as type: JPG files
+
+        -   You should see this as 25 different photoquads
